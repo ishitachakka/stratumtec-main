@@ -170,24 +170,18 @@ export const Header = () => {
               ))}
               
               {/* Mobile Language Selector */}
-              <div className="flex items-center justify-center space-x-3 pt-4 border-t border-stratumtec-light/20">
+              <div className="flex flex-col pt-4 border-t border-border/20">
                 {languageOptions.map((option) => (
                   <Link
                     key={option.route}
                     to={option.route}
-                    className={`p-2 rounded-md transition-colors ${
-                      getLanguageRoute() === option.route.replace('/', '') || (option.route === '/' && getLanguageRoute() === 'pt')
-                        ? 'bg-stratumtec-orange/20' 
-                        : 'hover:bg-stratumtec-light/20'
+                    className={`flex items-center space-x-2 px-4 py-2 text-sm hover:bg-accent transition-colors ${
+                      currentLang.route === option.route ? 'bg-accent/50' : ''
                     }`}
-                    title={option.alt}
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    <img 
-                      src={option.flag} 
-                      alt={option.alt}
-                      className="w-6 h-4 object-cover rounded-sm"
-                    />
+                    <img src={option.flag} alt={option.alt} className="w-5 h-3.5 object-cover rounded-sm" />
+                    <span>{option.alt}</span>
                   </Link>
                 ))}
               </div>
