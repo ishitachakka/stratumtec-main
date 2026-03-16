@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link, useLocation } from "react-router-dom";
 import { CalendarPopup } from "@/components/CalendarPopup";
 import flagBr from "@/assets/flag-br.png";
 import flagUs from "@/assets/flag-us.png";
-import flagEs from "@/assets/flag-es.png";
+import flagCo from "@/assets/flag-co.png";
 
 export const Header = () => {
   const { t } = useLanguage();
@@ -14,9 +14,9 @@ export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const getLanguageRoute = () => {
-    if (location.pathname === '/en') return 'en';
-    if (location.pathname === '/es') return 'es';
-    return 'pt';
+    if (location.pathname.startsWith('/pt')) return 'pt';
+    if (location.pathname.startsWith('/es')) return 'es';
+    return 'en';
   };
 
   const navigationItems = [
@@ -27,11 +27,28 @@ export const Header = () => {
     { label: t.nav.contact, href: "/contato" },
   ];
 
+  const [isLangOpen, setIsLangOpen] = useState(false);
+  const langRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setIsLangOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
   const languageOptions = [
-    { route: '/', flag: flagBr, alt: 'Português' },
-    { route: '/en', flag: flagUs, alt: 'English' },
-    { route: '/es', flag: flagEs, alt: 'Español' },
+    { route: '/', flag: flagUs, alt: 'English', label: 'EN' },
+    { route: '/pt', flag: flagBr, alt: 'Português', label: 'PT' },
+    { route: '/es', flag: flagCo, alt: 'Español', label: 'ES' },
   ];
+
+  const currentLang = languageOptions.find(
+    (o) => getLanguageRoute() === o.route.replace('/', '') || (o.route === '/' && getLanguageRoute() === 'en')
+  ) || languageOptions[0];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border shadow-sm">
@@ -75,26 +92,33 @@ export const Header = () => {
 
           {/* Right Side Actions */}
           <div className="flex items-center space-x-4">
-            {/* Language Selector */}
-            <div className="flex items-center space-x-2">
-              {languageOptions.map((option) => (
-                <Link
-                  key={option.route}
-                  to={option.route}
-                  className={`p-1 rounded-md transition-colors ${
-                    getLanguageRoute() === option.route.replace('/', '') || (option.route === '/' && getLanguageRoute() === 'pt')
-                      ? 'bg-stratumtec-orange/20' 
-                      : 'hover:bg-stratumtec-light/20'
-                  }`}
-                  title={option.alt}
-                >
-                  <img 
-                    src={option.flag} 
-                    alt={option.alt}
-                    className="w-6 h-4 object-cover rounded-sm"
-                  />
-                </Link>
-              ))}
+            {/* Language Dropdown */}
+            <div className="relative" ref={langRef}>
+              <button
+                onClick={() => setIsLangOpen(!isLangOpen)}
+                className="flex items-center space-x-1.5 p-1.5 rounded-md hover:bg-muted transition-colors"
+              >
+                <img src={currentLang.flag} alt={currentLang.alt} className="w-6 h-4 object-cover rounded-sm" />
+                <span className="text-sm font-medium text-foreground">{currentLang.label}</span>
+                <ChevronDown className={`h-3.5 w-3.5 text-muted-foreground transition-transform ${isLangOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {isLangOpen && (
+                <div className="absolute right-0 mt-1 w-36 bg-popover border border-border rounded-md shadow-lg py-1 z-50">
+                  {languageOptions.map((option) => (
+                    <Link
+                      key={option.route}
+                      to={option.route}
+                      className={`flex items-center space-x-2 px-3 py-2 text-sm hover:bg-accent transition-colors ${
+                        currentLang.route === option.route ? 'bg-accent/50' : ''
+                      }`}
+                      onClick={() => setIsLangOpen(false)}
+                    >
+                      <img src={option.flag} alt={option.alt} className="w-5 h-3.5 object-cover rounded-sm" />
+                      <span>{option.alt}</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* CTA Button */}
@@ -146,24 +170,18 @@ export const Header = () => {
               ))}
               
               {/* Mobile Language Selector */}
-              <div className="flex items-center justify-center space-x-3 pt-4 border-t border-stratumtec-light/20">
+              <div className="flex flex-col pt-4 border-t border-border/20">
                 {languageOptions.map((option) => (
                   <Link
                     key={option.route}
                     to={option.route}
-                    className={`p-2 rounded-md transition-colors ${
-                      getLanguageRoute() === option.route.replace('/', '') || (option.route === '/' && getLanguageRoute() === 'pt')
-                        ? 'bg-stratumtec-orange/20' 
-                        : 'hover:bg-stratumtec-light/20'
+                    className={`flex items-center space-x-2 px-4 py-2 text-sm hover:bg-accent transition-colors ${
+                      currentLang.route === option.route ? 'bg-accent/50' : ''
                     }`}
-                    title={option.alt}
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    <img 
-                      src={option.flag} 
-                      alt={option.alt}
-                      className="w-6 h-4 object-cover rounded-sm"
-                    />
+                    <img src={option.flag} alt={option.alt} className="w-5 h-3.5 object-cover rounded-sm" />
+                    <span>{option.alt}</span>
                   </Link>
                 ))}
               </div>

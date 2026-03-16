@@ -28,7 +28,8 @@ const App = () => (
         <ScrollToTop />
         <LanguageProvider>
           <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<English />} />
+          <Route path="/pt" element={<Index />} />
           <Route path="/en" element={<English />} />
           <Route path="/es" element={<Spanish />} />
           <Route path="/empresa" element={<Company />} />
