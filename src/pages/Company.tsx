@@ -143,7 +143,7 @@ function CompanyContent() {
             <Card className="p-8 bg-gradient-to-r from-stratumtec-navy to-stratumtec-navy/90 border-0 shadow-2xl">
               <CardContent className="p-0 text-center">
                 <p className="text-xl text-white leading-relaxed max-w-4xl mx-auto">
-                  Aliamos <span className="font-bold text-stratumtec-orange">agilidade, proximidade e visão estratégica</span> à robustez de uma base tecnológica validada globalmente, garantindo eficiência, escalabilidade e resultados concretos desde o primeiro projeto.
+                  {t.company.about.bottomHighlight}
                 </p>
               </CardContent>
             </Card>
