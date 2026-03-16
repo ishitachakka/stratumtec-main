@@ -95,7 +95,7 @@ export const Header = () => {
                       className="flex items-center justify-center w-full px-2 py-2 hover:bg-accent transition-colors"
                       onClick={() => handleLanguageChange(option.lang)}
                     >
-                      <img src={option.flag} alt={option.alt} className="w-7 h-5 object-cover rounded-sm" />
+                      <img src={option.flag} alt={option.alt} className="w-8 h-6 object-cover rounded" />
                     </button>
                   ))}
                 </div>
