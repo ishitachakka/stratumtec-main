@@ -84,7 +84,7 @@ export const Header = () => {
                 onClick={() => setIsLangOpen(!isLangOpen)}
                 className="flex items-center space-x-1 p-1.5 rounded-md hover:bg-muted transition-colors"
               >
-                <img src={currentLang.flag} alt={currentLang.alt} className="w-7 h-5 object-cover rounded-sm" />
+                <img src={currentLang.flag} alt={currentLang.alt} className="w-8 h-6 object-cover rounded" />
                 <ChevronDown className={`h-3.5 w-3.5 text-muted-foreground transition-transform ${isLangOpen ? 'rotate-180' : ''}`} />
               </button>
               {isLangOpen && (
@@ -95,7 +95,7 @@ export const Header = () => {
                       className="flex items-center justify-center w-full px-2 py-2 hover:bg-accent transition-colors"
                       onClick={() => handleLanguageChange(option.lang)}
                     >
-                      <img src={option.flag} alt={option.alt} className="w-7 h-5 object-cover rounded-sm" />
+                      <img src={option.flag} alt={option.alt} className="w-8 h-6 object-cover rounded" />
                     </button>
                   ))}
                 </div>
@@ -149,7 +149,7 @@ export const Header = () => {
                     }`}
                     onClick={() => { handleLanguageChange(option.lang); setIsMenuOpen(false); }}
                   >
-                    <img src={option.flag} alt={option.alt} className="w-7 h-5 object-cover rounded-sm" />
+                    <img src={option.flag} alt={option.alt} className="w-8 h-6 object-cover rounded" />
                   </button>
                 ))}
               </div>
