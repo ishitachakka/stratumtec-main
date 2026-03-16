@@ -14,9 +14,9 @@ export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const getLanguageRoute = () => {
-    if (location.pathname === '/en') return 'en';
-    if (location.pathname === '/es') return 'es';
-    return 'pt';
+    if (location.pathname.startsWith('/pt')) return 'pt';
+    if (location.pathname.startsWith('/es')) return 'es';
+    return 'en';
   };
 
   const navigationItems = [

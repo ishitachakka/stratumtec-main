@@ -14,7 +14,7 @@ interface LanguageProviderProps {
   defaultLanguage?: Language;
 }
 
-export const LanguageProvider = ({ children, defaultLanguage = 'pt' }: LanguageProviderProps) => {
+export const LanguageProvider = ({ children, defaultLanguage = 'en' }: LanguageProviderProps) => {
   const [language, setLanguage] = useState<Language>(defaultLanguage);
 
   const value = {
