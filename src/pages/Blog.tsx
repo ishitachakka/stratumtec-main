@@ -439,7 +439,7 @@ const Blog = () => {
                           {featuredPost.date}
                         </div>
                         <div>
-                          {featuredPost.readTime} {t.blog.readMore === "Read More" ? "read" : language === "es" ? "de lectura" : "de leitura"}
+                          {featuredPost.readTime} {ui.readTimeSuffix}
                         </div>
                       </div>
                     </div>
