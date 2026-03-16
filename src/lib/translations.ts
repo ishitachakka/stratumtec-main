@@ -745,5 +745,371 @@ export const translations = {
   }
 };
 
+// Page-level translations for components with hardcoded content
+export const pageTranslations = {
+  pt: {
+    solutionsSection: {
+      title: "Soluções em Destaque",
+      subtitle: "Tecnologias inovadoras que transformam a experiência do cliente e impulsionam o crescimento do seu negócio",
+      highlight: "Destaque",
+      learnMore: "Saiba Mais",
+      customSolution: "Precisa de uma solução personalizada?",
+      customSolutionDesc: "Nossa equipe de especialistas está pronta para desenhar a solução perfeita para os desafios únicos do seu negócio.",
+      talkExpert: "Falar com Especialista",
+      requestQuote: "Solicitar Cotação",
+      solutions: [
+        { title: "NCS Technology", description: "Netstratum Communication Suite é uma plataforma omnichannel ágil, customizável e segura, que integra voz, vídeo, WhatsApp, chat, e-mail e automações.", features: ["IA Generativa", "Machine Learning", "Hub de Sistemas"] },
+        { title: "BlueMesh | IA", description: "Solução de Inteligência Artificial da stratumtec, desenvolvida para integrar qualquer plataforma com segurança, escalabilidade e performance.", features: ["IA Proprietária", "API's Unificadas", "Sync em tempo real"] },
+        { title: "Omnichannel", description: "Integração completa entre todos os canais de relacionamento, garantindo uma experiência unificada e uma comunicação mais fluida com o cliente.", features: ["Customer Centricity", "Speech Analytics", "Multiplataforma"] },
+        { title: "Data Analytics", description: "Suite completa para análise e tratamento de dados em grandes volumes, gerando dashboards inteligentes e insights preditivos para tomada de decisão.", features: ["Business Intelligence", "Análise Preditiva", "Dashboards Personalizados"] },
+        { title: "Jornada do Cliente", description: "Mapeamento de jornada da experiência do cliente, visando otimização no tempo de resolução de demandas do atendimento em todos os pontos de contato.", features: ["Régua e Regras de Eventos", "Análise de Touchpoints", "Otimização da Experiência"] },
+        { title: "Fluxos Inteligentes", description: "Workflows automatizados que eliminam tarefas repetitivas, melhoram o tempo de resposta e aceleram processos críticos e garante maior eficiência em CXM.", features: ["Automação de Workflow", "Redução de TMA", "Ganho de Eficiência"] }
+      ]
+    },
+    consultingSection: {
+      title: "Consultoria Especializada",
+      subtitle: "Nossa equipe de especialistas oferece consultoria estratégica para transformar a experiência do cliente da sua empresa através de soluções tecnológicas inovadoras.",
+      learnMore: "Saiba Mais",
+      ctaTitle: "Pronto para Transformar sua Experiência do Cliente?",
+      ctaDesc: "Agende uma conversa com nossos especialistas e descubra como podemos ajudar sua empresa a alcançar novos patamares de excelência em Customer Experience.",
+      scheduleConsulting: "Agendar Consultoria",
+      requestProposal: "Solicitar Proposta",
+      yearsExp: "Anos de Experiência",
+      projects: "Projetos Realizados",
+      satisfaction: "Satisfação dos Clientes",
+      services: [
+        { title: "Estratégia de CX", description: "Estratégias personalizadas para elevar a experiência do cliente, impulsionando engajamento e fidelização.", features: ["Mapeamento de jornada", "Análise de touchpoints", "Definição de KPIs"] },
+        { title: "Assessment de CX", description: "Avaliação de processos e fluxos de atendimento, jornada do cliente, programas de fidelização e retenção.", features: ["Aumento de NPS, CSAT e CES", "Performance e Escalabilidade", "Insights Personalizados"] },
+        { title: "Transformação Digital", description: "Estratégia e implementação estruturada de projetos de modernização, envolvendo tecnologia, processos e cultura.", features: ["Auditoria de sistemas", "Análise de Performance", "Relatórios detalhados"] },
+        { title: "Monetização", description: "Aumento de receitas por meio de estratégias de monetização centradas no cliente.", features: ["Personalização de ofertas", "Alertas em tempo real", "Precificação inteligente"] },
+        { title: "VoC – Voz do Cliente", description: "Estratégia integrada para capturar, interpretar e transformar feedbacks em decisões estratégicas.", features: ["Insights de consumidores", "Análise de sentimento", "Voice Analytics"] },
+        { title: "Processos de CXM", description: "Mapeamento e revisão de processos de CX para garantir melhor experiência e eficiência operacional.", features: ["Mapeamento de Processos", "Estratégias de Fidelização", "Gestão de Performance"] }
+      ]
+    },
+    companyHome: {
+      title: "Sobre a",
+      description: "A stratumtec atua com o respaldo tecnológico, a experiência internacional e os produtos desenvolvidos pela Netstratum - referência global em soluções tecnológicas customizadas, com mais de 25 anos de atuação em projetos de alta complexidade.",
+      card1Title: "Soluções Modulares e Integráveis",
+      card1Desc: "O foco da stratumtec é entregar soluções modulares e integráveis que se conectam facilmente a qualquer sistema, plataforma ou infraestrutura já existente, de forma ultra customizada.",
+      card2Title: "Integração Sem Barreiras",
+      card2Desc: "Acreditamos que integração não deve ser uma barreira, mas um acelerador. Desenvolvemos nossas soluções para se encaixarem em qualquer ambiente — de forma rápida, segura e sem fricção.",
+      bottomText: "Aliamos agilidade, proximidade e visão estratégica à robustez de uma base tecnológica validada globalmente, garantindo eficiência, escalabilidade e resultados concretos desde o primeiro projeto.",
+      stat1: "Anos de Experiência", stat2: "Soluções Integráveis", stat3: "Alcance Internacional", stat4: "Complexidade de Projetos",
+      stat3Value: "Global", stat4Value: "Alta"
+    },
+    blogSection: {
+      title: "Insights & Tendências",
+      subtitle: "Mantenha-se atualizado com as últimas tendências em Customer Experience, tecnologia e inovação",
+      featured: "Destaque", readMore: "Ler Mais", readFullArticle: "Ler Artigo Completo", readTime: "de leitura",
+      newsletterTitle: "Quer receber nossos insights?",
+      newsletterDesc: "Assine nossa newsletter e fique por dentro das últimas tendências em CX e tecnologia.",
+      emailPlaceholder: "Seu melhor e-mail", subscribe: "Assinar",
+      posts: [
+        { title: "O Futuro da IA no Customer Experience", excerpt: "Como a Inteligência Artificial está revolucionando a forma como as empresas se relacionam com seus clientes.", category: "Inteligência Artificial" },
+        { title: "Automação Inteligente: Reduzindo Custos e Aumentando Eficiência", excerpt: "Descubra como implementar soluções de automação que transformam processos manuais em workflows inteligentes.", category: "Automação" },
+        { title: "Integração Omnichannel: Unificando a Experiência do Cliente", excerpt: "As melhores práticas para criar uma experiência consistente em todos os canais de comunicação.", category: "Omnichannel" },
+        { title: "Métricas de CX que Realmente Importam em 2024", excerpt: "Um guia completo sobre as métricas mais importantes para medir e otimizar a experiência do cliente.", category: "Analytics" }
+      ]
+    },
+    contactForm: {
+      headerTitle: "Vamos conversar?", headerSubtitle: "Entre em contato conosco e descubra como podemos transformar a experiência do cliente da sua empresa",
+      contactUs: "Fale conosco", contactDesc: "Nossa equipe de especialistas está pronta para ajudar você a encontrar a solução perfeita.",
+      email: "E-mail", phone: "Telefone", address: "Endereço", addressValue: "Alphaville, SP - Brasil",
+      hours: "Horário", hoursValue: "Seg. a Sex", hoursDetail: "das 9h às 18h",
+      quickResponse: "Precisa de uma resposta rápida?", quickResponseDesc: "Entre em contato via WhatsApp e fale direto com nossos especialistas.",
+      requestQuote: "Solicitar Cotação", formDesc: "Preencha o formulário abaixo e nossa equipe entrará em contato em até 24 horas.",
+      fullName: "Nome Completo", fullNamePlaceholder: "Seu nome completo", emailLabel: "E-mail",
+      company: "Empresa", companyPlaceholder: "Nome da empresa", phonePlaceholder: "(11) 99999-9999",
+      subject: "Assunto", subjectPlaceholder: "Como podemos ajudar?",
+      message: "Mensagem", messagePlaceholder: "Descreva seu projeto ou necessidade...",
+      sending: "Enviando...", sendMessage: "Enviar Mensagem",
+      successTitle: "Mensagem enviada com sucesso!", successDesc: "Nossa equipe entrará em contato em breve.",
+      errorTitle: "Erro ao enviar mensagem", errorDesc: "Tente novamente ou entre em contato diretamente."
+    },
+    footer: {
+      companyDesc: "A stratumtec oferece soluções inteligentes em Customer Experience, conectando tecnologia avançada e inovação para criar experiências excepcionais.",
+      sections: [
+        { title: "Empresa", links: ["Sobre nós", "Nossa história", "Equipe", "Carreiras"] },
+        { title: "Soluções", links: ["NCS Technology", "BlueMesh IA", "Data Analytics", "Automação IA"] },
+        { title: "Conteúdos", links: ["Blog", "Webinars", "Cases de Sucesso", "Downloads"] },
+        { title: "Suporte", links: ["Central de Ajuda", "Documentação", "Status do Sistema", "Contato"] }
+      ],
+      newsletterTitle: "Mantenha-se atualizado", newsletterDesc: "Receba insights exclusivos sobre Customer Experience e as últimas tendências em tecnologia",
+      emailPlaceholder: "Seu melhor e-mail", subscribe: "Assinar",
+      copyright: "Todos os direitos reservados.", madeWith: "Feito com paixão por tecnologia",
+      privacy: "Política de Privacidade", terms: "Termos de Uso", cookies: "Cookies"
+    },
+    solutionsPage: {
+      heroTitle1: "Nossas", heroTitle2: "Soluções",
+      heroDesc: "Descubra como nossas tecnologias se conectam para criar uma experiência única e transformar completamente a jornada dos seus clientes",
+      demoButton: "Ver Demo Interativo", learnMore: "Saiba Mais", freeDemo: "Demo Gratuito",
+      ctaTitle: "Pronto para Transformar seu Negócio?", ctaDesc: "Descubra como nossas soluções podem se integrar perfeitamente ao seu ecossistema",
+      talkExpert: "Falar com Especialista", requestDemo: "Solicitar Demonstração",
+      solutions: [
+        { title: "NCS Technology", subtitle: "Netstratum Communication Suite", description: "Netstratum Communication Suite é uma plataforma omnichannel ágil, customizável e segura, que integra voz, vídeo, WhatsApp, chat, e-mail e automações.", features: ["IA Generativa", "Machine Learning", "Hub de Sistemas"], benefits: "Reduz tempo de resposta em 80% e aumenta satisfação do cliente" },
+        { title: "BlueMesh | IA", subtitle: "Plataforma de IA Proprietária", description: "Solução de Inteligência Artificial da stratumtec, desenvolvida para integrar qualquer plataforma com segurança, escalabilidade e performance.", features: ["IA Proprietária", "API's Unificadas", "Sync em tempo real"], benefits: "Integra 100% dos sistemas com segurança máxima" },
+        { title: "Omnichannel", subtitle: "Experiência Unificada", description: "Integração completa entre todos os canais de relacionamento, garantindo uma experiência unificada e uma comunicação mais fluida com o cliente.", features: ["Customer Centricity", "Speech Analytics", "Multiplataforma"], benefits: "Aumenta retenção de clientes em 65%" },
+        { title: "Data Analytics", subtitle: "Inteligência de Negócios", description: "Suite completa para análise e tratamento de dados em grandes volumes, gerando dashboards inteligentes e insights preditivos para tomada de decisão.", features: ["Business Intelligence", "Análise Preditiva", "Dashboards Personalizados"], benefits: "Melhora decisões estratégicas em 90%" },
+        { title: "Jornada do Cliente", subtitle: "Customer Experience", description: "Mapeamento de jornada da experiência do cliente, visando otimização no tempo de resolução de demandas.", features: ["Régua e Regras de Eventos", "Análise de Touchpoints", "Otimização da Experiência"], benefits: "Eleva NPS em até 40 pontos" },
+        { title: "Fluxos Inteligentes", subtitle: "Process Excellence", description: "Workflows automatizados que eliminam tarefas repetitivas, melhoram o tempo de resposta e aceleram processos críticos.", features: ["Automação de Workflow", "Redução de TMA", "Ganho de Eficiência"], benefits: "Reduz custos operacionais em 60%" }
+      ]
+    },
+    consultingPage: {
+      heroTitle1: "Consultoria", heroTitle2: "Especializada",
+      heroDesc: "Nossa equipe de especialistas oferece consultoria estratégica para transformar a experiência do cliente através de metodologias comprovadas e soluções inovadoras",
+      scheduleConsulting: "Agendar Consultoria", learnMore: "Saiba Mais", requestProposal: "Solicitar Proposta",
+      ctaTitle: "Pronto para Transformar sua Experiência do Cliente?",
+      ctaDesc: "Agende uma conversa com nossos especialistas e descubra como podemos ajudar sua empresa a alcançar novos patamares de excelência em Customer Experience",
+      yearsExp: "Anos de Experiência", projects: "Projetos Realizados", satisfaction: "Satisfação dos Clientes",
+      services: [
+        { title: "Estratégia de CX", subtitle: "Customer Experience Strategy", description: "Estratégias personalizadas para elevar a experiência do cliente.", features: ["Mapeamento de jornada", "Análise de touchpoints", "Definição de KPIs"], benefits: "Aumenta satisfação do cliente em até 85%" },
+        { title: "Assessment de Maturidade em CX", subtitle: "Diagnóstico Completo", description: "Avaliação de processos e fluxos de atendimento, jornada do cliente.", features: ["Aumento de NPS, CSAT e CES", "Performance e Escalabilidade", "Insights Personalizados"], benefits: "Identifica 90% das oportunidades de melhoria" },
+        { title: "Transformação Digital", subtitle: "Digital Innovation", description: "Estratégia e implementação estruturada de projetos de modernização.", features: ["Auditoria de sistemas", "Análise de Performance", "Relatórios detalhados"], benefits: "Acelera adoção digital em 80%" },
+        { title: "Monetização", subtitle: "Revenue Optimization", description: "Aumento de receitas por meio de estratégias de monetização centradas no cliente.", features: ["Personalização de ofertas por cluster", "Alertas de oportunidades em tempo real", "Precificação inteligente"], benefits: "Incrementa receita em até 40%" },
+        { title: "VoC – Voz do Cliente", subtitle: "Customer Insights", description: "Estratégia integrada para capturar, interpretar e transformar feedbacks.", features: ["Insights de consumidores", "Análise de sentimento e oportunidades", "Voice Analytics"], benefits: "Melhora NPS em até 35 pontos" },
+        { title: "Processos de CXM", subtitle: "Process Excellence", description: "Mapeamento e revisão de processos de CX para garantir melhor experiência.", features: ["Mapeamento de Processos", "Estratégias de Fidelização", "Gestão de Performance (NPS, CSAT, CES)"], benefits: "Reduz tempo de resolução em 70%" }
+      ]
+    }
+  },
+  en: {
+    solutionsSection: {
+      title: "Featured Solutions",
+      subtitle: "Innovative technologies that transform customer experience and drive business growth",
+      highlight: "Featured", learnMore: "Learn More",
+      customSolution: "Need a custom solution?",
+      customSolutionDesc: "Our team of experts is ready to design the perfect solution for your unique business challenges.",
+      talkExpert: "Talk to an Expert", requestQuote: "Request Quote",
+      solutions: [
+        { title: "NCS Technology", description: "Netstratum Communication Suite is an agile, customizable, and secure omnichannel platform integrating voice, video, WhatsApp, chat, email, and automations.", features: ["Generative AI", "Machine Learning", "Systems Hub"] },
+        { title: "BlueMesh | AI", description: "Stratumtec's proprietary AI solution, developed to integrate any platform with security, scalability, and performance.", features: ["Proprietary AI", "Unified APIs", "Real-time Sync"] },
+        { title: "Omnichannel", description: "Complete integration across all relationship channels, ensuring a unified experience and smoother client communication.", features: ["Customer Centricity", "Speech Analytics", "Multi-platform"] },
+        { title: "Data Analytics", description: "Complete suite for large-volume data analysis, generating intelligent dashboards and predictive insights.", features: ["Business Intelligence", "Predictive Analysis", "Custom Dashboards"] },
+        { title: "Customer Journey", description: "Customer experience journey mapping, optimizing resolution times across all service touchpoints.", features: ["Event Rules & Triggers", "Touchpoint Analysis", "Experience Optimization"] },
+        { title: "Intelligent Workflows", description: "Automated workflows that eliminate repetitive tasks, improve response times, and accelerate critical processes.", features: ["Workflow Automation", "AHT Reduction", "Efficiency Gains"] }
+      ]
+    },
+    consultingSection: {
+      title: "Specialized Consulting",
+      subtitle: "Our team of experts offers strategic consulting to transform your company's customer experience through innovative solutions.",
+      learnMore: "Learn More",
+      ctaTitle: "Ready to Transform your Customer Experience?",
+      ctaDesc: "Schedule a conversation with our specialists and discover how we can help your company reach new levels of CX excellence.",
+      scheduleConsulting: "Schedule Consulting", requestProposal: "Request Proposal",
+      yearsExp: "Years of Experience", projects: "Projects Completed", satisfaction: "Client Satisfaction",
+      services: [
+        { title: "CX Strategy", description: "Personalized strategies to elevate customer experience, driving engagement and loyalty.", features: ["Journey Mapping", "Touchpoint Analysis", "KPI Definition"] },
+        { title: "CX Assessment", description: "Evaluation of service processes and flows, identifying risks, bottlenecks and opportunities.", features: ["NPS, CSAT & CES Improvement", "Performance & Scalability", "Personalized Insights"] },
+        { title: "Digital Transformation", description: "Strategy and structured implementation of modernization projects.", features: ["System Audit", "Performance Analysis", "Detailed Reports"] },
+        { title: "Monetization", description: "Revenue growth through customer-centric monetization strategies.", features: ["Cluster-based Personalization", "Real-time Alerts", "Intelligent Pricing"] },
+        { title: "VoC – Voice of Customer", description: "Integrated strategy to capture and transform feedback into strategic decisions.", features: ["Consumer Insights", "Sentiment Analysis", "Voice Analytics"] },
+        { title: "CXM Processes", description: "CX process mapping and review for better experience and operational efficiency.", features: ["Process Mapping", "Loyalty Strategies", "Performance Management"] }
+      ]
+    },
+    companyHome: {
+      title: "About",
+      description: "Stratumtec operates with the technological backing, international experience and products developed by Netstratum - a global reference in customized technological solutions, with over 25 years of experience in high-complexity projects.",
+      card1Title: "Modular & Integrable Solutions",
+      card1Desc: "Stratumtec's focus is delivering modular and integrable solutions that easily connect to any existing system, platform or infrastructure, in a highly customized way.",
+      card2Title: "Integration Without Barriers",
+      card2Desc: "We believe integration should not be a barrier, but an accelerator. We develop our solutions to fit any environment — quickly, securely and without friction.",
+      bottomText: "We combine agility, proximity and strategic vision with the robustness of a globally validated technology base, ensuring efficiency, scalability and concrete results from the first project.",
+      stat1: "Years of Experience", stat2: "Integrable Solutions", stat3: "International Reach", stat4: "Project Complexity",
+      stat3Value: "Global", stat4Value: "High"
+    },
+    blogSection: {
+      title: "Insights & Trends",
+      subtitle: "Stay updated with the latest trends in Customer Experience, technology and innovation",
+      featured: "Featured", readMore: "Read More", readFullArticle: "Read Full Article", readTime: "read",
+      newsletterTitle: "Want to receive our insights?",
+      newsletterDesc: "Subscribe to our newsletter and stay up to date with the latest CX and technology trends.",
+      emailPlaceholder: "Your best email", subscribe: "Subscribe",
+      posts: [
+        { title: "The Future of AI in Customer Experience", excerpt: "How AI is revolutionizing the way companies relate to their customers, creating more personalized experiences.", category: "Artificial Intelligence" },
+        { title: "Intelligent Automation: Reducing Costs and Increasing Efficiency", excerpt: "Discover how to implement automation solutions that transform manual processes into intelligent workflows.", category: "Automation" },
+        { title: "Omnichannel Integration: Unifying Customer Experience", excerpt: "Best practices for creating a consistent experience across all communication channels.", category: "Omnichannel" },
+        { title: "CX Metrics That Really Matter in 2024", excerpt: "A complete guide to the most important metrics for measuring and optimizing customer experience.", category: "Analytics" }
+      ]
+    },
+    contactForm: {
+      headerTitle: "Let's talk?", headerSubtitle: "Get in touch and discover how we can transform your company's customer experience",
+      contactUs: "Contact us", contactDesc: "Our team of experts is ready to help you find the perfect solution for your business challenges.",
+      email: "Email", phone: "Phone", address: "Address", addressValue: "Alphaville, SP - Brazil",
+      hours: "Hours", hoursValue: "Mon to Fri", hoursDetail: "9am to 6pm",
+      quickResponse: "Need a quick response?", quickResponseDesc: "Contact us via WhatsApp and speak directly with our specialists.",
+      requestQuote: "Request Quote", formDesc: "Fill out the form below and our team will contact you within 24 hours.",
+      fullName: "Full Name", fullNamePlaceholder: "Your full name", emailLabel: "Email",
+      company: "Company", companyPlaceholder: "Company name", phonePlaceholder: "(11) 99999-9999",
+      subject: "Subject", subjectPlaceholder: "How can we help?",
+      message: "Message", messagePlaceholder: "Describe your project or need...",
+      sending: "Sending...", sendMessage: "Send Message",
+      successTitle: "Message sent successfully!", successDesc: "Our team will be in touch soon.",
+      errorTitle: "Error sending message", errorDesc: "Please try again or contact us directly."
+    },
+    footer: {
+      companyDesc: "Stratumtec offers intelligent Customer Experience solutions, connecting advanced technology and innovation to create exceptional experiences.",
+      sections: [
+        { title: "Company", links: ["About us", "Our history", "Team", "Careers"] },
+        { title: "Solutions", links: ["NCS Technology", "BlueMesh AI", "Data Analytics", "AI Automation"] },
+        { title: "Content", links: ["Blog", "Webinars", "Success Cases", "Downloads"] },
+        { title: "Support", links: ["Help Center", "Documentation", "System Status", "Contact"] }
+      ],
+      newsletterTitle: "Stay updated", newsletterDesc: "Receive exclusive insights about Customer Experience and the latest technology trends",
+      emailPlaceholder: "Your best email", subscribe: "Subscribe",
+      copyright: "All rights reserved.", madeWith: "Made with passion for technology",
+      privacy: "Privacy Policy", terms: "Terms of Use", cookies: "Cookies"
+    },
+    solutionsPage: {
+      heroTitle1: "Our", heroTitle2: "Solutions",
+      heroDesc: "Discover how our technologies connect to create a unique experience and completely transform your customers' journey",
+      demoButton: "View Interactive Demo", learnMore: "Learn More", freeDemo: "Free Demo",
+      ctaTitle: "Ready to Transform your Business?", ctaDesc: "Discover how our solutions can seamlessly integrate into your ecosystem",
+      talkExpert: "Talk to an Expert", requestDemo: "Request Demo",
+      solutions: [
+        { title: "NCS Technology", subtitle: "Netstratum Communication Suite", description: "Agile, customizable, secure omnichannel platform integrating voice, video, WhatsApp, chat, email, and automations.", features: ["Generative AI", "Machine Learning", "Systems Hub"], benefits: "Reduces response time by 80% and increases customer satisfaction" },
+        { title: "BlueMesh | AI", subtitle: "Proprietary AI Platform", description: "Stratumtec's proprietary AI solution for secure, scalable platform integration.", features: ["Proprietary AI", "Unified APIs", "Real-time Sync"], benefits: "Integrates 100% of systems with maximum security" },
+        { title: "Omnichannel", subtitle: "Unified Experience", description: "Complete integration across all channels for unified experience and smoother communication.", features: ["Customer Centricity", "Speech Analytics", "Multi-platform"], benefits: "Increases client retention by 65%" },
+        { title: "Data Analytics", subtitle: "Business Intelligence", description: "Complete suite for large-volume data analysis with intelligent dashboards and predictive insights.", features: ["Business Intelligence", "Predictive Analysis", "Custom Dashboards"], benefits: "Improves strategic decisions by 90%" },
+        { title: "Customer Journey", subtitle: "Customer Experience", description: "Journey mapping optimizing resolution times across all service touchpoints.", features: ["Event Rules & Triggers", "Touchpoint Analysis", "Experience Optimization"], benefits: "Raises NPS by up to 40 points" },
+        { title: "Intelligent Workflows", subtitle: "Process Excellence", description: "Automated workflows eliminating repetitive tasks and accelerating critical processes.", features: ["Workflow Automation", "AHT Reduction", "Efficiency Gains"], benefits: "Reduces operational costs by 60%" }
+      ]
+    },
+    consultingPage: {
+      heroTitle1: "Specialized", heroTitle2: "Consulting",
+      heroDesc: "Our team offers strategic consulting to transform customer experience through proven methodologies and innovative solutions",
+      scheduleConsulting: "Schedule Consulting", learnMore: "Learn More", requestProposal: "Request Proposal",
+      ctaTitle: "Ready to Transform your Customer Experience?",
+      ctaDesc: "Schedule a conversation with our specialists and discover how we can help your company reach new CX excellence levels",
+      yearsExp: "Years of Experience", projects: "Projects Completed", satisfaction: "Client Satisfaction",
+      services: [
+        { title: "CX Strategy", subtitle: "Customer Experience Strategy", description: "Personalized strategies to elevate customer experience.", features: ["Journey Mapping", "Touchpoint Analysis", "KPI Definition"], benefits: "Increases customer satisfaction by up to 85%" },
+        { title: "CX Maturity Assessment", subtitle: "Complete Diagnosis", description: "Evaluation of service processes, customer journey, loyalty programs.", features: ["NPS, CSAT & CES Improvement", "Performance & Scalability", "Personalized Insights"], benefits: "Identifies 90% of improvement opportunities" },
+        { title: "Digital Transformation", subtitle: "Digital Innovation", description: "Strategy and structured implementation of modernization projects.", features: ["System Audit", "Performance Analysis", "Detailed Reports"], benefits: "Accelerates digital adoption by 80%" },
+        { title: "Monetization", subtitle: "Revenue Optimization", description: "Revenue growth through customer-centric monetization strategies.", features: ["Cluster-based Personalization", "Real-time Opportunity Alerts", "Intelligent Pricing"], benefits: "Increases revenue by up to 40%" },
+        { title: "VoC – Voice of Customer", subtitle: "Customer Insights", description: "Integrated strategy to capture and transform feedback into strategic decisions.", features: ["Consumer Insights", "Sentiment & Opportunity Analysis", "Voice Analytics"], benefits: "Improves NPS by up to 35 points" },
+        { title: "CXM Processes", subtitle: "Process Excellence", description: "CX process mapping for better experience and operational efficiency.", features: ["Process Mapping", "Loyalty Strategies", "Performance Management (NPS, CSAT, CES)"], benefits: "Reduces resolution time by 70%" }
+      ]
+    }
+  },
+  es: {
+    solutionsSection: {
+      title: "Soluciones Destacadas",
+      subtitle: "Tecnologías innovadoras que transforman la experiencia del cliente e impulsan el crecimiento empresarial",
+      highlight: "Destacado", learnMore: "Saber Más",
+      customSolution: "¿Necesita una solución personalizada?",
+      customSolutionDesc: "Nuestro equipo de expertos está listo para diseñar la solución perfecta para los desafíos de su negocio.",
+      talkExpert: "Hablar con un Experto", requestQuote: "Solicitar Cotización",
+      solutions: [
+        { title: "NCS Technology", description: "Plataforma omnicanal ágil, personalizable y segura que integra voz, video, WhatsApp, chat, correo y automatizaciones.", features: ["IA Generativa", "Machine Learning", "Hub de Sistemas"] },
+        { title: "BlueMesh | IA", description: "Solución de IA propietaria de stratumtec para integrar cualquier plataforma con seguridad y rendimiento.", features: ["IA Propietaria", "APIs Unificadas", "Sincronización en tiempo real"] },
+        { title: "Omnicanal", description: "Integración completa entre todos los canales garantizando experiencia unificada y comunicación fluida.", features: ["Customer Centricity", "Speech Analytics", "Multiplataforma"] },
+        { title: "Data Analytics", description: "Suite completa para análisis de datos en grandes volúmenes con dashboards inteligentes e insights predictivos.", features: ["Business Intelligence", "Análisis Predictivo", "Dashboards Personalizados"] },
+        { title: "Jornada del Cliente", description: "Mapeo de la jornada del cliente optimizando tiempos de resolución en todos los puntos de contacto.", features: ["Reglas de Eventos", "Análisis de Touchpoints", "Optimización de Experiencia"] },
+        { title: "Flujos Inteligentes", description: "Workflows automatizados que eliminan tareas repetitivas y aceleran procesos críticos.", features: ["Automatización de Workflows", "Reducción de TMA", "Ganancia de Eficiencia"] }
+      ]
+    },
+    consultingSection: {
+      title: "Consultoría Especializada",
+      subtitle: "Nuestro equipo ofrece consultoría estratégica para transformar la experiencia del cliente a través de soluciones tecnológicas innovadoras.",
+      learnMore: "Saber Más",
+      ctaTitle: "¿Listo para Transformar su Experiencia del Cliente?",
+      ctaDesc: "Agende una conversación con nuestros especialistas y descubra cómo podemos ayudar a su empresa.",
+      scheduleConsulting: "Agendar Consultoría", requestProposal: "Solicitar Propuesta",
+      yearsExp: "Años de Experiencia", projects: "Proyectos Realizados", satisfaction: "Satisfacción de Clientes",
+      services: [
+        { title: "Estrategia de CX", description: "Estrategias personalizadas para elevar la experiencia del cliente.", features: ["Mapeo de jornada", "Análisis de touchpoints", "Definición de KPIs"] },
+        { title: "Assessment de CX", description: "Evaluación de procesos y flujos de atención identificando riesgos y oportunidades.", features: ["Mejora de NPS, CSAT y CES", "Performance y Escalabilidad", "Insights Personalizados"] },
+        { title: "Transformación Digital", description: "Estrategia e implementación de proyectos de modernización.", features: ["Auditoría de sistemas", "Análisis de Performance", "Informes detallados"] },
+        { title: "Monetización", description: "Aumento de ingresos mediante estrategias centradas en el cliente.", features: ["Personalización de ofertas", "Alertas en tiempo real", "Precificación inteligente"] },
+        { title: "VoC – Voz del Cliente", description: "Estrategia para capturar y transformar feedbacks en decisiones estratégicas.", features: ["Insights de consumidores", "Análisis de sentimiento", "Voice Analytics"] },
+        { title: "Procesos de CXM", description: "Mapeo y revisión de procesos de CX para mejor experiencia y eficiencia.", features: ["Mapeo de Procesos", "Estrategias de Fidelización", "Gestión de Performance"] }
+      ]
+    },
+    companyHome: {
+      title: "Sobre",
+      description: "Stratumtec actúa con el respaldo tecnológico, la experiencia internacional y los productos desarrollados por Netstratum - referencia global en soluciones tecnológicas, con más de 25 años de actuación en proyectos de alta complejidad.",
+      card1Title: "Soluciones Modulares e Integrables",
+      card1Desc: "El foco de stratumtec es entregar soluciones modulares e integrables que se conectan fácilmente a cualquier sistema existente de forma ultra personalizada.",
+      card2Title: "Integración Sin Barreras",
+      card2Desc: "Creemos que la integración no debe ser una barrera, sino un acelerador. Desarrollamos soluciones que se adaptan a cualquier ambiente — rápida, segura y sin fricción.",
+      bottomText: "Combinamos agilidad, proximidad y visión estratégica con la robustez de una base tecnológica validada globalmente, garantizando eficiencia, escalabilidad y resultados concretos.",
+      stat1: "Años de Experiencia", stat2: "Soluciones Integrables", stat3: "Alcance Internacional", stat4: "Complejidad de Proyectos",
+      stat3Value: "Global", stat4Value: "Alta"
+    },
+    blogSection: {
+      title: "Insights y Tendencias",
+      subtitle: "Manténgase actualizado con las últimas tendencias en Customer Experience, tecnología e innovación",
+      featured: "Destacado", readMore: "Leer Más", readFullArticle: "Leer Artículo Completo", readTime: "de lectura",
+      newsletterTitle: "¿Quiere recibir nuestros insights?",
+      newsletterDesc: "Suscríbase a nuestro newsletter y manténgase al día con las últimas tendencias.",
+      emailPlaceholder: "Su mejor correo electrónico", subscribe: "Suscribirse",
+      posts: [
+        { title: "El Futuro de la IA en Customer Experience", excerpt: "Cómo la IA está revolucionando la forma en que las empresas se relacionan con sus clientes.", category: "Inteligencia Artificial" },
+        { title: "Automatización Inteligente: Reduciendo Costos", excerpt: "Descubra cómo implementar soluciones de automatización que transforman procesos manuales.", category: "Automatización" },
+        { title: "Integración Omnicanal: Unificando la Experiencia", excerpt: "Las mejores prácticas para crear una experiencia consistente en todos los canales.", category: "Omnicanal" },
+        { title: "Métricas de CX que Realmente Importan en 2024", excerpt: "Una guía completa sobre las métricas más importantes para medir la experiencia del cliente.", category: "Analytics" }
+      ]
+    },
+    contactForm: {
+      headerTitle: "¿Conversamos?", headerSubtitle: "Póngase en contacto y descubra cómo podemos transformar la experiencia del cliente de su empresa",
+      contactUs: "Contáctenos", contactDesc: "Nuestro equipo de expertos está listo para ayudarle a encontrar la solución perfecta.",
+      email: "Correo electrónico", phone: "Teléfono", address: "Dirección", addressValue: "Alphaville, SP - Brasil",
+      hours: "Horario", hoursValue: "Lun a Vie", hoursDetail: "de 9h a 18h",
+      quickResponse: "¿Necesita una respuesta rápida?", quickResponseDesc: "Contáctenos vía WhatsApp y hable con nuestros especialistas.",
+      requestQuote: "Solicitar Cotización", formDesc: "Complete el formulario y nuestro equipo se pondrá en contacto en hasta 24 horas.",
+      fullName: "Nombre Completo", fullNamePlaceholder: "Su nombre completo", emailLabel: "Correo electrónico",
+      company: "Empresa", companyPlaceholder: "Nombre de la empresa", phonePlaceholder: "(11) 99999-9999",
+      subject: "Asunto", subjectPlaceholder: "¿Cómo podemos ayudar?",
+      message: "Mensaje", messagePlaceholder: "Describa su proyecto o necesidad...",
+      sending: "Enviando...", sendMessage: "Enviar Mensaje",
+      successTitle: "¡Mensaje enviado con éxito!", successDesc: "Nuestro equipo se pondrá en contacto pronto.",
+      errorTitle: "Error al enviar mensaje", errorDesc: "Intente de nuevo o contáctenos directamente."
+    },
+    footer: {
+      companyDesc: "Stratumtec ofrece soluciones inteligentes en Customer Experience, conectando tecnología avanzada e innovación para experiencias excepcionales.",
+      sections: [
+        { title: "Empresa", links: ["Sobre nosotros", "Nuestra historia", "Equipo", "Carreras"] },
+        { title: "Soluciones", links: ["NCS Technology", "BlueMesh IA", "Data Analytics", "Automatización IA"] },
+        { title: "Contenidos", links: ["Blog", "Webinars", "Casos de Éxito", "Descargas"] },
+        { title: "Soporte", links: ["Centro de Ayuda", "Documentación", "Estado del Sistema", "Contacto"] }
+      ],
+      newsletterTitle: "Manténgase actualizado", newsletterDesc: "Reciba insights exclusivos sobre Customer Experience y las últimas tendencias",
+      emailPlaceholder: "Su mejor correo electrónico", subscribe: "Suscribirse",
+      copyright: "Todos los derechos reservados.", madeWith: "Hecho con pasión por la tecnología",
+      privacy: "Política de Privacidad", terms: "Términos de Uso", cookies: "Cookies"
+    },
+    solutionsPage: {
+      heroTitle1: "Nuestras", heroTitle2: "Soluciones",
+      heroDesc: "Descubra cómo nuestras tecnologías se conectan para crear una experiencia única y transformar la jornada de sus clientes",
+      demoButton: "Ver Demo Interactivo", learnMore: "Saber Más", freeDemo: "Demo Gratuito",
+      ctaTitle: "¿Listo para Transformar su Negocio?", ctaDesc: "Descubra cómo nuestras soluciones pueden integrarse a su ecosistema",
+      talkExpert: "Hablar con un Experto", requestDemo: "Solicitar Demostración",
+      solutions: [
+        { title: "NCS Technology", subtitle: "Netstratum Communication Suite", description: "Plataforma omnicanal ágil, personalizable y segura que integra voz, video, WhatsApp, chat, correo y automatizaciones.", features: ["IA Generativa", "Machine Learning", "Hub de Sistemas"], benefits: "Reduce tiempo de respuesta en 80% y aumenta satisfacción" },
+        { title: "BlueMesh | IA", subtitle: "Plataforma de IA Propietaria", description: "Solución de IA propietaria para integrar cualquier plataforma con seguridad y rendimiento.", features: ["IA Propietaria", "APIs Unificadas", "Sincronización en tiempo real"], benefits: "Integra 100% de los sistemas con máxima seguridad" },
+        { title: "Omnicanal", subtitle: "Experiencia Unificada", description: "Integración completa entre todos los canales para experiencia unificada.", features: ["Customer Centricity", "Speech Analytics", "Multiplataforma"], benefits: "Aumenta retención de clientes en 65%" },
+        { title: "Data Analytics", subtitle: "Inteligencia de Negocios", description: "Suite completa para análisis de datos con dashboards inteligentes e insights predictivos.", features: ["Business Intelligence", "Análisis Predictivo", "Dashboards Personalizados"], benefits: "Mejora decisiones estratégicas en 90%" },
+        { title: "Jornada del Cliente", subtitle: "Customer Experience", description: "Mapeo de jornada optimizando tiempos de resolución en todos los puntos de contacto.", features: ["Reglas de Eventos", "Análisis de Touchpoints", "Optimización de Experiencia"], benefits: "Eleva NPS hasta 40 puntos" },
+        { title: "Flujos Inteligentes", subtitle: "Process Excellence", description: "Workflows automatizados que eliminan tareas repetitivas y aceleran procesos críticos.", features: ["Automatización de Workflows", "Reducción de TMA", "Ganancia de Eficiencia"], benefits: "Reduce costos operacionales en 60%" }
+      ]
+    },
+    consultingPage: {
+      heroTitle1: "Consultoría", heroTitle2: "Especializada",
+      heroDesc: "Nuestro equipo ofrece consultoría estratégica para transformar la experiencia del cliente a través de metodologías comprobadas",
+      scheduleConsulting: "Agendar Consultoría", learnMore: "Saber Más", requestProposal: "Solicitar Propuesta",
+      ctaTitle: "¿Listo para Transformar su Experiencia del Cliente?",
+      ctaDesc: "Agende una conversación con nuestros especialistas y descubra cómo podemos ayudar a su empresa",
+      yearsExp: "Años de Experiencia", projects: "Proyectos Realizados", satisfaction: "Satisfacción de Clientes",
+      services: [
+        { title: "Estrategia de CX", subtitle: "Customer Experience Strategy", description: "Estrategias personalizadas para elevar la experiencia del cliente.", features: ["Mapeo de jornada", "Análisis de touchpoints", "Definición de KPIs"], benefits: "Aumenta satisfacción hasta 85%" },
+        { title: "Assessment de Madurez en CX", subtitle: "Diagnóstico Completo", description: "Evaluación de procesos y flujos de atención.", features: ["Mejora de NPS, CSAT y CES", "Performance y Escalabilidad", "Insights Personalizados"], benefits: "Identifica 90% de oportunidades de mejora" },
+        { title: "Transformación Digital", subtitle: "Innovación Digital", description: "Estrategia e implementación de proyectos de modernización.", features: ["Auditoría de sistemas", "Análisis de Performance", "Informes detallados"], benefits: "Acelera adopción digital en 80%" },
+        { title: "Monetización", subtitle: "Optimización de Ingresos", description: "Aumento de ingresos mediante estrategias centradas en el cliente.", features: ["Personalización de ofertas", "Alertas en tiempo real", "Precificación inteligente"], benefits: "Incrementa ingresos hasta 40%" },
+        { title: "VoC – Voz del Cliente", subtitle: "Customer Insights", description: "Estrategia para capturar y transformar feedbacks en decisiones estratégicas.", features: ["Insights de consumidores", "Análisis de sentimiento", "Voice Analytics"], benefits: "Mejora NPS hasta 35 puntos" },
+        { title: "Procesos de CXM", subtitle: "Process Excellence", description: "Mapeo y revisión de procesos para mejor experiencia y eficiencia.", features: ["Mapeo de Procesos", "Estrategias de Fidelización", "Gestión de Performance (NPS, CSAT, CES)"], benefits: "Reduce tiempo de resolución en 70%" }
+      ]
+    }
+  }
+};
+
 export type Language = 'pt' | 'en' | 'es';
 export type TranslationKey = keyof typeof translations.pt;
