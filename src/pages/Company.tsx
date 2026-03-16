@@ -94,7 +94,7 @@ function CompanyContent() {
                   <CardContent className="p-0">
                     <div className="space-y-6">
                       <p className="text-lg text-stratumtec-dark leading-relaxed font-medium">
-                        A <strong className="text-stratumtec-orange">stratumtec</strong> atua com o respaldo tecnológico, a experiência internacional e os produtos desenvolvidos pela Netstratum - referência global em soluções tecnológicas customizadas.
+                        {t.company.about.description1}
                       </p>
                       <p className="text-lg text-muted-foreground leading-relaxed">
                         {t.company.about.description2}
