@@ -143,7 +143,7 @@ export const WhatsAppPlugin = () => {
 
       {/* Pulse animation for first-time visitors */}
       {!isOpen && (
-        <div className="absolute inset-0 w-14 h-14 bg-green-600/30 rounded-full animate-ping" />
+        <div className="absolute inset-0 w-14 h-14 bg-green-600/30 rounded-full animate-ping pointer-events-none" />
       )}
     </div>
   );

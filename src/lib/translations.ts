@@ -151,10 +151,11 @@ export const translations = {
         cta: "Conheça Nossa História"
       },
       about: {
-        title: "Sobre a Stratumtec",
+        title: "Sobre a",
         description1: "A Stratumtec chega ao Brasil com uma proposta revolucionária: transformar completamente a experiência do cliente através de tecnologias avançadas de Inteligência Artificial e metodologias comprovadas internacionalmente.",
         description2: "Nossa expertise internacional, combinada com o profundo conhecimento do mercado brasileiro, nos permite oferecer soluções únicas que atendem às necessidades específicas de empresas que buscam excelência em Customer Experience.",
-        description3: "Com um modelo de negócio diferenciado, focamos em resultados mensuráveis e impacto real nas operações de nossos clientes, estabelecendo novos padrões de qualidade no mercado brasileiro de call centers e CX."
+        description3: "Com um modelo de negócio diferenciado, focamos em resultados mensuráveis e impacto real nas operações de nossos clientes, estabelecendo novos padrões de qualidade no mercado brasileiro de call centers e CX.",
+        bottomHighlight: "Aliamos agilidade, proximidade e visão estratégica à robustez de uma base tecnológica validada globalmente, garantindo eficiência, escalabilidade e resultados concretos desde o primeiro projeto."
       },
       mission: {
         title: "Nossa Missão",
@@ -399,10 +400,11 @@ export const translations = {
         cta: "Learn Our Story"
       },
       about: {
-        title: "About Stratumtec",
+        title: "About",
         description1: "Stratumtec arrives in Brazil with a revolutionary proposal: to completely transform the customer experience through advanced Artificial Intelligence technologies and internationally proven methodologies.",
         description2: "Our international expertise, combined with deep knowledge of the Brazilian market, allows us to offer unique solutions that meet the specific needs of companies seeking excellence in Customer Experience.",
-        description3: "With a differentiated business model, we focus on measurable results and real impact on our clients' operations, establishing new quality standards in the Brazilian call center and CX market."
+        description3: "With a differentiated business model, we focus on measurable results and real impact on our clients' operations, establishing new quality standards in the Brazilian call center and CX market.",
+        bottomHighlight: "We combine agility, proximity and strategic vision with the robustness of a globally validated technology base, ensuring efficiency, scalability and concrete results from the very first project."
       },
       mission: {
         title: "Our Mission",
@@ -647,10 +649,11 @@ export const translations = {
         cta: "Conoce Nuestra Historia"
       },
       about: {
-        title: "Sobre Stratumtec",
+        title: "Sobre",
         description1: "Stratumtec llega a Brasil con una propuesta revolucionaria: transformar completamente la experiencia del cliente a través de tecnologías avanzadas de Inteligencia Artificial y metodologías probadas internacionalmente.",
         description2: "Nuestra expertise internacional, combinada con el profundo conocimiento del mercado brasileño, nos permite ofrecer soluciones únicas que atienden las necesidades específicas de empresas que buscan excelencia en Customer Experience.",
-        description3: "Con un modelo de negocio diferenciado, nos enfocamos en resultados medibles e impacto real en las operaciones de nuestros clientes, estableciendo nuevos estándares de calidad en el mercado brasileño de call centers y CX."
+        description3: "Con un modelo de negocio diferenciado, nos enfocamos en resultados medibles e impacto real en las operaciones de nuestros clientes, estableciendo nuevos estándares de calidad en el mercado brasileño de call centers y CX.",
+        bottomHighlight: "Combinamos agilidad, proximidad y visión estratégica con la robustez de una base tecnológica validada globalmente, garantizando eficiencia, escalabilidad y resultados concretos desde el primer proyecto."
       },
       mission: {
         title: "Nuestra Misión",
