@@ -31,6 +31,7 @@ const App = () => (
           <Route path="/" element={<English />} />
           <Route path="/pt" element={<Index />} />
           <Route path="/en" element={<English />} />
+          <Route path="/es" element={<Spanish />} />
           <Route path="/empresa" element={<Company />} />
           <Route path="/en/company" element={<Company />} />
           <Route path="/es/empresa" element={<Company />} />
