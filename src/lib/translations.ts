@@ -649,7 +649,7 @@ export const translations = {
         cta: "Conoce Nuestra Historia"
       },
       about: {
-        title: "Sobre Stratumtec",
+        title: "Sobre",
         description1: "Stratumtec llega a Brasil con una propuesta revolucionaria: transformar completamente la experiencia del cliente a través de tecnologías avanzadas de Inteligencia Artificial y metodologías probadas internacionalmente.",
         description2: "Nuestra expertise internacional, combinada con el profundo conocimiento del mercado brasileño, nos permite ofrecer soluciones únicas que atienden las necesidades específicas de empresas que buscan excelencia en Customer Experience.",
         description3: "Con un modelo de negocio diferenciado, nos enfocamos en resultados medibles e impacto real en las operaciones de nuestros clientes, estableciendo nuevos estándares de calidad en el mercado brasileño de call centers y CX.",
