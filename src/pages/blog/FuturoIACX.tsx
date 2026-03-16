@@ -1,6 +1,6 @@
 import React from "react";
 import BlogPost from "../BlogPost";
-import { LanguageProvider } from "@/contexts/LanguageContext";
+
 
 const FuturoIACXContent = () => {
   const title = "O Futuro da Inteligência Artificial na <span class='text-stratumtec-orange'>CX</span> do Cliente";
@@ -87,9 +87,5 @@ O futuro do CX já está em curso. E ele será tão inteligente quanto a sua est
 };
 
 export default function FuturoIACX() {
-  return (
-    <LanguageProvider>
-      <FuturoIACXContent />
-    </LanguageProvider>
-  );
+  return <FuturoIACXContent />;
 }

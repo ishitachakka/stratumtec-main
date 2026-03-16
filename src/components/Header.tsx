@@ -13,12 +13,36 @@ export const Header = () => {
   const { t, language, setLanguage } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const navRoutes: Record<Language, { company: string; solutions: string; consulting: string; content: string; contact: string }> = {
+    en: {
+      company: "/en/company",
+      solutions: "/en/solutions",
+      consulting: "/en/consulting",
+      content: "/en/blog",
+      contact: "/en/contact",
+    },
+    pt: {
+      company: "/empresa",
+      solutions: "/solucoes",
+      consulting: "/consultoria",
+      content: "/blog",
+      contact: "/contato",
+    },
+    es: {
+      company: "/es/empresa",
+      solutions: "/es/soluciones",
+      consulting: "/es/consultoria",
+      content: "/es/blog",
+      contact: "/es/contacto",
+    },
+  };
+
   const navigationItems = [
-    { label: t.nav.company, href: "/empresa" },
-    { label: t.nav.solutions, href: "/solucoes" },
-    { label: t.nav.consulting, href: "/consultoria" },
-    { label: t.nav.content, href: "/blog" },
-    { label: t.nav.contact, href: "/contato" },
+    { label: t.nav.company, href: navRoutes[language].company },
+    { label: t.nav.solutions, href: navRoutes[language].solutions },
+    { label: t.nav.consulting, href: navRoutes[language].consulting },
+    { label: t.nav.content, href: navRoutes[language].content },
+    { label: t.nav.contact, href: navRoutes[language].contact },
   ];
 
   const [isLangOpen, setIsLangOpen] = useState(false);
@@ -53,7 +77,14 @@ export const Header = () => {
         <nav className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/">
+            <Link
+              to="/"
+              onClick={() => {
+                setLanguage('en');
+                setIsMenuOpen(false);
+                setIsLangOpen(false);
+              }}
+            >
               <img 
                 src="/lovable-uploads/2cfa7eb9-c064-42b8-b3ce-a4793be73521.png" 
                 alt="stratumtec" 
