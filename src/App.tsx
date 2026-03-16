@@ -28,7 +28,8 @@ const App = () => (
         <ScrollToTop />
         <LanguageProvider>
           <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<English />} />
+          <Route path="/pt" element={<Index />} />
           <Route path="/en" element={<English />} />
           <Route path="/es" element={<Spanish />} />
           <Route path="/empresa" element={<Company />} />
@@ -44,10 +45,12 @@ const App = () => (
            <Route path="/en/contact" element={<Contact />} />
            <Route path="/es/contacto" element={<Contact />} />
            <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
-          <Route path="/blog/futuro-ia-cx" element={<FuturoIACX />} />
-          <Route path="/en/blog/:slug" element={<BlogPost />} />
-          <Route path="/es/blog/:slug" element={<BlogPost />} />
+           <Route path="/en/blog" element={<Blog />} />
+           <Route path="/es/blog" element={<Blog />} />
+           <Route path="/blog/:slug" element={<BlogPost />} />
+           <Route path="/blog/futuro-ia-cx" element={<FuturoIACX />} />
+           <Route path="/en/blog/:slug" element={<BlogPost />} />
+           <Route path="/es/blog/:slug" element={<BlogPost />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

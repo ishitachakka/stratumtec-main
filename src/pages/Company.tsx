@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { useLanguage, LanguageProvider } from "@/contexts/LanguageContext";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, Globe2, Users, Target, Award, TrendingUp, Eye } from "lucide-react";
@@ -69,7 +69,7 @@ function CompanyContent() {
             {/* Header */}
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-stratumtec-navy mb-6">
-                Sobre a <strong>stratumtec</strong>
+                {t.company.about.title} <strong>stratumtec</strong>
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-stratumtec-orange to-stratumtec-navy mx-auto rounded-full"></div>
             </div>
@@ -94,7 +94,7 @@ function CompanyContent() {
                   <CardContent className="p-0">
                     <div className="space-y-6">
                       <p className="text-lg text-stratumtec-dark leading-relaxed font-medium">
-                        A <strong className="text-stratumtec-orange">stratumtec</strong> atua com o respaldo tecnológico, a experiência internacional e os produtos desenvolvidos pela Netstratum - referência global em soluções tecnológicas customizadas.
+                        {t.company.about.description1}
                       </p>
                       <p className="text-lg text-muted-foreground leading-relaxed">
                         {t.company.about.description2}
@@ -143,7 +143,7 @@ function CompanyContent() {
             <Card className="p-8 bg-gradient-to-r from-stratumtec-navy to-stratumtec-navy/90 border-0 shadow-2xl">
               <CardContent className="p-0 text-center">
                 <p className="text-xl text-white leading-relaxed max-w-4xl mx-auto">
-                  Aliamos <span className="font-bold text-stratumtec-orange">agilidade, proximidade e visão estratégica</span> à robustez de uma base tecnológica validada globalmente, garantindo eficiência, escalabilidade e resultados concretos desde o primeiro projeto.
+                  {t.company.about.bottomHighlight}
                 </p>
               </CardContent>
             </Card>
@@ -235,7 +235,5 @@ function CompanyContent() {
     </div>;
 }
 export default function Company() {
-  return <LanguageProvider>
-      <CompanyContent />
-    </LanguageProvider>;
+  return <CompanyContent />;
 }

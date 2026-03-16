@@ -1,37 +1,75 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { CalendarPopup } from "@/components/CalendarPopup";
+import { Language } from "@/lib/translations";
 import flagBr from "@/assets/flag-br.png";
 import flagUs from "@/assets/flag-us.png";
-import flagEs from "@/assets/flag-es.png";
+import flagCo from "@/assets/flag-co.png";
 
 export const Header = () => {
-  const { t } = useLanguage();
-  const location = useLocation();
+  const { t, language, setLanguage } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const getLanguageRoute = () => {
-    if (location.pathname === '/en') return 'en';
-    if (location.pathname === '/es') return 'es';
-    return 'pt';
+  const navRoutes: Record<Language, { company: string; solutions: string; consulting: string; content: string; contact: string }> = {
+    en: {
+      company: "/en/company",
+      solutions: "/en/solutions",
+      consulting: "/en/consulting",
+      content: "/en/blog",
+      contact: "/en/contact",
+    },
+    pt: {
+      company: "/empresa",
+      solutions: "/solucoes",
+      consulting: "/consultoria",
+      content: "/blog",
+      contact: "/contato",
+    },
+    es: {
+      company: "/es/empresa",
+      solutions: "/es/soluciones",
+      consulting: "/es/consultoria",
+      content: "/es/blog",
+      contact: "/es/contacto",
+    },
   };
 
   const navigationItems = [
-    { label: t.nav.company, href: "/empresa" },
-    { label: t.nav.solutions, href: "/solucoes" },
-    { label: t.nav.consulting, href: "/consultoria" },
-    { label: t.nav.content, href: "/blog" },
-    { label: t.nav.contact, href: "/contato" },
+    { label: t.nav.company, href: navRoutes[language].company },
+    { label: t.nav.solutions, href: navRoutes[language].solutions },
+    { label: t.nav.consulting, href: navRoutes[language].consulting },
+    { label: t.nav.content, href: navRoutes[language].content },
+    { label: t.nav.contact, href: navRoutes[language].contact },
   ];
 
-  const languageOptions = [
-    { route: '/', flag: flagBr, alt: 'Português' },
-    { route: '/en', flag: flagUs, alt: 'English' },
-    { route: '/es', flag: flagEs, alt: 'Español' },
+  const [isLangOpen, setIsLangOpen] = useState(false);
+  const langRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setIsLangOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const languageOptions: { lang: Language; flag: string; alt: string }[] = [
+    { lang: 'en', flag: flagUs, alt: 'English' },
+    { lang: 'pt', flag: flagBr, alt: 'Português' },
+    { lang: 'es', flag: flagCo, alt: 'Español' },
   ];
+
+  const currentLang = languageOptions.find(o => o.lang === language) || languageOptions[0];
+
+  const handleLanguageChange = (lang: Language) => {
+    setLanguage(lang);
+    setIsLangOpen(false);
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border shadow-sm">
@@ -39,7 +77,14 @@ export const Header = () => {
         <nav className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/">
+            <Link
+              to="/"
+              onClick={() => {
+                setLanguage('en');
+                setIsMenuOpen(false);
+                setIsLangOpen(false);
+              }}
+            >
               <img 
                 src="/lovable-uploads/2cfa7eb9-c064-42b8-b3ce-a4793be73521.png" 
                 alt="stratumtec" 
@@ -51,50 +96,41 @@ export const Header = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
               {navigationItems.map((item) => (
-                item.href.startsWith('#') ? (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    className="text-base font-medium text-stratumtec-text hover:text-stratumtec-orange transition-fast relative group"
-                  >
-                    {item.label}
-                    <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-stratumtec-orange transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-                  </a>
-                ) : (
-                  <Link
-                    key={item.label}
-                    to={item.href}
-                    className="text-base font-medium text-stratumtec-text hover:text-stratumtec-orange transition-fast relative group"
-                  >
-                    {item.label}
-                    <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-stratumtec-orange transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-                  </Link>
-                )
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  className="text-base font-medium text-stratumtec-text hover:text-stratumtec-orange transition-fast relative group"
+                >
+                  {item.label}
+                  <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-stratumtec-orange transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+                </Link>
               ))}
           </div>
 
           {/* Right Side Actions */}
           <div className="flex items-center space-x-4">
-            {/* Language Selector */}
-            <div className="flex items-center space-x-2">
-              {languageOptions.map((option) => (
-                <Link
-                  key={option.route}
-                  to={option.route}
-                  className={`p-1 rounded-md transition-colors ${
-                    getLanguageRoute() === option.route.replace('/', '') || (option.route === '/' && getLanguageRoute() === 'pt')
-                      ? 'bg-stratumtec-orange/20' 
-                      : 'hover:bg-stratumtec-light/20'
-                  }`}
-                  title={option.alt}
-                >
-                  <img 
-                    src={option.flag} 
-                    alt={option.alt}
-                    className="w-6 h-4 object-cover rounded-sm"
-                  />
-                </Link>
-              ))}
+            {/* Language Dropdown - Flag only */}
+            <div className="relative" ref={langRef}>
+              <button
+                onClick={() => setIsLangOpen(!isLangOpen)}
+                className="flex items-center space-x-1 p-1.5 rounded-md hover:bg-muted transition-colors"
+              >
+                <img src={currentLang.flag} alt={currentLang.alt} className="w-8 h-6 object-cover rounded" />
+                <ChevronDown className={`h-3.5 w-3.5 text-muted-foreground transition-transform ${isLangOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {isLangOpen && (
+                <div className="absolute right-0 mt-1 w-12 bg-popover border border-border rounded-md shadow-lg py-1 z-50">
+                  {languageOptions.filter(o => o.lang !== language).map((option) => (
+                    <button
+                      key={option.lang}
+                      className="flex items-center justify-center w-full px-2 py-2 hover:bg-accent transition-colors"
+                      onClick={() => handleLanguageChange(option.lang)}
+                    >
+                      <img src={option.flag} alt={option.alt} className="w-8 h-6 object-cover rounded" />
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* CTA Button */}
@@ -124,47 +160,28 @@ export const Header = () => {
           <div className="lg:hidden border-t border-border bg-white/95 backdrop-blur-md">
             <div className="py-4 space-y-2">
               {navigationItems.map((item) => (
-                item.href.startsWith('#') ? (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    className="block px-4 py-3 text-base font-medium text-stratumtec-text hover:text-stratumtec-orange hover:bg-muted transition-fast"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.label}
-                  </a>
-                ) : (
-                  <Link
-                    key={item.label}
-                    to={item.href}
-                    className="block px-4 py-3 text-base font-medium text-stratumtec-text hover:text-stratumtec-orange hover:bg-muted transition-fast"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
-                )
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  className="block px-4 py-3 text-base font-medium text-stratumtec-text hover:text-stratumtec-orange hover:bg-muted transition-fast"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.label}
+                </Link>
               ))}
               
               {/* Mobile Language Selector */}
-              <div className="flex items-center justify-center space-x-3 pt-4 border-t border-stratumtec-light/20">
+              <div className="flex gap-2 px-4 pt-4 border-t border-border/20">
                 {languageOptions.map((option) => (
-                  <Link
-                    key={option.route}
-                    to={option.route}
+                  <button
+                    key={option.lang}
                     className={`p-2 rounded-md transition-colors ${
-                      getLanguageRoute() === option.route.replace('/', '') || (option.route === '/' && getLanguageRoute() === 'pt')
-                        ? 'bg-stratumtec-orange/20' 
-                        : 'hover:bg-stratumtec-light/20'
+                      language === option.lang ? 'bg-accent ring-2 ring-stratumtec-orange' : 'hover:bg-accent'
                     }`}
-                    title={option.alt}
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={() => { handleLanguageChange(option.lang); setIsMenuOpen(false); }}
                   >
-                    <img 
-                      src={option.flag} 
-                      alt={option.alt}
-                      className="w-6 h-4 object-cover rounded-sm"
-                    />
-                  </Link>
+                    <img src={option.flag} alt={option.alt} className="w-8 h-6 object-cover rounded" />
+                  </button>
                 ))}
               </div>
             </div>

@@ -1,5 +1,6 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
 import { Language, translations } from '@/lib/translations';
+import { useLocation } from 'react-router-dom';
 
 interface LanguageContextType {
   language: Language;
@@ -14,7 +15,7 @@ interface LanguageProviderProps {
   defaultLanguage?: Language;
 }
 
-export const LanguageProvider = ({ children, defaultLanguage = 'pt' }: LanguageProviderProps) => {
+export const LanguageProvider = ({ children, defaultLanguage = 'en' }: LanguageProviderProps) => {
   const [language, setLanguage] = useState<Language>(defaultLanguage);
 
   const value = {
