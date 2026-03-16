@@ -154,7 +154,8 @@ export const translations = {
         title: "Sobre a Stratumtec",
         description1: "A Stratumtec chega ao Brasil com uma proposta revolucionária: transformar completamente a experiência do cliente através de tecnologias avançadas de Inteligência Artificial e metodologias comprovadas internacionalmente.",
         description2: "Nossa expertise internacional, combinada com o profundo conhecimento do mercado brasileiro, nos permite oferecer soluções únicas que atendem às necessidades específicas de empresas que buscam excelência em Customer Experience.",
-        description3: "Com um modelo de negócio diferenciado, focamos em resultados mensuráveis e impacto real nas operações de nossos clientes, estabelecendo novos padrões de qualidade no mercado brasileiro de call centers e CX."
+        description3: "Com um modelo de negócio diferenciado, focamos em resultados mensuráveis e impacto real nas operações de nossos clientes, estabelecendo novos padrões de qualidade no mercado brasileiro de call centers e CX.",
+        bottomHighlight: "Aliamos agilidade, proximidade e visão estratégica à robustez de uma base tecnológica validada globalmente, garantindo eficiência, escalabilidade e resultados concretos desde o primeiro projeto."
       },
       mission: {
         title: "Nossa Missão",
