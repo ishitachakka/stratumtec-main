@@ -87,9 +87,5 @@ O futuro do CX já está em curso. E ele será tão inteligente quanto a sua est
 };
 
 export default function FuturoIACX() {
-  return (
-    <LanguageProvider>
-      <FuturoIACXContent />
-    </LanguageProvider>
-  );
+  return <FuturoIACXContent />;
 }

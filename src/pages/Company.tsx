@@ -235,7 +235,5 @@ function CompanyContent() {
     </div>;
 }
 export default function Company() {
-  return <LanguageProvider>
-      <CompanyContent />
-    </LanguageProvider>;
+  return <CompanyContent />;
 }
