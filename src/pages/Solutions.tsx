@@ -1,0 +1,256 @@
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { CalendarPopup } from "@/components/CalendarPopup";
+import { Brain, Network, BarChart3, Route, Zap, Users, ArrowRight, CheckCircle, Play } from "lucide-react";
+const solutions = [{
+  id: 1,
+  icon: Brain,
+  title: "NCS Technology",
+  subtitle: "Netstratum Communication Suite",
+  description: "Netstratum Communication Suite é uma plataforma omnichannel ágil, customizável e segura, que integra voz, vídeo, WhatsApp, chat, e-mail e automações.",
+  features: ["IA Generativa", "Machine Learning", "Hub de Sistemas"],
+  benefits: "Reduz tempo de resposta em 80% e aumenta satisfação do cliente",
+  color: "from-stratumtec-navy to-stratumtec-cyan",
+  position: "left",
+  highlight: true
+}, {
+  id: 2,
+  icon: Network,
+  title: "BlueMesh | IA",
+  subtitle: "Plataforma de IA Proprietária",
+  description: "Solução de Inteligência Artificial da stratumtec, desenvolvida para integrar qualquer plataforma com segurança, escalabilidade e performance.",
+  features: ["IA Proprietária", "API's Unificadas", "Sync em tempo real"],
+  benefits: "Integra 100% dos sistemas com segurança máxima",
+  color: "from-stratumtec-cyan to-stratumtec-orange",
+  position: "right",
+  highlight: true
+}, {
+  id: 3,
+  icon: Network,
+  title: "Omnichannel",
+  subtitle: "Experiência Unificada",
+  description: "Integração completa entre todos os canais de relacionamento, garantindo uma experiência unificada e uma comunicação mais fluida com o cliente.",
+  features: ["Customer Centricity", "Speech Analytics", "Multiplataforma"],
+  benefits: "Aumenta retenção de clientes em 65%",
+  color: "from-stratumtec-orange to-stratumtec-navy",
+  position: "left",
+  highlight: true
+}, {
+  id: 4,
+  icon: BarChart3,
+  title: "Data Analytics",
+  subtitle: "Inteligência de Negócios",
+  description: "Suite completa para análise e tratamento de dados em grandes volumes, gerando dashboards inteligentes e insights preditivos para tomada de decisão.",
+  features: ["Business Intelligence", "Análise Preditiva", "Dashboards Personalizados"],
+  benefits: "Melhora decisões estratégicas em 90%",
+  color: "from-stratumtec-navy to-stratumtec-cyan",
+  position: "right",
+  highlight: false
+}, {
+  id: 5,
+  icon: Route,
+  title: "Jornada do Cliente",
+  subtitle: "Customer Experience",
+  description: "Mapeamento de jornada da experiência do cliente, visando otimização no tempo de resolução de demandas do atendimento em todos os pontos de contato.",
+  features: ["Régua e Regras de Eventos", "Análise de Touchpoints", "Otimização da Experiência"],
+  benefits: "Eleva NPS em até 40 pontos",
+  color: "from-stratumtec-cyan to-stratumtec-orange",
+  position: "left",
+  highlight: false
+}, {
+  id: 6,
+  icon: Zap,
+  title: "Fluxos Inteligentes",
+  subtitle: "Process Excellence",
+  description: "Workflows automatizados que eliminam tarefas repetitivas, melhoram o tempo de resposta e aceleram processos críticos e garante maior eficiência em CXM.",
+  features: ["Automação de Workflow", "Redução de TMA", "Ganho de Eficiência"],
+  benefits: "Reduz custos operacionais em 60%",
+  color: "from-stratumtec-orange to-stratumtec-navy",
+  position: "right",
+  highlight: false
+}];
+export default function Solutions() {
+  return <div className="min-h-screen bg-gradient-to-br from-stratumtec-light via-background to-stratumtec-light/30">
+      <Header />
+      
+      
+      {/* Hero Section */}
+      <section className="pt-32 pb-16 bg-stratumtec-navy/95 backdrop-blur-sm relative overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute inset-0 bg-gradient-to-r from-stratumtec-navy/5 to-stratumtec-cyan/5"></div>
+        <div className="absolute top-20 right-10 w-32 h-32 bg-stratumtec-orange/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 left-10 w-40 h-40 bg-stratumtec-cyan/10 rounded-full blur-3xl"></div>
+        
+        <div className="container mx-auto px-4 lg:px-6 text-center relative z-10 flex items-end min-h-[200px]">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6">
+              Nossas{" "}
+              <span className="text-stratumtec-orange">
+                Soluções
+              </span>
+            </h1>
+            <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
+              Descubra como nossas tecnologias se conectam para criar uma experiência única 
+              e transformar completamente a jornada dos seus clientes
+            </p>
+            <div className="flex items-center justify-center gap-4">
+              <CalendarPopup
+                trigger={
+                  <Button size="lg" className="bg-stratumtec-orange text-white hover:bg-stratumtec-orange/90 hover:shadow-xl hover:scale-105 transition-all duration-300 px-8 py-4">
+                    <Play className="mr-2 h-5 w-5" />
+                    Ver Demo Interativo
+                  </Button>
+                }
+                triggerAsChild
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Solutions Journey Path */}
+      <section className="py-20">
+        <div className="container mx-auto px-4 lg:px-6">
+          <div className="relative">
+            {/* Journey Path SVG */}
+            <div className="absolute inset-0 flex justify-center">
+              <svg width="600" height="2400" className="absolute" style={{
+              left: '50%',
+              transform: 'translateX(-50%)'
+            }}>
+                {/* Organic Journey Path */}
+                <path d="M300 60 
+                     C380 140, 220 240, 300 320
+                     C420 400, 180 520, 300 600
+                     C480 680, 120 800, 300 880
+                     C520 960, 80 1080, 300 1160
+                     C540 1240, 60 1360, 300 1440
+                     C560 1520, 40 1640, 300 1720
+                     C580 1800, 20 1920, 300 2000
+                     C380 2080, 220 2160, 300 2240
+                     C420 2320, 180 2380, 300 2400" stroke="#009a93" strokeWidth="8" fill="none" strokeLinecap="round" className="drop-shadow-lg" />
+                
+                {/* Journey Checkpoints */}
+                {[60, 320, 600, 880, 1160, 1440, 1720].map((y, index) => <g key={index}>
+                    <circle cx="300" cy={y} r="14" fill="#009a93" stroke="#ffffff" strokeWidth="4" className="drop-shadow-md" />
+                    <circle cx="300" cy={y} r="8" fill="#ffffff" className="animate-pulse" />
+                  </g>)}
+              </svg>
+            </div>
+
+            {/* Solutions Cards */}
+            <div className="space-y-32 relative z-10">
+              {solutions.map((solution, index) => {
+              const IconComponent = solution.icon;
+              const isLeft = solution.position === "left";
+              return <div key={solution.id} className={`flex items-center ${isLeft ? 'flex-row' : 'flex-row-reverse'} gap-16`}>
+                    
+                    {/* Content */}
+                    <div className={`flex-1 ${isLeft ? 'text-right' : 'text-left'}`}>
+                      <Card className={`group border-2 border-stratumtec-light shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 bg-white/90 backdrop-blur-sm hover:border-stratumtec-orange/50`}>
+                        <CardHeader className="pb-4">
+                          <div className={`flex items-center gap-4 ${isLeft ? 'flex-row-reverse' : 'flex-row'}`}>
+                            <div className={`w-20 h-20 rounded-2xl bg-stratumtec-navy flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                              <IconComponent className="h-10 w-10 text-white" />
+                            </div>
+                            <div className={`${isLeft ? 'text-right' : 'text-left'}`}>
+                              <CardTitle className="text-2xl font-heading text-stratumtec-navy mb-1">
+                                {solution.title}
+                              </CardTitle>
+                              <p className="text-sm font-medium text-stratumtec-orange">
+                                {solution.subtitle}
+                              </p>
+                            </div>
+                          </div>
+                        </CardHeader>
+
+                        <CardContent>
+                          <CardDescription className="text-lg text-stratumtec-text mb-6 leading-relaxed">
+                            {solution.description}
+                          </CardDescription>
+
+                          <div className="bg-stratumtec-orange/10 rounded-xl p-4 mb-6 border border-stratumtec-orange/20">
+                            <p className="text-sm font-semibold text-stratumtec-navy flex items-center gap-2">
+                              <CheckCircle className="h-4 w-4 text-stratumtec-orange" />
+                              {solution.benefits}
+                            </p>
+                          </div>
+
+                          <div className="animate-fade-in">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
+                              {solution.features.map((feature, idx) => <div key={idx} className="flex items-center text-sm text-stratumtec-text">
+                                  <div className="w-2 h-2 bg-stratumtec-orange rounded-full mr-3" />
+                                  {feature}
+                                </div>)}
+                            </div>
+
+                            <div className="flex gap-3">
+                              <Button size="sm" className="bg-stratumtec-orange text-white hover:bg-stratumtec-orange/90 hover:shadow-lg">
+                                Saiba Mais
+                                <ArrowRight className="ml-2 h-4 w-4" />
+                              </Button>
+                              <CalendarPopup
+                                trigger={
+                                  <Button variant="outline" size="sm" className="border-stratumtec-orange text-stratumtec-orange hover:bg-stratumtec-orange hover:text-white">
+                                    Demo Gratuito
+                                  </Button>
+                                }
+                                triggerAsChild
+                              />
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </div>
+
+                    {/* Spacer for timeline */}
+                    <div className="w-16"></div>
+                  </div>;
+            })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 relative overflow-hidden bg-zinc-500">
+        {/* Background decorations */}
+        <div className="absolute top-0 left-1/4 w-64 h-64 bg-stratumtec-orange/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-48 h-48 bg-white/10 rounded-full blur-2xl"></div>
+        
+        <div className="container mx-auto px-4 lg:px-6 text-center relative z-10">
+          <div className="max-w-4xl mx-auto text-white">
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-white">
+              Pronto para Transformar seu Negócio?
+            </h2>
+            <p className="text-xl mb-8 opacity-90">
+              Descubra como nossas soluções podem se integrar perfeitamente ao seu ecossistema
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <CalendarPopup
+                trigger={
+                  <Button size="lg" className="bg-stratumtec-orange text-white hover:bg-stratumtec-orange/90 hover:scale-105 transition-all duration-300 px-8 py-4 shadow-xl">
+                    <Users className="mr-2 h-5 w-5" />
+                    Falar com Especialista
+                  </Button>
+                }
+                triggerAsChild
+              />
+              <CalendarPopup
+                trigger={
+                  <Button variant="outline" size="lg" className="border-white text-stratumtec-cyan hover:bg-stratumtec-orange hover:border-stratumtec-orange hover:text-white hover:scale-105 transition-all duration-300 px-8 py-4">
+                    Solicitar Demonstração
+                  </Button>
+                }
+                triggerAsChild
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>;
+}
