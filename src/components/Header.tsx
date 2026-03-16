@@ -77,7 +77,14 @@ export const Header = () => {
         <nav className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/">
+            <Link
+              to="/"
+              onClick={() => {
+                setLanguage('en');
+                setIsMenuOpen(false);
+                setIsLangOpen(false);
+              }}
+            >
               <img 
                 src="/lovable-uploads/2cfa7eb9-c064-42b8-b3ce-a4793be73521.png" 
                 alt="stratumtec" 
