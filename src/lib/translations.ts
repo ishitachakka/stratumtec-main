@@ -262,6 +262,38 @@ export const translations = {
       cta: "Discover Our Solutions",
       ctaSecondary: "Schedule Meeting"
     },
+    carousel: {
+      slides: [
+        {
+          title: "Customer Experience Innovation",
+          subtitle: "Transform your customer journey",
+          description: "Intelligent solutions connecting advanced technology and human experience to create lasting, impactful relationships.",
+          ctaText: "Discover Solutions",
+          ctaSecondary: "Talk to an Expert"
+        },
+        {
+          title: "Global Technology Hub",
+          subtitle: "Connecting systems, integrating possibilities",
+          description: "Omnichannel platform that unifies all touchpoints, creating a fluid and consistent experience in every interaction.",
+          ctaText: "View Integrations",
+          ctaSecondary: "Talk to an Expert"
+        },
+        {
+          title: "Intelligent Monetization",
+          subtitle: "AI that amplifies results",
+          description: "Automate processes, optimize resources, and maximize conversion with intelligent algorithms that learn and evolve with your business.",
+          ctaText: "Explore AI",
+          ctaSecondary: "Talk to an Expert"
+        },
+        {
+          title: "Transformative Automation",
+          subtitle: "Efficiency in every process",
+          description: "Eliminate operational bottlenecks and accelerate decision-making with solutions that work 24/7 for your business success.",
+          ctaText: "Schedule Demo",
+          ctaSecondary: "Talk to an Expert"
+        }
+      ]
+    },
     solutions: {
       title: "Featured Solutions",
       subtitle: "Innovative technologies that transform customer experience and drive business growth",
