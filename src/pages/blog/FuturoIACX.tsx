@@ -1,6 +1,6 @@
 import React from "react";
 import BlogPost from "../BlogPost";
-import { LanguageProvider } from "@/contexts/LanguageContext";
+
 
 const FuturoIACXContent = () => {
   const title = "O Futuro da Inteligência Artificial na <span class='text-stratumtec-orange'>CX</span> do Cliente";

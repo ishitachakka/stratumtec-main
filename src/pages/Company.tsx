@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { useLanguage, LanguageProvider } from "@/contexts/LanguageContext";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, Globe2, Users, Target, Award, TrendingUp, Eye } from "lucide-react";
