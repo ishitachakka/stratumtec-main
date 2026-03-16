@@ -84,7 +84,7 @@ export const Header = () => {
                 onClick={() => setIsLangOpen(!isLangOpen)}
                 className="flex items-center space-x-1 p-1.5 rounded-md hover:bg-muted transition-colors"
               >
-                <img src={currentLang.flag} alt={currentLang.alt} className="w-7 h-5 object-cover rounded-sm" />
+                <img src={currentLang.flag} alt={currentLang.alt} className="w-8 h-6 object-cover rounded" />
                 <ChevronDown className={`h-3.5 w-3.5 text-muted-foreground transition-transform ${isLangOpen ? 'rotate-180' : ''}`} />
               </button>
               {isLangOpen && (
