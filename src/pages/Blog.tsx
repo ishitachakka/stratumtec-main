@@ -271,6 +271,7 @@ const blogUiCopy: Record<Language, {
   featured: string;
   readFull: string;
   readMore: string;
+  readTimeSuffix: string;
   noResultsTitle: string;
   noResultsDescription: string;
   clearFilters: string;
