@@ -92,26 +92,33 @@ export const Header = () => {
 
           {/* Right Side Actions */}
           <div className="flex items-center space-x-4">
-            {/* Language Selector */}
-            <div className="flex items-center space-x-2">
-              {languageOptions.map((option) => (
-                <Link
-                  key={option.route}
-                  to={option.route}
-                  className={`p-1 rounded-md transition-colors ${
-                    getLanguageRoute() === option.route.replace('/', '') || (option.route === '/' && getLanguageRoute() === 'pt')
-                      ? 'bg-stratumtec-orange/20' 
-                      : 'hover:bg-stratumtec-light/20'
-                  }`}
-                  title={option.alt}
-                >
-                  <img 
-                    src={option.flag} 
-                    alt={option.alt}
-                    className="w-6 h-4 object-cover rounded-sm"
-                  />
-                </Link>
-              ))}
+            {/* Language Dropdown */}
+            <div className="relative" ref={langRef}>
+              <button
+                onClick={() => setIsLangOpen(!isLangOpen)}
+                className="flex items-center space-x-1.5 p-1.5 rounded-md hover:bg-muted transition-colors"
+              >
+                <img src={currentLang.flag} alt={currentLang.alt} className="w-6 h-4 object-cover rounded-sm" />
+                <span className="text-sm font-medium text-foreground">{currentLang.label}</span>
+                <ChevronDown className={`h-3.5 w-3.5 text-muted-foreground transition-transform ${isLangOpen ? 'rotate-180' : ''}`} />
+              </button>
+              {isLangOpen && (
+                <div className="absolute right-0 mt-1 w-36 bg-popover border border-border rounded-md shadow-lg py-1 z-50">
+                  {languageOptions.map((option) => (
+                    <Link
+                      key={option.route}
+                      to={option.route}
+                      className={`flex items-center space-x-2 px-3 py-2 text-sm hover:bg-accent transition-colors ${
+                        currentLang.route === option.route ? 'bg-accent/50' : ''
+                      }`}
+                      onClick={() => setIsLangOpen(false)}
+                    >
+                      <img src={option.flag} alt={option.alt} className="w-5 h-3.5 object-cover rounded-sm" />
+                      <span>{option.alt}</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* CTA Button */}
