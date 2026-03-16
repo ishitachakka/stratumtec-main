@@ -510,6 +510,38 @@ export const translations = {
       cta: "Conozca Nuestras Soluciones",
       ctaSecondary: "Agendar Reunión"
     },
+    carousel: {
+      slides: [
+        {
+          title: "Innovación en Customer Experience",
+          subtitle: "Transforme el recorrido de su cliente",
+          description: "Soluciones inteligentes que conectan tecnología avanzada y experiencia humana para crear relaciones duraderas e impactantes.",
+          ctaText: "Descubrir Soluciones",
+          ctaSecondary: "Hablar con un Experto"
+        },
+        {
+          title: "Hub Global de Tecnología",
+          subtitle: "Conectamos sistemas, integramos posibilidades",
+          description: "Plataforma omnicanal que unifica todos los puntos de contacto, creando una experiencia fluida y consistente en cada interacción.",
+          ctaText: "Ver Integraciones",
+          ctaSecondary: "Hablar con un Experto"
+        },
+        {
+          title: "Monetización Inteligente",
+          subtitle: "IA que potencia resultados",
+          description: "Automatice procesos, optimice recursos y maximice la conversión con algoritmos inteligentes que aprenden y evolucionan con su negocio.",
+          ctaText: "Explorar IA",
+          ctaSecondary: "Hablar con un Experto"
+        },
+        {
+          title: "Automatización Transformadora",
+          subtitle: "Eficiencia en cada proceso",
+          description: "Elimine cuellos de botella operativos y acelere la toma de decisiones con soluciones que trabajan 24/7 para el éxito de su negocio.",
+          ctaText: "Agendar Demo",
+          ctaSecondary: "Hablar con un Experto"
+        }
+      ]
+    },
     solutions: {
       title: "Soluciones Destacadas",
       subtitle: "Tecnologías innovadoras que transforman la experiencia del cliente e impulsan el crecimiento empresarial",
