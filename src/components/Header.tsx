@@ -2,22 +2,16 @@ import React, { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { CalendarPopup } from "@/components/CalendarPopup";
+import { Language } from "@/lib/translations";
 import flagBr from "@/assets/flag-br.png";
 import flagUs from "@/assets/flag-us.png";
 import flagCo from "@/assets/flag-co.png";
 
 export const Header = () => {
-  const { t } = useLanguage();
-  const location = useLocation();
+  const { t, language, setLanguage } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const getLanguageRoute = () => {
-    if (location.pathname.startsWith('/pt')) return 'pt';
-    if (location.pathname.startsWith('/es')) return 'es';
-    return 'en';
-  };
 
   const navigationItems = [
     { label: t.nav.company, href: "/empresa" },
@@ -40,15 +34,18 @@ export const Header = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const languageOptions = [
-    { route: '/', flag: flagUs, alt: 'English', label: 'EN' },
-    { route: '/pt', flag: flagBr, alt: 'Português', label: 'PT' },
-    { route: '/es', flag: flagCo, alt: 'Español', label: 'ES' },
+  const languageOptions: { lang: Language; flag: string; alt: string }[] = [
+    { lang: 'en', flag: flagUs, alt: 'English' },
+    { lang: 'pt', flag: flagBr, alt: 'Português' },
+    { lang: 'es', flag: flagCo, alt: 'Español' },
   ];
 
-  const currentLang = languageOptions.find(
-    (o) => getLanguageRoute() === o.route.replace('/', '') || (o.route === '/' && getLanguageRoute() === 'en')
-  ) || languageOptions[0];
+  const currentLang = languageOptions.find(o => o.lang === language) || languageOptions[0];
+
+  const handleLanguageChange = (lang: Language) => {
+    setLanguage(lang);
+    setIsLangOpen(false);
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border shadow-sm">
@@ -68,54 +65,38 @@ export const Header = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
               {navigationItems.map((item) => (
-                item.href.startsWith('#') ? (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    className="text-base font-medium text-stratumtec-text hover:text-stratumtec-orange transition-fast relative group"
-                  >
-                    {item.label}
-                    <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-stratumtec-orange transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-                  </a>
-                ) : (
-                  <Link
-                    key={item.label}
-                    to={item.href}
-                    className="text-base font-medium text-stratumtec-text hover:text-stratumtec-orange transition-fast relative group"
-                  >
-                    {item.label}
-                    <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-stratumtec-orange transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-                  </Link>
-                )
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  className="text-base font-medium text-stratumtec-text hover:text-stratumtec-orange transition-fast relative group"
+                >
+                  {item.label}
+                  <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-stratumtec-orange transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+                </Link>
               ))}
           </div>
 
           {/* Right Side Actions */}
           <div className="flex items-center space-x-4">
-            {/* Language Dropdown */}
+            {/* Language Dropdown - Flag only */}
             <div className="relative" ref={langRef}>
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
-                className="flex items-center space-x-1.5 p-1.5 rounded-md hover:bg-muted transition-colors"
+                className="flex items-center space-x-1 p-1.5 rounded-md hover:bg-muted transition-colors"
               >
-                <img src={currentLang.flag} alt={currentLang.alt} className="w-6 h-4 object-cover rounded-sm" />
-                <span className="text-sm font-medium text-foreground">{currentLang.label}</span>
+                <img src={currentLang.flag} alt={currentLang.alt} className="w-7 h-5 object-cover rounded-sm" />
                 <ChevronDown className={`h-3.5 w-3.5 text-muted-foreground transition-transform ${isLangOpen ? 'rotate-180' : ''}`} />
               </button>
               {isLangOpen && (
-                <div className="absolute right-0 mt-1 w-36 bg-popover border border-border rounded-md shadow-lg py-1 z-50">
-                  {languageOptions.map((option) => (
-                    <Link
-                      key={option.route}
-                      to={option.route}
-                      className={`flex items-center space-x-2 px-3 py-2 text-sm hover:bg-accent transition-colors ${
-                        currentLang.route === option.route ? 'bg-accent/50' : ''
-                      }`}
-                      onClick={() => setIsLangOpen(false)}
+                <div className="absolute right-0 mt-1 w-12 bg-popover border border-border rounded-md shadow-lg py-1 z-50">
+                  {languageOptions.filter(o => o.lang !== language).map((option) => (
+                    <button
+                      key={option.lang}
+                      className="flex items-center justify-center w-full px-2 py-2 hover:bg-accent transition-colors"
+                      onClick={() => handleLanguageChange(option.lang)}
                     >
-                      <img src={option.flag} alt={option.alt} className="w-5 h-3.5 object-cover rounded-sm" />
-                      <span>{option.alt}</span>
-                    </Link>
+                      <img src={option.flag} alt={option.alt} className="w-7 h-5 object-cover rounded-sm" />
+                    </button>
                   ))}
                 </div>
               )}
@@ -148,41 +129,28 @@ export const Header = () => {
           <div className="lg:hidden border-t border-border bg-white/95 backdrop-blur-md">
             <div className="py-4 space-y-2">
               {navigationItems.map((item) => (
-                item.href.startsWith('#') ? (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    className="block px-4 py-3 text-base font-medium text-stratumtec-text hover:text-stratumtec-orange hover:bg-muted transition-fast"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.label}
-                  </a>
-                ) : (
-                  <Link
-                    key={item.label}
-                    to={item.href}
-                    className="block px-4 py-3 text-base font-medium text-stratumtec-text hover:text-stratumtec-orange hover:bg-muted transition-fast"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
-                )
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  className="block px-4 py-3 text-base font-medium text-stratumtec-text hover:text-stratumtec-orange hover:bg-muted transition-fast"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.label}
+                </Link>
               ))}
               
               {/* Mobile Language Selector */}
-              <div className="flex flex-col pt-4 border-t border-border/20">
+              <div className="flex gap-2 px-4 pt-4 border-t border-border/20">
                 {languageOptions.map((option) => (
-                  <Link
-                    key={option.route}
-                    to={option.route}
-                    className={`flex items-center space-x-2 px-4 py-2 text-sm hover:bg-accent transition-colors ${
-                      currentLang.route === option.route ? 'bg-accent/50' : ''
+                  <button
+                    key={option.lang}
+                    className={`p-2 rounded-md transition-colors ${
+                      language === option.lang ? 'bg-accent ring-2 ring-stratumtec-orange' : 'hover:bg-accent'
                     }`}
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={() => { handleLanguageChange(option.lang); setIsMenuOpen(false); }}
                   >
-                    <img src={option.flag} alt={option.alt} className="w-5 h-3.5 object-cover rounded-sm" />
-                    <span>{option.alt}</span>
-                  </Link>
+                    <img src={option.flag} alt={option.alt} className="w-7 h-5 object-cover rounded-sm" />
+                  </button>
                 ))}
               </div>
             </div>
