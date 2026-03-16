@@ -400,7 +400,7 @@ export const translations = {
         cta: "Learn Our Story"
       },
       about: {
-        title: "About Stratumtec",
+        title: "About",
         description1: "Stratumtec arrives in Brazil with a revolutionary proposal: to completely transform the customer experience through advanced Artificial Intelligence technologies and internationally proven methodologies.",
         description2: "Our international expertise, combined with deep knowledge of the Brazilian market, allows us to offer unique solutions that meet the specific needs of companies seeking excellence in Customer Experience.",
         description3: "With a differentiated business model, we focus on measurable results and real impact on our clients' operations, establishing new quality standards in the Brazilian call center and CX market.",
