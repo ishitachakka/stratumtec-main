@@ -403,7 +403,8 @@ export const translations = {
         title: "About Stratumtec",
         description1: "Stratumtec arrives in Brazil with a revolutionary proposal: to completely transform the customer experience through advanced Artificial Intelligence technologies and internationally proven methodologies.",
         description2: "Our international expertise, combined with deep knowledge of the Brazilian market, allows us to offer unique solutions that meet the specific needs of companies seeking excellence in Customer Experience.",
-        description3: "With a differentiated business model, we focus on measurable results and real impact on our clients' operations, establishing new quality standards in the Brazilian call center and CX market."
+        description3: "With a differentiated business model, we focus on measurable results and real impact on our clients' operations, establishing new quality standards in the Brazilian call center and CX market.",
+        bottomHighlight: "We combine agility, proximity and strategic vision with the robustness of a globally validated technology base, ensuring efficiency, scalability and concrete results from the very first project."
       },
       mission: {
         title: "Our Mission",
