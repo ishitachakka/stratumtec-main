@@ -69,7 +69,7 @@ function CompanyContent() {
             {/* Header */}
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-stratumtec-navy mb-6">
-                Sobre a <strong>stratumtec</strong>
+                {t.company.about.title} <strong>stratumtec</strong>
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-stratumtec-orange to-stratumtec-navy mx-auto rounded-full"></div>
             </div>
