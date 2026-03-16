@@ -1,16 +1,50 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import ProjectCard from "@/components/ProjectCard";
+import Footer from "@/components/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+import project1 from "@/assets/project-1.jpg";
+import project2 from "@/assets/project-2.jpg";
+import project3 from "@/assets/project-3.jpg";
+
+const projects = [
+  {
+    index: "01",
+    category: "Residential",
+    title: ["The", "Concrete", "Void"],
+    image: project1,
+    alt: "Brutalist concrete residential building with angular geometry",
+  },
+  {
+    index: "02",
+    category: "Cultural",
+    title: ["Hollow", "Light", "Museum"],
+    image: project2,
+    alt: "Modern museum interior with vast gallery space and skylights",
+    reversed: true,
+  },
+  {
+    index: "03",
+    category: "Commercial",
+    title: ["Glass", "Meridian", "Tower"],
+    image: project3,
+    alt: "Angular glass office tower at dusk in urban skyline",
+  },
+];
+
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="bg-background text-foreground min-h-screen">
+      <Navbar />
+      <Hero />
+      <section id="work" className="max-w-[1440px] mx-auto px-6 md:px-12 py-[20vh]">
+        {projects.map((project) => (
+          <ProjectCard key={project.index} {...project} />
+        ))}
+      </section>
+      <Footer />
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
