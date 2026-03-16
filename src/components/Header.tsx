@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link, useLocation } from "react-router-dom";
 import { CalendarPopup } from "@/components/CalendarPopup";
 import flagBr from "@/assets/flag-br.png";
 import flagUs from "@/assets/flag-us.png";
-import flagEs from "@/assets/flag-es.png";
+import flagCo from "@/assets/flag-co.png";
 
 export const Header = () => {
   const { t } = useLanguage();
