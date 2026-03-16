@@ -149,7 +149,7 @@ export const Header = () => {
                     }`}
                     onClick={() => { handleLanguageChange(option.lang); setIsMenuOpen(false); }}
                   >
-                    <img src={option.flag} alt={option.alt} className="w-7 h-5 object-cover rounded-sm" />
+                    <img src={option.flag} alt={option.alt} className="w-8 h-6 object-cover rounded" />
                   </button>
                 ))}
               </div>
