@@ -27,11 +27,28 @@ export const Header = () => {
     { label: t.nav.contact, href: "/contato" },
   ];
 
+  const [isLangOpen, setIsLangOpen] = useState(false);
+  const langRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setIsLangOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
   const languageOptions = [
-    { route: '/', flag: flagBr, alt: 'Português' },
-    { route: '/en', flag: flagUs, alt: 'English' },
-    { route: '/es', flag: flagEs, alt: 'Español' },
+    { route: '/', flag: flagUs, alt: 'English', label: 'EN' },
+    { route: '/pt', flag: flagBr, alt: 'Português', label: 'PT' },
+    { route: '/es', flag: flagCo, alt: 'Español', label: 'ES' },
   ];
+
+  const currentLang = languageOptions.find(
+    (o) => getLanguageRoute() === o.route.replace('/', '') || (o.route === '/' && getLanguageRoute() === 'en')
+  ) || languageOptions[0];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border shadow-sm">
