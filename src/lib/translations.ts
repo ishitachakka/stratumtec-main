@@ -17,32 +17,44 @@ export const translations = {
     carousel: {
       slides: [
         {
+          title: "BlueMesh: IA Segura e Integrada",
+          subtitle: "Nossa plataforma proprietária de IA",
+          description: "Plataforma de Inteligência Artificial própria, super segura, eficiente e integrada. Potencialize seus resultados com IA de ponta.",
+          ctaText: "Conhecer BlueMesh",
+          ctaSecondary: "Falar com Especialista",
+          link: "/solucoes"
+        },
+        {
           title: "Inovação em Customer Experience",
           subtitle: "Transforme a jornada do seu cliente",
           description: "Soluções inteligentes que conectam tecnologia avançada e experiência humana para criar relacionamentos duradouros e impactantes.",
           ctaText: "Descobrir Soluções",
-          ctaSecondary: "Falar com Especialista"
+          ctaSecondary: "Falar com Especialista",
+          link: "/solucoes"
         },
         {
           title: "Hub Global de Tecnologia",
           subtitle: "Conectamos sistemas, integramos possibilidades",
           description: "Plataforma omnichannel que unifica todos os pontos de contato, criando uma experiência fluida e consistente em cada interação.",
           ctaText: "Ver Integrações",
-          ctaSecondary: "Falar com Especialista"
+          ctaSecondary: "Falar com Especialista",
+          link: "/solucoes"
         },
         {
-          title: "Monetização Inteligente",
+          title: "Consultoria Especializada",
           subtitle: "IA que potencializa resultados",
           description: "Automatize processos, otimize recursos e maximize a conversão com algoritmos inteligentes que aprendem e evoluem com seu negócio.",
-          ctaText: "Explorar IA",
-          ctaSecondary: "Falar com Especialista"
+          ctaText: "Explorar Consultoria",
+          ctaSecondary: "Falar com Especialista",
+          link: "/consultoria"
         },
         {
           title: "Automação que Transforma",
           subtitle: "Eficiência em cada processo",
           description: "Elimine gargalos operacionais e acelere a tomada de decisões com soluções que trabalham 24/7 para o sucesso do seu negócio.",
           ctaText: "Agendar Demo",
-          ctaSecondary: "Falar com Especialista"
+          ctaSecondary: "Falar com Especialista",
+          link: "/contato"
         }
       ]
     },
@@ -266,32 +278,44 @@ export const translations = {
     carousel: {
       slides: [
         {
+          title: "BlueMesh: Secure & Integrated AI",
+          subtitle: "Our proprietary AI platform",
+          description: "A super secure, efficient, and integrated Artificial Intelligence platform. Supercharge your results with cutting-edge AI.",
+          ctaText: "Discover BlueMesh",
+          ctaSecondary: "Talk to an Expert",
+          link: "/en/solutions"
+        },
+        {
           title: "Customer Experience Innovation",
           subtitle: "Transform your customer journey",
           description: "Intelligent solutions connecting advanced technology and human experience to create lasting, impactful relationships.",
           ctaText: "Discover Solutions",
-          ctaSecondary: "Talk to an Expert"
+          ctaSecondary: "Talk to an Expert",
+          link: "/en/solutions"
         },
         {
           title: "Global Technology Hub",
           subtitle: "Connecting systems, integrating possibilities",
           description: "Omnichannel platform that unifies all touchpoints, creating a fluid and consistent experience in every interaction.",
           ctaText: "View Integrations",
-          ctaSecondary: "Talk to an Expert"
+          ctaSecondary: "Talk to an Expert",
+          link: "/en/solutions"
         },
         {
-          title: "Intelligent Monetization",
+          title: "Expert Consulting",
           subtitle: "AI that amplifies results",
           description: "Automate processes, optimize resources, and maximize conversion with intelligent algorithms that learn and evolve with your business.",
-          ctaText: "Explore AI",
-          ctaSecondary: "Talk to an Expert"
+          ctaText: "Explore Consulting",
+          ctaSecondary: "Talk to an Expert",
+          link: "/en/consulting"
         },
         {
           title: "Transformative Automation",
           subtitle: "Efficiency in every process",
           description: "Eliminate operational bottlenecks and accelerate decision-making with solutions that work 24/7 for your business success.",
           ctaText: "Schedule Demo",
-          ctaSecondary: "Talk to an Expert"
+          ctaSecondary: "Talk to an Expert",
+          link: "/en/contact"
         }
       ]
     },
@@ -515,32 +539,44 @@ export const translations = {
     carousel: {
       slides: [
         {
+          title: "BlueMesh: IA Segura e Integrada",
+          subtitle: "Nuestra plataforma propietaria de IA",
+          description: "Plataforma de Inteligencia Artificial propia, súper segura, eficiente e integrada. Potencie sus resultados con IA de vanguardia.",
+          ctaText: "Conocer BlueMesh",
+          ctaSecondary: "Hablar con un Experto",
+          link: "/es/soluciones"
+        },
+        {
           title: "Innovación en Customer Experience",
           subtitle: "Transforme el recorrido de su cliente",
           description: "Soluciones inteligentes que conectan tecnología avanzada y experiencia humana para crear relaciones duraderas e impactantes.",
           ctaText: "Descubrir Soluciones",
-          ctaSecondary: "Hablar con un Experto"
+          ctaSecondary: "Hablar con un Experto",
+          link: "/es/soluciones"
         },
         {
           title: "Hub Global de Tecnología",
           subtitle: "Conectamos sistemas, integramos posibilidades",
           description: "Plataforma omnicanal que unifica todos los puntos de contacto, creando una experiencia fluida y consistente en cada interacción.",
           ctaText: "Ver Integraciones",
-          ctaSecondary: "Hablar con un Experto"
+          ctaSecondary: "Hablar con un Experto",
+          link: "/es/soluciones"
         },
         {
-          title: "Monetización Inteligente",
+          title: "Consultoría Especializada",
           subtitle: "IA que potencia resultados",
           description: "Automatice procesos, optimice recursos y maximice la conversión con algoritmos inteligentes que aprenden y evolucionan con su negocio.",
-          ctaText: "Explorar IA",
-          ctaSecondary: "Hablar con un Experto"
+          ctaText: "Explorar Consultoría",
+          ctaSecondary: "Hablar con un Experto",
+          link: "/es/consultoria"
         },
         {
           title: "Automatización Transformadora",
           subtitle: "Eficiencia en cada proceso",
           description: "Elimine cuellos de botella operativos y acelere la toma de decisiones con soluciones que trabajan 24/7 para el éxito de su negocio.",
           ctaText: "Agendar Demo",
-          ctaSecondary: "Hablar con un Experto"
+          ctaSecondary: "Hablar con un Experto",
+          link: "/es/contacto"
         }
       ]
     },
