@@ -539,32 +539,44 @@ export const translations = {
     carousel: {
       slides: [
         {
+          title: "BlueMesh: IA Segura e Integrada",
+          subtitle: "Nuestra plataforma propietaria de IA",
+          description: "Plataforma de Inteligencia Artificial propia, súper segura, eficiente e integrada. Potencie sus resultados con IA de vanguardia.",
+          ctaText: "Conocer BlueMesh",
+          ctaSecondary: "Hablar con un Experto",
+          link: "/es/soluciones"
+        },
+        {
           title: "Innovación en Customer Experience",
           subtitle: "Transforme el recorrido de su cliente",
           description: "Soluciones inteligentes que conectan tecnología avanzada y experiencia humana para crear relaciones duraderas e impactantes.",
           ctaText: "Descubrir Soluciones",
-          ctaSecondary: "Hablar con un Experto"
+          ctaSecondary: "Hablar con un Experto",
+          link: "/es/soluciones"
         },
         {
           title: "Hub Global de Tecnología",
           subtitle: "Conectamos sistemas, integramos posibilidades",
           description: "Plataforma omnicanal que unifica todos los puntos de contacto, creando una experiencia fluida y consistente en cada interacción.",
           ctaText: "Ver Integraciones",
-          ctaSecondary: "Hablar con un Experto"
+          ctaSecondary: "Hablar con un Experto",
+          link: "/es/soluciones"
         },
         {
-          title: "Monetización Inteligente",
+          title: "Consultoría Especializada",
           subtitle: "IA que potencia resultados",
           description: "Automatice procesos, optimice recursos y maximice la conversión con algoritmos inteligentes que aprenden y evolucionan con su negocio.",
-          ctaText: "Explorar IA",
-          ctaSecondary: "Hablar con un Experto"
+          ctaText: "Explorar Consultoría",
+          ctaSecondary: "Hablar con un Experto",
+          link: "/es/consultoria"
         },
         {
           title: "Automatización Transformadora",
           subtitle: "Eficiencia en cada proceso",
           description: "Elimine cuellos de botella operativos y acelere la toma de decisiones con soluciones que trabajan 24/7 para el éxito de su negocio.",
           ctaText: "Agendar Demo",
-          ctaSecondary: "Hablar con un Experto"
+          ctaSecondary: "Hablar con un Experto",
+          link: "/es/contacto"
         }
       ]
     },

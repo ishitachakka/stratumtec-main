@@ -77,7 +77,7 @@ export const HeroCarousel = () => {
                     <Button 
                       size="lg"
                       className="bg-stratumtec-orange hover:bg-stratumtec-orange/90 text-white font-semibold px-8 py-4 text-lg transition-smooth group"
-                      onClick={() => { window.location.href = "/solucoes"; }}
+                      onClick={() => { navigate((slide as any).link || "/"); }}
                     >
                       {slide.ctaText}
                       <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
