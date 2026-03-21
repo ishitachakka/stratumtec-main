@@ -299,7 +299,7 @@ export const translations = {
           description: "Omnichannel platform that unifies all touchpoints, creating a fluid and consistent experience in every interaction.",
           ctaText: "View Integrations",
           ctaSecondary: "Talk to an Expert",
-          link: "/en/solutions"
+          link: "/en/solutions#stratumhub"
         },
         {
           title: "Expert Consulting",
