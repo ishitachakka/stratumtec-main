@@ -22,7 +22,7 @@ export const translations = {
           description: "Plataforma de Inteligência Artificial própria, super segura, eficiente e integrada. Potencialize seus resultados com IA de ponta.",
           ctaText: "Conhecer BlueMesh",
           ctaSecondary: "Falar com Especialista",
-          link: "/solucoes"
+          link: "/solucoes#bluemesh"
         },
         {
           title: "Inovação em Customer Experience",
