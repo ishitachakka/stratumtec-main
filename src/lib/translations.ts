@@ -51,7 +51,7 @@ export const translations = {
       subtitle: "Tecnologias inovadoras que transformam a experiência do cliente e impulsionam o crescimento do seu negócio",
       learnMore: "Saiba Mais",
       ncs: {
-        title: "NCS Technology",
+        title: "stratumHub Technology",
         description: "Plataforma de Neural Customer Service que utiliza IA para automatizar e personalizar interações em tempo real.",
         features: ["IA Conversacional", "Machine Learning", "Processamento de Linguagem Natural"]
       },
@@ -137,7 +137,7 @@ export const translations = {
       callTitle: "Pronto para Transformar sua Experiência do Cliente?",
       callSubtitle: "Vamos conversar sobre como nossas soluções podem impulsionar seu negócio",
       callCta: "Agendar Consulta Gratuita",
-      email: "sales@stratumtec.com",
+      email: "jomon@stratumtec.com",
       phone: "+55 11 99332-4239",
       address: "Alphaville, SP - Brasil",
       hours: "Seg. a Sex",
@@ -214,7 +214,7 @@ export const translations = {
       },
       solutions: {
         title: "Soluções",
-        ncs: "NCS Technology",
+        ncs: "stratumHub Technology",
         bluemesh: "BlueMesh IA",
         analytics: "Data Analytics",
         automation: "Automação IA"
@@ -300,7 +300,7 @@ export const translations = {
       subtitle: "Innovative technologies that transform customer experience and drive business growth",
       learnMore: "Learn More",
       ncs: {
-        title: "NCS Technology",
+        title: "stratumHub Technology",
         description: "Neural Customer Service platform that uses AI to automate and personalize real-time interactions.",
         features: ["Conversational AI", "Machine Learning", "Natural Language Processing"]
       },
@@ -386,7 +386,7 @@ export const translations = {
       callTitle: "Ready to Transform your Customer Experience?",
       callSubtitle: "Let's talk about how our solutions can boost your business",
       callCta: "Schedule Free Consultation",
-      email: "sales@stratumtec.com",
+      email: "jomon@stratumtec.com",
       phone: "+55 11 99332-4239",
       address: "Alphaville, SP - Brazil",
       hours: "Mon to Fri",
@@ -463,7 +463,7 @@ export const translations = {
       },
       solutions: {
         title: "Solutions",
-        ncs: "NCS Technology",
+        ncs: "stratumHub Technology",
         bluemesh: "BlueMesh AI",
         analytics: "Data Analytics",
         automation: "AI Automation"
@@ -549,7 +549,7 @@ export const translations = {
       subtitle: "Tecnologías innovadoras que transforman la experiencia del cliente e impulsan el crecimiento empresarial",
       learnMore: "Saber Más",
       ncs: {
-        title: "NCS Technology",
+        title: "stratumHub Technology",
         description: "Plataforma de Neural Customer Service que utiliza IA para automatizar y personalizar interacciones en tiempo real.",
         features: ["IA Conversacional", "Machine Learning", "Procesamiento de Lenguaje Natural"]
       },
@@ -635,7 +635,7 @@ export const translations = {
       callTitle: "¿Listo para Transformar su Experiencia del Cliente?",
       callSubtitle: "Conversemos sobre cómo nuestras soluciones pueden impulsar su negocio",
       callCta: "Agendar Consulta Gratuita",
-      email: "sales@stratumtec.com",
+      email: "jomon@stratumtec.com",
       phone: "+55 11 99332-4239",
       address: "Alphaville, SP - Brasil",
       hours: "Lun a Vie",
@@ -712,7 +712,7 @@ export const translations = {
       },
       solutions: {
         title: "Soluciones",
-        ncs: "NCS Technology",
+        ncs: "stratumHub Technology",
         bluemesh: "BlueMesh IA",
         analytics: "Data Analytics",
         automation: "Automatización IA"
@@ -761,7 +761,7 @@ export const pageTranslations = {
       talkExpert: "Falar com Especialista",
       requestQuote: "Solicitar Cotação",
       solutions: [
-        { title: "NCS Technology", description: "Netstratum Communication Suite é uma plataforma omnichannel ágil, customizável e segura, que integra voz, vídeo, WhatsApp, chat, e-mail e automações.", features: ["IA Generativa", "Machine Learning", "Hub de Sistemas"] },
+        { title: "stratumHub Technology", description: "stratumHub Communication Suite é uma plataforma omnichannel ágil, customizável e segura, que integra voz, vídeo, WhatsApp, chat, e-mail e automações.", features: ["IA Generativa", "Machine Learning", "Hub de Sistemas"] },
         { title: "BlueMesh | IA", description: "Solução de Inteligência Artificial da stratumtec, desenvolvida para integrar qualquer plataforma com segurança, escalabilidade e performance.", features: ["IA Proprietária", "API's Unificadas", "Sync em tempo real"] },
         { title: "Omnichannel", description: "Integração completa entre todos os canais de relacionamento, garantindo uma experiência unificada e uma comunicação mais fluida com o cliente.", features: ["Customer Centricity", "Speech Analytics", "Multiplataforma"] },
         { title: "Data Analytics", description: "Suite completa para análise e tratamento de dados em grandes volumes, gerando dashboards inteligentes e insights preditivos para tomada de decisão.", features: ["Business Intelligence", "Análise Preditiva", "Dashboards Personalizados"] },
@@ -791,7 +791,7 @@ export const pageTranslations = {
     },
     companyHome: {
       title: "Sobre a",
-      description: "A stratumtec atua com o respaldo tecnológico, a experiência internacional e os produtos desenvolvidos pela Netstratum - referência global em soluções tecnológicas customizadas, com mais de 25 anos de atuação em projetos de alta complexidade.",
+      description: "A stratumtec atua com o respaldo tecnológico, a experiência internacional e os produtos desenvolvidos pela StratumTec - referência global em soluções tecnológicas customizadas, com mais de 25 anos de atuação em projetos de alta complexidade.",
       card1Title: "Soluções Modulares e Integráveis",
       card1Desc: "O foco da stratumtec é entregar soluções modulares e integráveis que se conectam facilmente a qualquer sistema, plataforma ou infraestrutura já existente, de forma ultra customizada.",
       card2Title: "Integração Sem Barreiras",
@@ -833,7 +833,7 @@ export const pageTranslations = {
       companyDesc: "A stratumtec oferece soluções inteligentes em Customer Experience, conectando tecnologia avançada e inovação para criar experiências excepcionais.",
       sections: [
         { title: "Empresa", links: ["Sobre nós", "Nossa história", "Equipe", "Carreiras"] },
-        { title: "Soluções", links: ["NCS Technology", "BlueMesh IA", "Data Analytics", "Automação IA"] },
+        { title: "Soluções", links: ["stratumHub Technology", "BlueMesh IA", "Data Analytics", "Automação IA"] },
         { title: "Conteúdos", links: ["Blog", "Webinars", "Cases de Sucesso", "Downloads"] },
         { title: "Suporte", links: ["Central de Ajuda", "Documentação", "Status do Sistema", "Contato"] }
       ],
@@ -849,7 +849,7 @@ export const pageTranslations = {
       ctaTitle: "Pronto para Transformar seu Negócio?", ctaDesc: "Descubra como nossas soluções podem se integrar perfeitamente ao seu ecossistema",
       talkExpert: "Falar com Especialista", requestDemo: "Solicitar Demonstração",
       solutions: [
-        { title: "NCS Technology", subtitle: "Netstratum Communication Suite", description: "Netstratum Communication Suite é uma plataforma omnichannel ágil, customizável e segura, que integra voz, vídeo, WhatsApp, chat, e-mail e automações.", features: ["IA Generativa", "Machine Learning", "Hub de Sistemas"], benefits: "Reduz tempo de resposta em 80% e aumenta satisfação do cliente" },
+        { title: "stratumHub Technology", subtitle: "stratumHub Communication Suite", description: "stratumHub Communication Suite é uma plataforma omnichannel ágil, customizável e segura, que integra voz, vídeo, WhatsApp, chat, e-mail e automações.", features: ["IA Generativa", "Machine Learning", "Hub de Sistemas"], benefits: "Reduz tempo de resposta em 80% e aumenta satisfação do cliente" },
         { title: "BlueMesh | IA", subtitle: "Plataforma de IA Proprietária", description: "Solução de Inteligência Artificial da stratumtec, desenvolvida para integrar qualquer plataforma com segurança, escalabilidade e performance.", features: ["IA Proprietária", "API's Unificadas", "Sync em tempo real"], benefits: "Integra 100% dos sistemas com segurança máxima" },
         { title: "Omnichannel", subtitle: "Experiência Unificada", description: "Integração completa entre todos os canais de relacionamento, garantindo uma experiência unificada e uma comunicação mais fluida com o cliente.", features: ["Customer Centricity", "Speech Analytics", "Multiplataforma"], benefits: "Aumenta retenção de clientes em 65%" },
         { title: "Data Analytics", subtitle: "Inteligência de Negócios", description: "Suite completa para análise e tratamento de dados em grandes volumes, gerando dashboards inteligentes e insights preditivos para tomada de decisão.", features: ["Business Intelligence", "Análise Preditiva", "Dashboards Personalizados"], benefits: "Melhora decisões estratégicas em 90%" },
@@ -883,7 +883,7 @@ export const pageTranslations = {
       customSolutionDesc: "Our team of experts is ready to design the perfect solution for your unique business challenges.",
       talkExpert: "Talk to an Expert", requestQuote: "Request Quote",
       solutions: [
-        { title: "NCS Technology", description: "Netstratum Communication Suite is an agile, customizable, and secure omnichannel platform integrating voice, video, WhatsApp, chat, email, and automations.", features: ["Generative AI", "Machine Learning", "Systems Hub"] },
+        { title: "stratumHub Technology", description: "stratumHub Communication Suite is an agile, customizable, and secure omnichannel platform integrating voice, video, WhatsApp, chat, email, and automations.", features: ["Generative AI", "Machine Learning", "Systems Hub"] },
         { title: "BlueMesh | AI", description: "Stratumtec's proprietary AI solution, developed to integrate any platform with security, scalability, and performance.", features: ["Proprietary AI", "Unified APIs", "Real-time Sync"] },
         { title: "Omnichannel", description: "Complete integration across all relationship channels, ensuring a unified experience and smoother client communication.", features: ["Customer Centricity", "Speech Analytics", "Multi-platform"] },
         { title: "Data Analytics", description: "Complete suite for large-volume data analysis, generating intelligent dashboards and predictive insights.", features: ["Business Intelligence", "Predictive Analysis", "Custom Dashboards"] },
@@ -910,7 +910,7 @@ export const pageTranslations = {
     },
     companyHome: {
       title: "About",
-      description: "Stratumtec operates with the technological backing, international experience and products developed by Netstratum - a global reference in customized technological solutions, with over 25 years of experience in high-complexity projects.",
+      description: "Stratumtec operates with the technological backing, international experience and products developed by StratumTec - a global reference in customized technological solutions, with over 25 years of experience in high-complexity projects.",
       card1Title: "Modular & Integrable Solutions",
       card1Desc: "Stratumtec's focus is delivering modular and integrable solutions that easily connect to any existing system, platform or infrastructure, in a highly customized way.",
       card2Title: "Integration Without Barriers",
@@ -952,7 +952,7 @@ export const pageTranslations = {
       companyDesc: "Stratumtec offers intelligent Customer Experience solutions, connecting advanced technology and innovation to create exceptional experiences.",
       sections: [
         { title: "Company", links: ["About us", "Our history", "Team", "Careers"] },
-        { title: "Solutions", links: ["NCS Technology", "BlueMesh AI", "Data Analytics", "AI Automation"] },
+        { title: "Solutions", links: ["stratumHub Technology", "BlueMesh AI", "Data Analytics", "AI Automation"] },
         { title: "Content", links: ["Blog", "Webinars", "Success Cases", "Downloads"] },
         { title: "Support", links: ["Help Center", "Documentation", "System Status", "Contact"] }
       ],
@@ -968,7 +968,7 @@ export const pageTranslations = {
       ctaTitle: "Ready to Transform your Business?", ctaDesc: "Discover how our solutions can seamlessly integrate into your ecosystem",
       talkExpert: "Talk to an Expert", requestDemo: "Request Demo",
       solutions: [
-        { title: "NCS Technology", subtitle: "Netstratum Communication Suite", description: "Agile, customizable, secure omnichannel platform integrating voice, video, WhatsApp, chat, email, and automations.", features: ["Generative AI", "Machine Learning", "Systems Hub"], benefits: "Reduces response time by 80% and increases customer satisfaction" },
+        { title: "stratumHub Technology", subtitle: "stratumHub Communication Suite", description: "Agile, customizable, secure omnichannel platform integrating voice, video, WhatsApp, chat, email, and automations.", features: ["Generative AI", "Machine Learning", "Systems Hub"], benefits: "Reduces response time by 80% and increases customer satisfaction" },
         { title: "BlueMesh | AI", subtitle: "Proprietary AI Platform", description: "Stratumtec's proprietary AI solution for secure, scalable platform integration.", features: ["Proprietary AI", "Unified APIs", "Real-time Sync"], benefits: "Integrates 100% of systems with maximum security" },
         { title: "Omnichannel", subtitle: "Unified Experience", description: "Complete integration across all channels for unified experience and smoother communication.", features: ["Customer Centricity", "Speech Analytics", "Multi-platform"], benefits: "Increases client retention by 65%" },
         { title: "Data Analytics", subtitle: "Business Intelligence", description: "Complete suite for large-volume data analysis with intelligent dashboards and predictive insights.", features: ["Business Intelligence", "Predictive Analysis", "Custom Dashboards"], benefits: "Improves strategic decisions by 90%" },
@@ -1002,7 +1002,7 @@ export const pageTranslations = {
       customSolutionDesc: "Nuestro equipo de expertos está listo para diseñar la solución perfecta para los desafíos de su negocio.",
       talkExpert: "Hablar con un Experto", requestQuote: "Solicitar Cotización",
       solutions: [
-        { title: "NCS Technology", description: "Plataforma omnicanal ágil, personalizable y segura que integra voz, video, WhatsApp, chat, correo y automatizaciones.", features: ["IA Generativa", "Machine Learning", "Hub de Sistemas"] },
+        { title: "stratumHub Technology", description: "Plataforma omnicanal ágil, personalizable y segura que integra voz, video, WhatsApp, chat, correo y automatizaciones.", features: ["IA Generativa", "Machine Learning", "Hub de Sistemas"] },
         { title: "BlueMesh | IA", description: "Solución de IA propietaria de stratumtec para integrar cualquier plataforma con seguridad y rendimiento.", features: ["IA Propietaria", "APIs Unificadas", "Sincronización en tiempo real"] },
         { title: "Omnicanal", description: "Integración completa entre todos los canales garantizando experiencia unificada y comunicación fluida.", features: ["Customer Centricity", "Speech Analytics", "Multiplataforma"] },
         { title: "Data Analytics", description: "Suite completa para análisis de datos en grandes volúmenes con dashboards inteligentes e insights predictivos.", features: ["Business Intelligence", "Análisis Predictivo", "Dashboards Personalizados"] },
@@ -1029,7 +1029,7 @@ export const pageTranslations = {
     },
     companyHome: {
       title: "Sobre",
-      description: "Stratumtec actúa con el respaldo tecnológico, la experiencia internacional y los productos desarrollados por Netstratum - referencia global en soluciones tecnológicas, con más de 25 años de actuación en proyectos de alta complejidad.",
+      description: "Stratumtec actúa con el respaldo tecnológico, la experiencia internacional y los productos desarrollados por StratumTec - referencia global en soluciones tecnológicas, con más de 25 años de actuación en proyectos de alta complejidad.",
       card1Title: "Soluciones Modulares e Integrables",
       card1Desc: "El foco de stratumtec es entregar soluciones modulares e integrables que se conectan fácilmente a cualquier sistema existente de forma ultra personalizada.",
       card2Title: "Integración Sin Barreras",
@@ -1071,7 +1071,7 @@ export const pageTranslations = {
       companyDesc: "Stratumtec ofrece soluciones inteligentes en Customer Experience, conectando tecnología avanzada e innovación para experiencias excepcionales.",
       sections: [
         { title: "Empresa", links: ["Sobre nosotros", "Nuestra historia", "Equipo", "Carreras"] },
-        { title: "Soluciones", links: ["NCS Technology", "BlueMesh IA", "Data Analytics", "Automatización IA"] },
+        { title: "Soluciones", links: ["stratumHub Technology", "BlueMesh IA", "Data Analytics", "Automatización IA"] },
         { title: "Contenidos", links: ["Blog", "Webinars", "Casos de Éxito", "Descargas"] },
         { title: "Soporte", links: ["Centro de Ayuda", "Documentación", "Estado del Sistema", "Contacto"] }
       ],
@@ -1087,7 +1087,7 @@ export const pageTranslations = {
       ctaTitle: "¿Listo para Transformar su Negocio?", ctaDesc: "Descubra cómo nuestras soluciones pueden integrarse a su ecosistema",
       talkExpert: "Hablar con un Experto", requestDemo: "Solicitar Demostración",
       solutions: [
-        { title: "NCS Technology", subtitle: "Netstratum Communication Suite", description: "Plataforma omnicanal ágil, personalizable y segura que integra voz, video, WhatsApp, chat, correo y automatizaciones.", features: ["IA Generativa", "Machine Learning", "Hub de Sistemas"], benefits: "Reduce tiempo de respuesta en 80% y aumenta satisfacción" },
+        { title: "stratumHub Technology", subtitle: "stratumHub Communication Suite", description: "Plataforma omnicanal ágil, personalizable y segura que integra voz, video, WhatsApp, chat, correo y automatizaciones.", features: ["IA Generativa", "Machine Learning", "Hub de Sistemas"], benefits: "Reduce tiempo de respuesta en 80% y aumenta satisfacción" },
         { title: "BlueMesh | IA", subtitle: "Plataforma de IA Propietaria", description: "Solución de IA propietaria para integrar cualquier plataforma con seguridad y rendimiento.", features: ["IA Propietaria", "APIs Unificadas", "Sincronización en tiempo real"], benefits: "Integra 100% de los sistemas con máxima seguridad" },
         { title: "Omnicanal", subtitle: "Experiencia Unificada", description: "Integración completa entre todos los canales para experiencia unificada.", features: ["Customer Centricity", "Speech Analytics", "Multiplataforma"], benefits: "Aumenta retención de clientes en 65%" },
         { title: "Data Analytics", subtitle: "Inteligencia de Negocios", description: "Suite completa para análisis de datos con dashboards inteligentes e insights predictivos.", features: ["Business Intelligence", "Análisis Predictivo", "Dashboards Personalizados"], benefits: "Mejora decisiones estratégicas en 90%" },

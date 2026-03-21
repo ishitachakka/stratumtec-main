@@ -17,7 +17,7 @@ export const ContactForm = () => {
   const [formData, setFormData] = useState({ name: "", email: "", company: "", phone: "", subject: "", message: "" });
 
   const contactInfo = [
-    { icon: Mail, title: t.email, content: "sales@stratumtec.com", link: "mailto:sales@stratumtec.com" },
+    { icon: Mail, title: t.email, content: "jomon@stratumtec.com", link: "mailto:jomon@stratumtec.com" },
     { icon: Phone, title: t.phone, content: "+55 11 99332-4239", link: "tel:+5511993324239" },
     { icon: MapPin, title: t.address, content: t.addressValue, link: "#" },
     { icon: Clock, title: t.hours, content: t.hoursValue, subContent: t.hoursDetail, link: "#" }

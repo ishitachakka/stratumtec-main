@@ -38,7 +38,7 @@ export const Footer = () => {
               <p className="text-white/80 leading-relaxed mb-6 max-w-md">{t.companyDesc}</p>
             </div>
             <div className="space-y-3">
-              <div className="flex items-center text-white/80 hover:text-stratumtec-orange transition-colors"><Mail className="h-5 w-5 mr-3" /><a href="mailto:sales@stratumtec.com">sales@stratumtec.com</a></div>
+              <div className="flex items-center text-white/80 hover:text-stratumtec-orange transition-colors"><Mail className="h-5 w-5 mr-3" /><a href="mailto:jomon@stratumtec.com">jomon@stratumtec.com</a></div>
               <div className="flex items-center text-white/80 hover:text-stratumtec-orange transition-colors"><Phone className="h-5 w-5 mr-3" /><a href="tel:+5511993324239">+55 11 99332-4239</a></div>
               <div className="flex items-center text-white/80"><MapPin className="h-5 w-5 mr-3" /><span>Alphaville, SP - Brasil</span></div>
             </div>
