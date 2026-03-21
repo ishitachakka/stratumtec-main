@@ -3,12 +3,14 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { CalendarPopup } from "@/components/CalendarPopup";
+import { useNavigate } from "react-router-dom";
 
 const backgroundGradients = [
-  "bg-gradient-to-br from-stratumtec-navy via-stratumtec-navy/90 to-stratumtec-orange/20",
   "bg-gradient-to-br from-stratumtec-cyan via-stratumtec-navy/80 to-stratumtec-orange/30",
+  "bg-gradient-to-br from-stratumtec-navy via-stratumtec-navy/90 to-stratumtec-orange/20",
   "bg-gradient-to-br from-stratumtec-orange via-stratumtec-navy/70 to-stratumtec-cyan/25",
   "bg-gradient-to-br from-stratumtec-navy/90 via-stratumtec-cyan/30 to-stratumtec-orange",
+  "bg-gradient-to-br from-stratumtec-navy via-stratumtec-orange/40 to-stratumtec-cyan/20",
 ];
 
 export const HeroCarousel = () => {
