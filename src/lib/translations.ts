@@ -278,32 +278,44 @@ export const translations = {
     carousel: {
       slides: [
         {
+          title: "BlueMesh: Secure & Integrated AI",
+          subtitle: "Our proprietary AI platform",
+          description: "A super secure, efficient, and integrated Artificial Intelligence platform. Supercharge your results with cutting-edge AI.",
+          ctaText: "Discover BlueMesh",
+          ctaSecondary: "Talk to an Expert",
+          link: "/en/solutions"
+        },
+        {
           title: "Customer Experience Innovation",
           subtitle: "Transform your customer journey",
           description: "Intelligent solutions connecting advanced technology and human experience to create lasting, impactful relationships.",
           ctaText: "Discover Solutions",
-          ctaSecondary: "Talk to an Expert"
+          ctaSecondary: "Talk to an Expert",
+          link: "/en/solutions"
         },
         {
           title: "Global Technology Hub",
           subtitle: "Connecting systems, integrating possibilities",
           description: "Omnichannel platform that unifies all touchpoints, creating a fluid and consistent experience in every interaction.",
           ctaText: "View Integrations",
-          ctaSecondary: "Talk to an Expert"
+          ctaSecondary: "Talk to an Expert",
+          link: "/en/solutions"
         },
         {
-          title: "Intelligent Monetization",
+          title: "Expert Consulting",
           subtitle: "AI that amplifies results",
           description: "Automate processes, optimize resources, and maximize conversion with intelligent algorithms that learn and evolve with your business.",
-          ctaText: "Explore AI",
-          ctaSecondary: "Talk to an Expert"
+          ctaText: "Explore Consulting",
+          ctaSecondary: "Talk to an Expert",
+          link: "/en/consulting"
         },
         {
           title: "Transformative Automation",
           subtitle: "Efficiency in every process",
           description: "Eliminate operational bottlenecks and accelerate decision-making with solutions that work 24/7 for your business success.",
           ctaText: "Schedule Demo",
-          ctaSecondary: "Talk to an Expert"
+          ctaSecondary: "Talk to an Expert",
+          link: "/en/contact"
         }
       ]
     },
