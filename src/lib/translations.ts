@@ -283,7 +283,7 @@ export const translations = {
           description: "A super secure, efficient, and integrated Artificial Intelligence platform. Supercharge your results with cutting-edge AI.",
           ctaText: "Discover BlueMesh",
           ctaSecondary: "Talk to an Expert",
-          link: "/en/solutions"
+          link: "/en/solutions#bluemesh"
         },
         {
           title: "Customer Experience Innovation",
