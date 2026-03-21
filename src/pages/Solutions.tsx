@@ -64,7 +64,7 @@ export default function Solutions() {
                 const IconComponent = icons[index];
                 const isLeft = positions[index] === "left";
                 return (
-                  <div key={index} className={`flex items-center ${isLeft ? 'flex-row' : 'flex-row-reverse'} gap-16`}>
+                  <div key={index} id={solutionIds[index]} className={`flex items-center ${isLeft ? 'flex-row' : 'flex-row-reverse'} gap-16`}>
                     <div className={`flex-1 ${isLeft ? 'text-right' : 'text-left'}`}>
                       <Card className="group border-2 border-stratumtec-light shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 bg-white/90 backdrop-blur-sm hover:border-stratumtec-orange/50">
                         <CardHeader className="pb-4">
