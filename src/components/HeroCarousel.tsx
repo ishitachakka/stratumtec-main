@@ -15,6 +15,7 @@ const backgroundGradients = [
 
 export const HeroCarousel = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
   const slides = t.carousel.slides;
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
