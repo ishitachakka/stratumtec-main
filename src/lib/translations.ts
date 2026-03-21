@@ -22,7 +22,7 @@ export const translations = {
           description: "Plataforma de Inteligência Artificial própria, super segura, eficiente e integrada. Potencialize seus resultados com IA de ponta.",
           ctaText: "Conhecer BlueMesh",
           ctaSecondary: "Falar com Especialista",
-          link: "/solucoes"
+          link: "/solucoes#bluemesh"
         },
         {
           title: "Inovação em Customer Experience",
@@ -38,7 +38,7 @@ export const translations = {
           description: "Plataforma omnichannel que unifica todos os pontos de contato, criando uma experiência fluida e consistente em cada interação.",
           ctaText: "Ver Integrações",
           ctaSecondary: "Falar com Especialista",
-          link: "/solucoes"
+          link: "/solucoes#stratumhub"
         },
         {
           title: "Consultoria Especializada",
@@ -283,7 +283,7 @@ export const translations = {
           description: "A super secure, efficient, and integrated Artificial Intelligence platform. Supercharge your results with cutting-edge AI.",
           ctaText: "Discover BlueMesh",
           ctaSecondary: "Talk to an Expert",
-          link: "/en/solutions"
+          link: "/en/solutions#bluemesh"
         },
         {
           title: "Customer Experience Innovation",
@@ -299,7 +299,7 @@ export const translations = {
           description: "Omnichannel platform that unifies all touchpoints, creating a fluid and consistent experience in every interaction.",
           ctaText: "View Integrations",
           ctaSecondary: "Talk to an Expert",
-          link: "/en/solutions"
+          link: "/en/solutions#stratumhub"
         },
         {
           title: "Expert Consulting",
@@ -544,7 +544,7 @@ export const translations = {
           description: "Plataforma de Inteligencia Artificial propia, súper segura, eficiente e integrada. Potencie sus resultados con IA de vanguardia.",
           ctaText: "Conocer BlueMesh",
           ctaSecondary: "Hablar con un Experto",
-          link: "/es/soluciones"
+          link: "/es/soluciones#bluemesh"
         },
         {
           title: "Innovación en Customer Experience",
@@ -560,7 +560,7 @@ export const translations = {
           description: "Plataforma omnicanal que unifica todos los puntos de contacto, creando una experiencia fluida y consistente en cada interacción.",
           ctaText: "Ver Integraciones",
           ctaSecondary: "Hablar con un Experto",
-          link: "/es/soluciones"
+          link: "/es/soluciones#stratumhub"
         },
         {
           title: "Consultoría Especializada",

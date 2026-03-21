@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -8,11 +10,23 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { pageTranslations } from "@/lib/translations";
 
 const icons = [Brain, Network, Network, BarChart3, Route, Zap];
+const solutionIds = ["stratumhub", "bluemesh", "omnichannel", "data-analytics", "customer-journey", "intelligent-workflows"];
 const positions = ["left", "right", "left", "right", "left", "right"];
 
 export default function Solutions() {
   const { language } = useLanguage();
+  const location = useLocation();
   const t = pageTranslations[language].solutionsPage;
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 300);
+    }
+  }, [location.hash]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-stratumtec-light via-background to-stratumtec-light/30">
@@ -50,7 +64,7 @@ export default function Solutions() {
                 const IconComponent = icons[index];
                 const isLeft = positions[index] === "left";
                 return (
-                  <div key={index} className={`flex items-center ${isLeft ? 'flex-row' : 'flex-row-reverse'} gap-16`}>
+                  <div key={index} id={solutionIds[index]} className={`flex items-center ${isLeft ? 'flex-row' : 'flex-row-reverse'} gap-16`}>
                     <div className={`flex-1 ${isLeft ? 'text-right' : 'text-left'}`}>
                       <Card className="group border-2 border-stratumtec-light shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 bg-white/90 backdrop-blur-sm hover:border-stratumtec-orange/50">
                         <CardHeader className="pb-4">
