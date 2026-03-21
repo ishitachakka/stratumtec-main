@@ -17,32 +17,44 @@ export const translations = {
     carousel: {
       slides: [
         {
+          title: "BlueMesh: IA Segura e Integrada",
+          subtitle: "Nossa plataforma proprietária de IA",
+          description: "Plataforma de Inteligência Artificial própria, super segura, eficiente e integrada. Potencialize seus resultados com IA de ponta.",
+          ctaText: "Conhecer BlueMesh",
+          ctaSecondary: "Falar com Especialista",
+          link: "/solucoes"
+        },
+        {
           title: "Inovação em Customer Experience",
           subtitle: "Transforme a jornada do seu cliente",
           description: "Soluções inteligentes que conectam tecnologia avançada e experiência humana para criar relacionamentos duradouros e impactantes.",
           ctaText: "Descobrir Soluções",
-          ctaSecondary: "Falar com Especialista"
+          ctaSecondary: "Falar com Especialista",
+          link: "/solucoes"
         },
         {
           title: "Hub Global de Tecnologia",
           subtitle: "Conectamos sistemas, integramos possibilidades",
           description: "Plataforma omnichannel que unifica todos os pontos de contato, criando uma experiência fluida e consistente em cada interação.",
           ctaText: "Ver Integrações",
-          ctaSecondary: "Falar com Especialista"
+          ctaSecondary: "Falar com Especialista",
+          link: "/solucoes"
         },
         {
-          title: "Monetização Inteligente",
+          title: "Consultoria Especializada",
           subtitle: "IA que potencializa resultados",
           description: "Automatize processos, otimize recursos e maximize a conversão com algoritmos inteligentes que aprendem e evoluem com seu negócio.",
-          ctaText: "Explorar IA",
-          ctaSecondary: "Falar com Especialista"
+          ctaText: "Explorar Consultoria",
+          ctaSecondary: "Falar com Especialista",
+          link: "/consultoria"
         },
         {
           title: "Automação que Transforma",
           subtitle: "Eficiência em cada processo",
           description: "Elimine gargalos operacionais e acelere a tomada de decisões com soluções que trabalham 24/7 para o sucesso do seu negócio.",
           ctaText: "Agendar Demo",
-          ctaSecondary: "Falar com Especialista"
+          ctaSecondary: "Falar com Especialista",
+          link: "/contato"
         }
       ]
     },
