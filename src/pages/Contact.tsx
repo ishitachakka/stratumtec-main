@@ -49,7 +49,7 @@ const contactPageCopy: Record<Language, {
     talkTitle: "Get in Touch",
     talkSubtitle: "Reach out through any of our service channels.",
     contactCards: [
-      { title: "Email", content: "sales@stratumtec.com", description: "Response within 24 hours" },
+      { title: "Email", content: "jomon@stratumtec.com", description: "Response within 24 hours" },
       { title: "Phone", content: "+55 11 99332-4239", description: "Monday to Friday, 9am to 6pm" },
       { title: "Address", content: "Alameda Rio Negro, 503 - Cj. 2020", description: "Alphaville, SP - Brazil" },
       { title: "Business Hours", content: "Monday to Friday: 9am to 6pm", description: "" },
@@ -92,7 +92,7 @@ const contactPageCopy: Record<Language, {
     talkTitle: "Fale Conosco",
     talkSubtitle: "Entre em contato através dos nossos canais de atendimento.",
     contactCards: [
-      { title: "E-mail", content: "sales@stratumtec.com", description: "Resposta em até 24 horas" },
+      { title: "E-mail", content: "jomon@stratumtec.com", description: "Resposta em até 24 horas" },
       { title: "Telefone", content: "+55 11 99332-4239", description: "Segunda a sexta, 9h às 18h" },
       { title: "Endereço", content: "Alameda Rio Negro, 503 - Cj. 2020", description: "Alphaville, SP - Brasil" },
       { title: "Horário de Atendimento", content: "Segunda a Sexta: 9h às 18h", description: "" },
@@ -135,7 +135,7 @@ const contactPageCopy: Record<Language, {
     talkTitle: "Contáctanos",
     talkSubtitle: "Comunícate con nosotros a través de nuestros canales de atención.",
     contactCards: [
-      { title: "Correo", content: "sales@stratumtec.com", description: "Respuesta en hasta 24 horas" },
+      { title: "Correo", content: "jomon@stratumtec.com", description: "Respuesta en hasta 24 horas" },
       { title: "Teléfono", content: "+55 11 99332-4239", description: "Lunes a viernes, 9h a 18h" },
       { title: "Dirección", content: "Alameda Rio Negro, 503 - Cj. 2020", description: "Alphaville, SP - Brasil" },
       { title: "Horario de Atención", content: "Lunes a Viernes: 9h a 18h", description: "" },
