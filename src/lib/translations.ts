@@ -38,7 +38,7 @@ export const translations = {
           description: "Plataforma omnichannel que unifica todos os pontos de contato, criando uma experiência fluida e consistente em cada interação.",
           ctaText: "Ver Integrações",
           ctaSecondary: "Falar com Especialista",
-          link: "/solucoes"
+          link: "/solucoes#stratumhub"
         },
         {
           title: "Consultoria Especializada",
