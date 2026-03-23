@@ -83,8 +83,7 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center text-white/70 text-sm">
               <span>© {currentYear} <strong>stratumtec</strong>. {t.copyright}</span>
-              <Heart className="h-4 w-4 mx-2 text-stratumtec-orange" />
-              <span>{t.madeWith}</span>
+              <Heart className="h-4 w-4 ml-2 text-stratumtec-orange" />
             </div>
             <div className="flex items-center space-x-6 text-sm">
               <a href="#privacidade" className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.privacy}</a>
