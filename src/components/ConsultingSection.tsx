@@ -57,11 +57,6 @@ export const ConsultingSection = () => {
           <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-card max-w-4xl mx-auto">
             <h3 className="text-2xl lg:text-3xl font-bold text-stratumtec-navy mb-6">{t.ctaTitle}</h3>
             <p className="text-lg text-stratumtec-text mb-8 max-w-2xl mx-auto">{t.ctaDesc}</p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="text-center"><div className="text-3xl font-bold text-stratumtec-orange mb-2">20+</div><div className="text-stratumtec-text font-medium">{t.yearsExp}</div></div>
-              <div className="text-center"><div className="text-3xl font-bold text-stratumtec-cyan mb-2">200+</div><div className="text-stratumtec-text font-medium">{t.projects}</div></div>
-              <div className="text-center"><div className="text-3xl font-bold text-green-600 mb-2">98%</div><div className="text-stratumtec-text font-medium">{t.satisfaction}</div></div>
-            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <CalendarPopup trigger={<Button className="bg-stratumtec-orange hover:bg-stratumtec-orange/90 text-white px-8 py-3"><MessageCircle className="h-4 w-4 mr-2" />{t.scheduleConsulting}</Button>} triggerAsChild />
               <Button variant="outline" className="border-stratumtec-navy text-stratumtec-navy hover:bg-stratumtec-navy hover:text-white px-8 py-3" onClick={() => { window.location.href = "/contato"; }}>{t.requestProposal}</Button>

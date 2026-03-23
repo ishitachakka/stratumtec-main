@@ -38,7 +38,7 @@ export const Footer = () => {
               <p className="text-white/80 leading-relaxed mb-6 max-w-md">{t.companyDesc}</p>
             </div>
             <div className="space-y-3">
-              <div className="flex items-center text-white/80 hover:text-stratumtec-orange transition-colors"><Mail className="h-5 w-5 mr-3" /><a href="mailto:sales@stratumtec.com">sales@stratumtec.com</a></div>
+              <div className="flex items-center text-white/80 hover:text-stratumtec-orange transition-colors"><Mail className="h-5 w-5 mr-3" /><a href="mailto:jomon@stratumtec.com">jomon@stratumtec.com</a></div>
               <div className="flex items-center text-white/80 hover:text-stratumtec-orange transition-colors"><Phone className="h-5 w-5 mr-3" /><a href="tel:+5511993324239">+55 11 99332-4239</a></div>
               <div className="flex items-center text-white/80"><MapPin className="h-5 w-5 mr-3" /><span>Alphaville, SP - Brasil</span></div>
             </div>
@@ -83,8 +83,7 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center text-white/70 text-sm">
               <span>© {currentYear} <strong>stratumtec</strong>. {t.copyright}</span>
-              <Heart className="h-4 w-4 mx-2 text-stratumtec-orange" />
-              <span>{t.madeWith}</span>
+              <Heart className="h-4 w-4 ml-2 text-stratumtec-orange" />
             </div>
             <div className="flex items-center space-x-6 text-sm">
               <a href="#privacidade" className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.privacy}</a>
