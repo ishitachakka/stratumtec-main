@@ -16,7 +16,19 @@ interface LanguageProviderProps {
 }
 
 export const LanguageProvider = ({ children, defaultLanguage = 'en' }: LanguageProviderProps) => {
-  const [language, setLanguage] = useState<Language>(defaultLanguage);
+  const location = useLocation();
+  
+  const getLanguageFromPath = (pathname: string): Language => {
+    if (pathname.startsWith('/pt')) return 'pt';
+    if (pathname.startsWith('/es')) return 'es';
+    return defaultLanguage;
+  };
+
+  const [language, setLanguage] = useState<Language>(getLanguageFromPath(location.pathname));
+
+  useEffect(() => {
+    setLanguage(getLanguageFromPath(location.pathname));
+  }, [location.pathname]);
 
   const value = {
     language,
