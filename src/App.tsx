@@ -52,6 +52,9 @@ const App = () => (
            <Route path="/blog/futuro-ia-cx" element={<FuturoIACX />} />
            <Route path="/en/blog/:slug" element={<BlogPost />} />
            <Route path="/es/blog/:slug" element={<BlogPost />} />
+           <Route path="/pt/privacidade" element={<PrivacyPolicy />} />
+           <Route path="/en/privacy-policy" element={<PrivacyPolicy />} />
+           <Route path="/es/privacidad" element={<PrivacyPolicy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
