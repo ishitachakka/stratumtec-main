@@ -86,7 +86,7 @@ export const Footer = () => {
               <Heart className="h-4 w-4 ml-2 text-stratumtec-orange" />
             </div>
             <div className="flex items-center space-x-6 text-sm">
-              <a href="#privacidade" className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.privacy}</a>
+              <a href={language === 'pt' ? '/pt/privacidade' : language === 'es' ? '/es/privacidad' : '/en/privacy-policy'} className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.privacy}</a>
               <a href="#termos" className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.terms}</a>
               <a href="#cookies" className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.cookies}</a>
             </div>
