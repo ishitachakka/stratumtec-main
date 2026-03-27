@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Linkedin, Instagram, Youtube, Facebook, ArrowUp, Heart } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { pageTranslations } from "@/lib/translations";
+import { routeTable } from "@/lib/routeMap";
+import { Link } from "react-router-dom";
 
 const sectionHrefs = [
   ["#empresa", "#empresa", "#empresa", "#carreiras"],
@@ -86,8 +88,8 @@ export const Footer = () => {
               <Heart className="h-4 w-4 ml-2 text-stratumtec-orange" />
             </div>
             <div className="flex items-center space-x-6 text-sm">
-              <a href={language === 'pt' ? '/pt/privacidade' : language === 'es' ? '/es/privacidad' : '/en/privacy-policy'} className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.privacy}</a>
-              <a href={language === 'pt' ? '/pt/termos-de-uso' : language === 'es' ? '/es/condiciones-de-uso' : '/en/terms-of-use'} className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.terms}</a>
+              <Link to={routeTable.privacy[language]} className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.privacy}</Link>
+              <Link to={routeTable.terms[language]} className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.terms}</Link>
               <a href="#cookies" className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.cookies}</a>
             </div>
           </div>

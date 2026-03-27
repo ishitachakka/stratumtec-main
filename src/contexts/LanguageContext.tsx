@@ -1,10 +1,11 @@
 import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
 import { Language, translations } from '@/lib/translations';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { getLanguageFromPath, getLocalizedPath } from '@/lib/routeMap';
 
 interface LanguageContextType {
   language: Language;
-  setLanguage: (lang: Language) => void;
+  switchLanguage: (lang: Language) => void;
   t: typeof translations.pt;
 }
 
@@ -12,29 +13,31 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 interface LanguageProviderProps {
   children: ReactNode;
-  defaultLanguage?: Language;
 }
 
-export const LanguageProvider = ({ children, defaultLanguage = 'en' }: LanguageProviderProps) => {
+export const LanguageProvider = ({ children }: LanguageProviderProps) => {
   const location = useLocation();
-  
-  const ptRoutes = ['/empresa', '/solucoes', '/consultoria', '/contato', '/blog/futuro-ia-cx'];
-  const getLanguageFromPath = (pathname: string): Language => {
-    if (pathname.startsWith('/pt') || ptRoutes.some(r => pathname === r)) return 'pt';
-    if (pathname.startsWith('/es')) return 'es';
-    return defaultLanguage;
-  };
+  const navigate = useNavigate();
 
   const [language, setLanguage] = useState<Language>(getLanguageFromPath(location.pathname));
 
+  // Keep language in sync when URL changes (back/forward, direct navigation)
   useEffect(() => {
     setLanguage(getLanguageFromPath(location.pathname));
   }, [location.pathname]);
 
+  // Switch language AND navigate to the equivalent localized route
+  const switchLanguage = (lang: Language) => {
+    if (lang === language) return;
+    const targetPath = getLocalizedPath(location.pathname, lang);
+    navigate(targetPath);
+    // language state will update via the useEffect above
+  };
+
   const value = {
     language,
-    setLanguage,
-    t: translations[language]
+    switchLanguage,
+    t: translations[language],
   };
 
   return (
