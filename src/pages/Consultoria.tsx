@@ -5,12 +5,15 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Target, BarChart3, DollarSign, Headphones, Settings, Users, ArrowRight, CheckCircle, MessageCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { pageTranslations } from "@/lib/translations";
+import { routeTable } from "@/lib/routeMap";
+import { useNavigate } from "react-router-dom";
 
 const icons = [Target, BarChart3, Users, DollarSign, Headphones, Settings];
 const positions = ["left", "right", "left", "right", "left", "right"];
 
 export default function Consultoria() {
   const { language } = useLanguage();
+  const navigate = useNavigate();
   const t = pageTranslations[language].consultingPage;
 
   const handleWhatsApp = () => {
@@ -81,7 +84,7 @@ export default function Consultoria() {
                           </div>
                           <div className="flex gap-3">
                             <Button size="sm" className="bg-stratumtec-orange text-white hover:bg-stratumtec-orange/90 hover:shadow-lg" onClick={handleWhatsApp}>{t.learnMore}<ArrowRight className="ml-2 h-4 w-4" /></Button>
-                            <Button variant="outline" size="sm" className="border-stratumtec-orange text-stratumtec-orange hover:bg-stratumtec-orange hover:text-white" onClick={() => { window.location.href = "/contato"; }}>{t.requestProposal}</Button>
+                            <Button variant="outline" size="sm" className="border-stratumtec-orange text-stratumtec-orange hover:bg-stratumtec-orange hover:text-white" onClick={() => navigate(routeTable.contact[language])}>{t.requestProposal}</Button>
                           </div>
                         </CardContent>
                       </Card>
@@ -111,7 +114,7 @@ export default function Consultoria() {
               <Button size="lg" onClick={handleWhatsApp} className="bg-stratumtec-orange text-white hover:bg-stratumtec-orange/90 hover:scale-105 transition-all duration-300 px-8 py-4 shadow-xl">
                 <MessageCircle className="mr-2 h-5 w-5" />{t.scheduleConsulting}
               </Button>
-              <Button variant="outline" size="lg" className="border-white text-stratumtec-cyan hover:bg-stratumtec-orange hover:border-stratumtec-orange hover:text-white hover:scale-105 transition-all duration-300 px-8 py-4" onClick={() => { window.location.href = "/contato"; }}>{t.requestProposal}</Button>
+              <Button variant="outline" size="lg" className="border-white text-stratumtec-cyan hover:bg-stratumtec-orange hover:border-stratumtec-orange hover:text-white hover:scale-105 transition-all duration-300 px-8 py-4" onClick={() => navigate(routeTable.contact[language])}>{t.requestProposal}</Button>
             </div>
           </div>
         </div>
