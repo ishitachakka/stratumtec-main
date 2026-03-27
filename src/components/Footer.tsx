@@ -39,8 +39,8 @@ export const Footer = () => {
             </div>
             <div className="space-y-3">
               <div className="flex items-center text-white/80 hover:text-stratumtec-orange transition-colors"><Mail className="h-5 w-5 mr-3" /><a href="mailto:jomon@stratumtec.com">jomon@stratumtec.com</a></div>
-              <div className="flex items-center text-white/80 hover:text-stratumtec-orange transition-colors"><Phone className="h-5 w-5 mr-3" /><a href="tel:+5511993324239">+55 11 99332-4239</a></div>
-              <div className="flex items-center text-white/80"><MapPin className="h-5 w-5 mr-3" /><span>Alphaville, SP - Brasil</span></div>
+              <div className="flex items-center text-white/80 hover:text-stratumtec-orange transition-colors"><Phone className="h-5 w-5 mr-3" /><a href={language === 'pt' ? "tel:+5511993324239" : "tel:+12397765370"}>{language === 'pt' ? "+55 11 99332-4239" : "+1 239 776 5370"}</a></div>
+              <div className="flex items-start text-white/80"><MapPin className="h-5 w-5 mr-3 mt-0.5 shrink-0" /><span>{language === 'pt' ? "Alphaville, SP - Brasil" : "2355 Vanderbilt Beach Road, Suite 154-V-124, Naples, FL 34109"}</span></div>
             </div>
             <div className="flex space-x-4 mt-6">
               {socialLinks.map((social) => {
@@ -87,20 +87,12 @@ export const Footer = () => {
             </div>
             <div className="flex items-center space-x-6 text-sm">
               <a href={language === 'pt' ? '/pt/privacidade' : language === 'es' ? '/es/privacidad' : '/en/privacy-policy'} className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.privacy}</a>
-              <a href="#termos" className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.terms}</a>
+              <a href={language === 'pt' ? '/pt/termos-de-uso' : language === 'es' ? '/es/condiciones-de-uso' : '/en/terms-of-use'} className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.terms}</a>
               <a href="#cookies" className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.cookies}</a>
             </div>
           </div>
         </div>
 
-        <div className="mt-8 pt-6 border-t border-white/20">
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            <div className="text-xs text-white/50 text-center"><div className="font-semibold mb-1">ISO 27001</div><div>Certificado</div></div>
-            <div className="text-xs text-white/50 text-center"><div className="font-semibold mb-1">AWS Partner</div><div>Advanced Tier</div></div>
-            <div className="text-xs text-white/50 text-center"><div className="font-semibold mb-1">Microsoft Gold</div><div>Partner</div></div>
-            <div className="text-xs text-white/50 text-center"><div className="font-semibold mb-1">Salesforce</div><div>Certified</div></div>
-          </div>
-        </div>
       </div>
     </footer>
   );

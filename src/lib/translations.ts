@@ -411,8 +411,8 @@ export const translations = {
       callSubtitle: "Let's talk about how our solutions can boost your business",
       callCta: "Schedule Free Consultation",
       email: "jomon@stratumtec.com",
-      phone: "+55 11 99332-4239",
-      address: "Alphaville, SP - Brazil",
+      phone: "+1 239 776 5370",
+      address: "Naples, FL - USA",
       hours: "Mon to Fri",
       hoursDetail: "9am to 6pm",
       whatsapp: "WhatsApp"
@@ -672,8 +672,8 @@ export const translations = {
       callSubtitle: "Conversemos sobre cómo nuestras soluciones pueden impulsar su negocio",
       callCta: "Agendar Consulta Gratuita",
       email: "jomon@stratumtec.com",
-      phone: "+55 11 99332-4239",
-      address: "Alphaville, SP - Brasil",
+      phone: "+1 239 776 5370",
+      address: "Naples, FL - EE.UU.",
       hours: "Lun a Vie",
       hoursDetail: "de 9h a 18h",
       whatsapp: "WhatsApp"
@@ -972,7 +972,7 @@ export const pageTranslations = {
     contactForm: {
       headerTitle: "Let's talk?", headerSubtitle: "Get in touch and discover how we can transform your company's customer experience",
       contactUs: "Contact us", contactDesc: "Our team of experts is ready to help you find the perfect solution for your business challenges.",
-      email: "Email", phone: "Phone", address: "Address", addressValue: "Alphaville, SP - Brazil",
+      email: "Email", phone: "Phone", address: "Address", addressValue: "2355 Vanderbilt Beach Road, Suite 154-V-124, Naples, FL 34109",
       hours: "Hours", hoursValue: "Mon to Fri", hoursDetail: "9am to 6pm",
       quickResponse: "Need a quick response?", quickResponseDesc: "Contact us via WhatsApp and speak directly with our specialists.",
       requestQuote: "Request Quote", formDesc: "Fill out the form below and our team will contact you within 24 hours.",
@@ -1091,7 +1091,7 @@ export const pageTranslations = {
     contactForm: {
       headerTitle: "¿Conversamos?", headerSubtitle: "Póngase en contacto y descubra cómo podemos transformar la experiencia del cliente de su empresa",
       contactUs: "Contáctenos", contactDesc: "Nuestro equipo de expertos está listo para ayudarle a encontrar la solución perfecta.",
-      email: "Correo electrónico", phone: "Teléfono", address: "Dirección", addressValue: "Alphaville, SP - Brasil",
+      email: "Correo electrónico", phone: "Teléfono", address: "Dirección", addressValue: "2355 Vanderbilt Beach Road, Suite 154-V-124, Naples, FL 34109",
       hours: "Horario", hoursValue: "Lun a Vie", hoursDetail: "de 9h a 18h",
       quickResponse: "¿Necesita una respuesta rápida?", quickResponseDesc: "Contáctenos vía WhatsApp y hable con nuestros especialistas.",
       requestQuote: "Solicitar Cotización", formDesc: "Complete el formulario y nuestro equipo se pondrá en contacto en hasta 24 horas.",
