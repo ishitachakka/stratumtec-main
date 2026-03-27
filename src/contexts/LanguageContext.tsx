@@ -18,8 +18,9 @@ interface LanguageProviderProps {
 export const LanguageProvider = ({ children, defaultLanguage = 'en' }: LanguageProviderProps) => {
   const location = useLocation();
   
+  const ptRoutes = ['/empresa', '/solucoes', '/consultoria', '/contato', '/blog/futuro-ia-cx'];
   const getLanguageFromPath = (pathname: string): Language => {
-    if (pathname.startsWith('/pt')) return 'pt';
+    if (pathname.startsWith('/pt') || ptRoutes.some(r => pathname === r)) return 'pt';
     if (pathname.startsWith('/es')) return 'es';
     return defaultLanguage;
   };
