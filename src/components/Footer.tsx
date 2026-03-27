@@ -87,20 +87,12 @@ export const Footer = () => {
             </div>
             <div className="flex items-center space-x-6 text-sm">
               <a href={language === 'pt' ? '/pt/privacidade' : language === 'es' ? '/es/privacidad' : '/en/privacy-policy'} className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.privacy}</a>
-              <a href="#termos" className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.terms}</a>
+              <a href={language === 'pt' ? '/pt/termos-de-uso' : language === 'es' ? '/es/condiciones-de-uso' : '/en/terms-of-use'} className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.terms}</a>
               <a href="#cookies" className="text-white/70 hover:text-stratumtec-orange transition-colors">{t.cookies}</a>
             </div>
           </div>
         </div>
 
-        <div className="mt-8 pt-6 border-t border-white/20">
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            <div className="text-xs text-white/50 text-center"><div className="font-semibold mb-1">ISO 27001</div><div>Certificado</div></div>
-            <div className="text-xs text-white/50 text-center"><div className="font-semibold mb-1">AWS Partner</div><div>Advanced Tier</div></div>
-            <div className="text-xs text-white/50 text-center"><div className="font-semibold mb-1">Microsoft Gold</div><div>Partner</div></div>
-            <div className="text-xs text-white/50 text-center"><div className="font-semibold mb-1">Salesforce</div><div>Certified</div></div>
-          </div>
-        </div>
       </div>
     </footer>
   );
