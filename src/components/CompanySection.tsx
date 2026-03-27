@@ -13,7 +13,7 @@ export const CompanySection = () => {
       </div>
       <div className="container mx-auto px-4 lg:px-6 relative z-10">
         <div className="text-center mb-16">
-          <h3 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">{t.title} <strong>stratumtec</strong></h3>
+          <h3 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">{t.title} <strong>StratumTec</strong></h3>
           <div className="max-w-5xl mx-auto">
             <p className="text-xl text-white/90 mb-8 leading-relaxed">{t.description}</p>
           </div>

@@ -87,7 +87,7 @@ export const Header = () => {
             >
               <img 
                 src="/lovable-uploads/2cfa7eb9-c064-42b8-b3ce-a4793be73521.png" 
-                alt="stratumtec" 
+                alt="StratumTec" 
                 className="h-8 md:h-10 w-auto cursor-pointer hover:opacity-80 transition-opacity"
               />
             </Link>

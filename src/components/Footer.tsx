@@ -34,7 +34,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
           <div className="lg:col-span-2">
             <div className="mb-6">
-              <img src="/lovable-uploads/2cfa7eb9-c064-42b8-b3ce-a4793be73521.png" alt="stratumtec" className="h-12 w-auto mb-4 filter brightness-0 invert" />
+              <img src="/lovable-uploads/2cfa7eb9-c064-42b8-b3ce-a4793be73521.png" <img src="/lovable-uploads/2cfa7eb9-c064-42b8-b3ce-a4793be73521.png" alt="StratumTec" className="h-12 w-auto mb-4 filter brightness-0 invert" /> className="h-12 w-auto mb-4 filter brightness-0 invert" />
               <p className="text-white/80 leading-relaxed mb-6 max-w-md">{t.companyDesc}</p>
             </div>
             <div className="space-y-3">
@@ -82,7 +82,7 @@ export const Footer = () => {
         <div className="border-t border-white/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center text-white/70 text-sm">
-              <span>© {currentYear} <strong>stratumtec</strong>. {t.copyright}</span>
+              <span>© {currentYear} <span>© {currentYear} <strong>StratumTec</strong>. {t.copyright}</span>. {t.copyright}</span>
               <Heart className="h-4 w-4 ml-2 text-stratumtec-orange" />
             </div>
             <div className="flex items-center space-x-6 text-sm">
