@@ -18,7 +18,7 @@ export const ContactForm = () => {
 
   const contactInfo = [
     { icon: Mail, title: t.email, content: "jomon@stratumtec.com", link: "mailto:jomon@stratumtec.com" },
-    { icon: Phone, title: t.phone, content: "+55 11 99332-4239", link: "tel:+5511993324239" },
+    { icon: Phone, title: t.phone, content: t.phoneValue, link: t.phoneLink },
     { icon: MapPin, title: t.address, content: t.addressValue, link: "#" },
     { icon: Clock, title: t.hours, content: t.hoursValue, subContent: t.hoursDetail, link: "#" }
   ];
@@ -104,7 +104,7 @@ export const ContactForm = () => {
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="email" className="text-stratumtec-navy font-medium">{t.emailLabel} *</Label>
-                      <Input id="email" name="email" type="email" value={formData.email} onChange={handleInputChange} placeholder="seu@email.com" required className="border-border focus:ring-stratumtec-orange" />
+                      <Input id="email" name="email" type="email" value={formData.email} onChange={handleInputChange} placeholder={t.emailPlaceholder} required className="border-border focus:ring-stratumtec-orange" />
                     </div>
                   </div>
                   <div className="grid md:grid-cols-2 gap-4">
