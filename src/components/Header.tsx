@@ -5,35 +5,36 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
 import { CalendarPopup } from "@/components/CalendarPopup";
 import { Language } from "@/lib/translations";
+import { routeTable } from "@/lib/routeMap";
 import flagBr from "@/assets/flag-br.png";
 import flagUs from "@/assets/flag-us.png";
 import flagCo from "@/assets/flag-co.png";
 
 export const Header = () => {
-  const { t, language, setLanguage } = useLanguage();
+  const { t, language, switchLanguage } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navRoutes: Record<Language, { company: string; solutions: string; consulting: string; content: string; contact: string }> = {
     en: {
-      company: "/en/company",
-      solutions: "/en/solutions",
-      consulting: "/en/consulting",
-      content: "/en/blog",
-      contact: "/en/contact",
+      company: routeTable.company.en,
+      solutions: routeTable.solutions.en,
+      consulting: routeTable.consulting.en,
+      content: routeTable.blog.en,
+      contact: routeTable.contact.en,
     },
     pt: {
-      company: "/empresa",
-      solutions: "/solucoes",
-      consulting: "/consultoria",
-      content: "/blog",
-      contact: "/contato",
+      company: routeTable.company.pt,
+      solutions: routeTable.solutions.pt,
+      consulting: routeTable.consulting.pt,
+      content: routeTable.blog.pt,
+      contact: routeTable.contact.pt,
     },
     es: {
-      company: "/es/empresa",
-      solutions: "/es/soluciones",
-      consulting: "/es/consultoria",
-      content: "/es/blog",
-      contact: "/es/contacto",
+      company: routeTable.company.es,
+      solutions: routeTable.solutions.es,
+      consulting: routeTable.consulting.es,
+      content: routeTable.blog.es,
+      contact: routeTable.contact.es,
     },
   };
 
@@ -67,7 +68,7 @@ export const Header = () => {
   const currentLang = languageOptions.find(o => o.lang === language) || languageOptions[0];
 
   const handleLanguageChange = (lang: Language) => {
-    setLanguage(lang);
+    switchLanguage(lang);
     setIsLangOpen(false);
   };
 
@@ -78,9 +79,8 @@ export const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link
-              to="/"
+              to={routeTable.home[language]}
               onClick={() => {
-                setLanguage('en');
                 setIsMenuOpen(false);
                 setIsLangOpen(false);
               }}
@@ -109,7 +109,7 @@ export const Header = () => {
 
           {/* Right Side Actions */}
           <div className="flex items-center space-x-4">
-            {/* Language Dropdown - Flag only */}
+            {/* Language Dropdown */}
             <div className="relative" ref={langRef}>
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
