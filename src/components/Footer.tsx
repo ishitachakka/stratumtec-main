@@ -82,7 +82,7 @@ export const Footer = () => {
         <div className="border-t border-white/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center text-white/70 text-sm">
-              <span>© {currentYear} <span>© {currentYear} <strong>StratumTec</strong>. {t.copyright}</span>. {t.copyright}</span>
+              <span>© {currentYear} <strong>StratumTec</strong>. {t.copyright}</span>
               <Heart className="h-4 w-4 ml-2 text-stratumtec-orange" />
             </div>
             <div className="flex items-center space-x-6 text-sm">
