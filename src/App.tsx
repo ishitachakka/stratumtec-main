@@ -16,6 +16,7 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import FuturoIACX from "./pages/blog/FuturoIACX";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfUse from "./pages/TermsOfUse";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -55,6 +56,9 @@ const App = () => (
            <Route path="/pt/privacidade" element={<PrivacyPolicy />} />
            <Route path="/en/privacy-policy" element={<PrivacyPolicy />} />
            <Route path="/es/privacidad" element={<PrivacyPolicy />} />
+           <Route path="/pt/termos-de-uso" element={<TermsOfUse />} />
+           <Route path="/en/terms-of-use" element={<TermsOfUse />} />
+           <Route path="/es/condiciones-de-uso" element={<TermsOfUse />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

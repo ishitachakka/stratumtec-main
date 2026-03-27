@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Header } from "@/components/Header";
 import { HeroCarousel } from "@/components/HeroCarousel";
 import { SolutionsSection } from "@/components/SolutionsSection";
@@ -8,11 +7,8 @@ import { BlogSection } from "@/components/BlogSection";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 import { WhatsAppPlugin } from "@/components/WhatsAppPlugin";
-import { useLanguage } from "@/contexts/LanguageContext";
 
 const English = () => {
-  const { setLanguage } = useLanguage();
-  useEffect(() => { setLanguage('en'); }, []);
 
   return (
     <div className="min-h-screen bg-background">
