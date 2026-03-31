@@ -26,10 +26,10 @@ const ServicesListPage = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <section className="pt-28 pb-16 bg-gradient-to-br from-secondary via-secondary/90 to-primary/20">
+        <section className="pt-32 pb-16 bg-gradient-to-br from-secondary via-secondary/90 to-primary/20">
           <div className="container mx-auto px-4 lg:px-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 !text-white" style={{ color: 'white' }}>{l.title}</h1>
-            <p className="text-xl text-white/85 max-w-3xl">{l.subtitle}</p>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 !text-white animate-fade-in" style={{ color: 'white' }}>{l.title}</h1>
+            <p className="text-xl text-white/85 max-w-3xl opacity-0 animate-fade-in" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>{l.subtitle}</p>
           </div>
         </section>
 

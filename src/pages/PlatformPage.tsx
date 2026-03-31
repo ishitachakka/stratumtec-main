@@ -19,9 +19,13 @@ const PlatformPage = () => {
     return (
       <div className="min-h-screen bg-background">
         <Header />
-        <main className="pt-24 pb-16 container mx-auto px-4 text-center">
-          <h1 className="text-3xl font-heading font-bold text-secondary">Page not found</h1>
-          <Link to={routeTable.platforms[language]} className="text-primary mt-4 inline-block">← Back</Link>
+        <main className="pt-32 pb-16 container mx-auto px-4 text-center">
+          <h1 className="text-3xl font-heading font-bold text-secondary">
+            {language === 'pt' ? 'Página não encontrada' : language === 'es' ? 'Página no encontrada' : 'Page not found'}
+          </h1>
+          <Link to={routeTable.platforms[language]} className="text-primary mt-4 inline-block">
+            {language === 'pt' ? '← Voltar' : language === 'es' ? '← Volver' : '← Back'}
+          </Link>
         </main>
         <Footer />
       </div>
@@ -39,16 +43,20 @@ const PlatformPage = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <section className="pt-28 pb-16 bg-gradient-to-br from-secondary via-secondary/90 to-primary/20">
+        <section className="pt-32 pb-16 bg-gradient-to-br from-secondary via-secondary/90 to-primary/20">
           <div className="container mx-auto px-4 lg:px-6">
-            <Link to={routeTable.platforms[language]} className="text-white/70 hover:text-white text-sm mb-6 inline-block transition-colors">
+            <Link to={routeTable.platforms[language]} className="text-white/70 hover:text-white text-sm mb-6 inline-block transition-colors animate-fade-in">
               {l.backTo}
             </Link>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-4 !text-white" style={{ color: 'white' }}>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-4 !text-white animate-fade-in" style={{ color: 'white' }}>
               {platform.name}
             </h1>
-            <p className="text-xl text-white/85 max-w-3xl mb-8 leading-relaxed">{platform.tagline}</p>
-            <p className="text-lg text-white/70 max-w-4xl leading-relaxed">{platform.institutionalDescription}</p>
+            <p className="text-xl text-white/85 max-w-3xl mb-8 leading-relaxed opacity-0 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
+              {platform.tagline}
+            </p>
+            <p className="text-lg text-white/70 max-w-4xl leading-relaxed opacity-0 animate-fade-in" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
+              {platform.institutionalDescription}
+            </p>
           </div>
         </section>
 
