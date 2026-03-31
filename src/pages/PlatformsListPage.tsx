@@ -17,9 +17,9 @@ const PlatformsListPage = () => {
   const platforms = getPlatforms(language);
 
   const labels = {
-    pt: { title: 'Plataformas', subtitle: 'Plataformas desenvolvidas para escalar sua operação', cta: 'Fale com um especialista' },
-    en: { title: 'Platforms', subtitle: 'Platforms built to scale your operation', cta: 'Talk to an expert' },
-    es: { title: 'Plataformas', subtitle: 'Plataformas desarrolladas para escalar su operación', cta: 'Hable con un especialista' },
+    pt: { title: 'Plataformas', subtitle: 'Plataformas desenvolvidas para escalar sua operação', cta: 'Fale com um especialista', learnMore: 'Saiba mais' },
+    en: { title: 'Platforms', subtitle: 'Platforms built to scale your operation', cta: 'Talk to an expert', learnMore: 'Learn more' },
+    es: { title: 'Plataformas', subtitle: 'Plataformas desarrolladas para escalar su operación', cta: 'Hable con un especialista', learnMore: 'Saber más' },
   };
   const l = labels[language];
 
@@ -27,10 +27,10 @@ const PlatformsListPage = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <section className="pt-28 pb-16 bg-gradient-to-br from-secondary via-secondary/90 to-primary/20">
+        <section className="pt-32 pb-16 bg-gradient-to-br from-secondary via-secondary/90 to-primary/20">
           <div className="container mx-auto px-4 lg:px-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 !text-white" style={{ color: 'white' }}>{l.title}</h1>
-            <p className="text-xl text-white/85 max-w-3xl">{l.subtitle}</p>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 !text-white animate-fade-in" style={{ color: 'white' }}>{l.title}</h1>
+            <p className="text-xl text-white/85 max-w-3xl opacity-0 animate-fade-in" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>{l.subtitle}</p>
           </div>
         </section>
 
@@ -53,7 +53,7 @@ const PlatformsListPage = () => {
                         </div>
                       </div>
                       <div className="mt-6 flex items-center text-primary text-sm font-medium">
-                        {language === 'pt' ? 'Saiba mais' : language === 'es' ? 'Saber más' : 'Learn more'} <ArrowRight className="ml-1 h-4 w-4" />
+                        {l.learnMore} <ArrowRight className="ml-1 h-4 w-4" />
                       </div>
                     </Card>
                   </Link>

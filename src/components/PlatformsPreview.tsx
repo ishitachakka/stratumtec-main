@@ -40,7 +40,7 @@ export const PlatformsPreview = () => {
                     </div>
                   </div>
                   <div className="mt-6 flex items-center text-primary text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                    {language === 'pt' ? 'Saiba mais' : language === 'es' ? 'Saber más' : 'Learn more'}
+                    {language === 'pt' ? 'Saiba mais' : language === 'es' ? 'Más información' : 'Learn more'}
                     <ArrowRight className="ml-1 h-4 w-4" />
                   </div>
                 </Card>

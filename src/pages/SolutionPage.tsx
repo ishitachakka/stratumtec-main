@@ -19,9 +19,13 @@ const SolutionPage = () => {
     return (
       <div className="min-h-screen bg-background">
         <Header />
-        <main className="pt-24 pb-16 container mx-auto px-4 text-center">
-          <h1 className="text-3xl font-heading font-bold text-secondary">Page not found</h1>
-          <Link to={routeTable.solutions[language]} className="text-primary mt-4 inline-block">← Back to solutions</Link>
+        <main className="pt-32 pb-16 container mx-auto px-4 text-center">
+          <h1 className="text-3xl font-heading font-bold text-secondary">
+            {language === 'pt' ? 'Página não encontrada' : language === 'es' ? 'Página no encontrada' : 'Page not found'}
+          </h1>
+          <Link to={routeTable.solutions[language]} className="text-primary mt-4 inline-block">
+            {language === 'pt' ? '← Voltar às Soluções' : language === 'es' ? '← Volver a Soluciones' : '← Back to Solutions'}
+          </Link>
         </main>
         <Footer />
       </div>
@@ -40,22 +44,24 @@ const SolutionPage = () => {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-28 pb-16 bg-gradient-to-br from-secondary via-secondary/90 to-primary/20">
+        <section className="pt-32 pb-16 bg-gradient-to-br from-secondary via-secondary/90 to-primary/20">
           <div className="container mx-auto px-4 lg:px-6">
-            <Link to={routeTable.solutions[language]} className="text-white/70 hover:text-white text-sm mb-6 inline-block transition-colors">
+            <Link to={routeTable.solutions[language]} className="text-white/70 hover:text-white text-sm mb-6 inline-block transition-colors animate-fade-in">
               {labels.backTo}
             </Link>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 !text-white" style={{ color: 'white' }}>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6 !text-white animate-fade-in" style={{ color: 'white' }}>
               {solution.title}
             </h1>
-            <p className="text-xl text-white/85 max-w-3xl leading-relaxed">{solution.institutionalDescription}</p>
+            <p className="text-xl text-white/85 max-w-3xl leading-relaxed opacity-0 animate-fade-in" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
+              {solution.institutionalDescription}
+            </p>
           </div>
         </section>
 
         {/* Content */}
         <section className="py-16">
           <div className="container mx-auto px-4 lg:px-6">
-            <div className="grid lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {/* Challenges */}
               <div className="bg-card p-8 rounded-xl border border-border">
                 <div className="flex items-center gap-3 mb-6">

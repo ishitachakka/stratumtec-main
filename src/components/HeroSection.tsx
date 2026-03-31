@@ -34,9 +34,8 @@ export const HeroSection = () => {
               triggerAsChild
             />
             <Button
-              variant="outline"
               size="lg"
-              className="border-white/30 text-white hover:bg-white/10 font-semibold px-8 py-4 text-lg"
+              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold px-8 py-4 text-lg transition-smooth"
               onClick={() => navigate(routeTable.solutions[language])}
             >
               {t.secondaryCta}
