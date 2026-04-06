@@ -278,12 +278,28 @@ export const translations = {
   },
   en: {
     nav: {
-      company: "Company",
       solutions: "Solutions",
-      consulting: "Consulting",
-      content: "Content",
+      platforms: "Platforms",
+      services: "Services",
+      about: "About Stratumtec",
       contact: "Contact",
-      scheduleCall: "Schedule Meeting"
+      scheduleCall: "Schedule Meeting",
+      solutionsDropdown: [
+        "Data Integration and Operational Consolidation",
+        "Integrated Lead and Opportunity Management",
+        "Intelligent Digital Service Automation",
+        "AI Agents for Digital Channels",
+        "Omnichannel Centralization and Journey Governance",
+        "Operational Monitoring, SLAs and Performance",
+        "Speech Analytics and Voice Intelligence",
+      ],
+      platformsDropdown: ["stratumHUB", "BlueMesh"],
+      servicesDropdown: [
+        "Systems Integration and Connectivity",
+        "Operational Adaptation and Continuous Improvement",
+        "Ongoing Operation and Stability Management",
+        "Technical and Architectural Consulting",
+      ],
     },
     hero: {
       title: "Transform Customer Experience with Artificial Intelligence",
