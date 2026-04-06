@@ -1,31 +1,12 @@
 export const translations = {
   pt: {
     nav: {
+      company: "Empresa",
       solutions: "Soluções",
-      platforms: "Plataformas",
-      services: "Serviços",
-      about: "Sobre a Stratumtec",
+      consulting: "Consultoria",
+      content: "Conteúdo",
       contact: "Contato",
-      scheduleCall: "Agendar Reunião",
-      solutionsDropdown: [
-        "Consolide dados e ganhe visibilidade real da sua operação",
-        "Converta mais oportunidades em receita",
-        "Atenda mais sem aumentar equipe",
-        "Expanda o atendimento 24 horas com IA",
-        "Unifique todos os canais em um só lugar",
-        "Monitore e controle sua operação em tempo real",
-        "Transforme conversas com clientes em inteligência de negócio",
-      ],
-      platformsDropdown: [
-        "stratumHUB",
-        "BlueMesh",
-      ],
-      servicesDropdown: [
-        "Implantação e Integração",
-        "Evolução e Customização",
-        "Sustentação e Operação Assistida",
-        "Consultoria Técnica e Arquitetural",
-      ],
+      scheduleCall: "Agendar Reunião"
     },
     hero: {
       title: "Transforme a Experiência do Cliente com Inteligência Artificial",
@@ -281,31 +262,12 @@ export const translations = {
   },
   en: {
     nav: {
+      company: "Company",
       solutions: "Solutions",
-      platforms: "Platforms",
-      services: "Services",
-      about: "About Stratumtec",
+      consulting: "Consulting",
+      content: "Content",
       contact: "Contact",
-      scheduleCall: "Schedule Meeting",
-      solutionsDropdown: [
-        "Consolidate data and gain real visibility into your operation",
-        "Convert more opportunities into revenue",
-        "Serve more without increasing headcount",
-        "Expand 24-hour service with AI",
-        "Unify all channels in one place",
-        "Monitor and control your operation in real time",
-        "Turn customer conversations into business intelligence",
-      ],
-      platformsDropdown: [
-        "stratumHUB",
-        "BlueMesh",
-      ],
-      servicesDropdown: [
-        "Implementation & Integration",
-        "Evolution & Customization",
-        "Support & Assisted Operations",
-        "Technical & Architectural Consulting",
-      ],
+      scheduleCall: "Schedule Meeting"
     },
     hero: {
       title: "Transform Customer Experience with Artificial Intelligence",
@@ -561,31 +523,12 @@ export const translations = {
   },
   es: {
     nav: {
+      company: "Empresa",
       solutions: "Soluciones",
-      platforms: "Plataformas",
-      services: "Servicios",
-      about: "Sobre Stratumtec",
+      consulting: "Consultoría",
+      content: "Contenido",
       contact: "Contacto",
-      scheduleCall: "Agendar Reunión",
-      solutionsDropdown: [
-        "Consolide datos y obtenga visibilidad real de su operación",
-        "Convierta más oportunidades en ingresos",
-        "Atienda más sin aumentar el equipo",
-        "Amplíe la atención 24 horas con IA",
-        "Unifique todos los canales en un solo lugar",
-        "Monitoree y controle su operación en tiempo real",
-        "Transforme conversaciones con clientes en inteligencia de negocio",
-      ],
-      platformsDropdown: [
-        "stratumHUB",
-        "BlueMesh",
-      ],
-      servicesDropdown: [
-        "Implementación e Integración",
-        "Evolución y Personalización",
-        "Soporte y Operación Asistida",
-        "Consultoría Técnica y Arquitectónica",
-      ],
+      scheduleCall: "Agendar Reunión"
     },
     hero: {
       title: "Transforme la Experiencia del Cliente con Inteligencia Artificial",
