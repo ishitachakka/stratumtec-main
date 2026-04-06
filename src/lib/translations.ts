@@ -281,12 +281,31 @@ export const translations = {
   },
   en: {
     nav: {
-      company: "Company",
       solutions: "Solutions",
-      consulting: "Consulting",
-      content: "Content",
+      platforms: "Platforms",
+      services: "Services",
+      about: "About Stratumtec",
       contact: "Contact",
-      scheduleCall: "Schedule Meeting"
+      scheduleCall: "Schedule Meeting",
+      solutionsDropdown: [
+        "Consolidate data and gain real visibility into your operation",
+        "Convert more opportunities into revenue",
+        "Serve more without increasing headcount",
+        "Expand 24-hour service with AI",
+        "Unify all channels in one place",
+        "Monitor and control your operation in real time",
+        "Turn customer conversations into business intelligence",
+      ],
+      platformsDropdown: [
+        "stratumHUB",
+        "BlueMesh",
+      ],
+      servicesDropdown: [
+        "Implementation & Integration",
+        "Evolution & Customization",
+        "Support & Assisted Operations",
+        "Technical & Architectural Consulting",
+      ],
     },
     hero: {
       title: "Transform Customer Experience with Artificial Intelligence",
