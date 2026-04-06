@@ -1,25 +1,16 @@
 import { Language } from './translations';
-import { solutionRoutes, solutionSlugs } from '@/data/solutions';
-import { platformRoutes, platformSlugs } from '@/data/platforms';
-import { serviceRoutes, serviceSlugs } from '@/data/services';
 
 // Each entry maps a "page key" to its localized routes
 const routeTable: Record<string, Record<Language, string>> = {
   home:        { en: '/en',                 pt: '/pt',                es: '/es' },
-  company:     { en: '/en/company',         pt: '/pt/empresa',        es: '/es/empresa' },
-  solutions:   { en: '/en/solutions',       pt: '/pt/solucoes',       es: '/es/soluciones' },
-  platforms:   { en: '/en/platforms',       pt: '/pt/plataformas',    es: '/es/plataformas' },
-  services:    { en: '/en/services',        pt: '/pt/servicos',       es: '/es/servicios' },
-  contact:     { en: '/en/contact',         pt: '/pt/contato',        es: '/es/contacto' },
-  blog:        { en: '/en/blog',            pt: '/pt/blog',           es: '/es/blog' },
+  company:     { en: '/en/company',         pt: '/empresa',           es: '/es/empresa' },
+  solutions:   { en: '/en/solutions',       pt: '/solucoes',          es: '/es/soluciones' },
+  consulting:  { en: '/en/consulting',      pt: '/consultoria',       es: '/es/consultoria' },
+  contact:     { en: '/en/contact',         pt: '/contato',           es: '/es/contacto' },
+  blog:        { en: '/en/blog',            pt: '/blog',              es: '/es/blog' },
   privacy:     { en: '/en/privacy-policy',  pt: '/pt/privacidade',    es: '/es/privacidad' },
   terms:       { en: '/en/terms-of-use',    pt: '/pt/termos-de-uso',  es: '/es/condiciones-de-uso' },
-  // Individual solutions
-  ...Object.fromEntries(solutionSlugs.map(s => [`solution-${s}`, solutionRoutes[s]])),
-  // Individual platforms
-  ...Object.fromEntries(platformSlugs.map(s => [`platform-${s}`, platformRoutes[s]])),
-  // Individual services
-  ...Object.fromEntries(serviceSlugs.map(s => [`service-${s}`, serviceRoutes[s]])),
+  blogIaCx:    { en: '/en/blog/futuro-ia-cx', pt: '/blog/futuro-ia-cx', es: '/es/blog/futuro-ia-cx' },
 };
 
 // Build a reverse lookup: path → page key
@@ -29,19 +20,8 @@ for (const [key, langs] of Object.entries(routeTable)) {
     pathToKey[path] = key;
   }
 }
-// Root "/" maps to home (defaults to English)
+// Root "/" maps to home
 pathToKey['/'] = 'home';
-// Legacy routes (without /pt prefix) — keep for backward compatibility
-const legacyPtRoutes: Record<string, string> = {
-  '/empresa': 'company',
-  '/solucoes': 'solutions',
-  '/consultoria': 'services', // old consulting maps to services now
-  '/contato': 'contact',
-  '/blog': 'blog',
-};
-for (const [path, key] of Object.entries(legacyPtRoutes)) {
-  pathToKey[path] = key;
-}
 
 /**
  * Given the current pathname and the desired language,
@@ -73,8 +53,8 @@ export function getLanguageFromPath(pathname: string): Language {
   if (pathname.startsWith('/pt/')) return 'pt';
   if (pathname.startsWith('/en/')) return 'en';
   // Legacy PT routes without prefix
-  const ptPrefixes = ['/empresa', '/solucoes', '/consultoria', '/contato', '/blog'];
-  if (ptPrefixes.some(r => pathname === r || pathname.startsWith(r + '/'))) return 'pt';
+  const ptRoutes = ['/empresa', '/solucoes', '/consultoria', '/contato', '/blog'];
+  if (ptRoutes.some(r => pathname === r || pathname.startsWith(r + '/'))) return 'pt';
   return 'en';
 }
 
