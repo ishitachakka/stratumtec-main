@@ -13,6 +13,26 @@ const routeTable: Record<string, Record<Language, string>> = {
   blogIaCx:    { en: '/en/blog/futuro-ia-cx', pt: '/blog/futuro-ia-cx', es: '/es/blog/futuro-ia-cx' },
 };
 
+// Anchor-based sub-routes for dropdown menus (not real routes, just solution page anchors)
+export const solutionAnchors = [
+  'data-visibility',
+  'conversion',
+  'efficiency',
+  'ai-24h',
+  'omnichannel',
+  'monitoring',
+  'conversation-intelligence',
+];
+
+export const platformAnchors = ['stratumhub', 'bluemesh'];
+
+export const serviceAnchors = [
+  'implementation',
+  'evolution',
+  'support',
+  'technical-consulting',
+];
+
 // Build a reverse lookup: path → page key
 const pathToKey: Record<string, string> = {};
 for (const [key, langs] of Object.entries(routeTable)) {
