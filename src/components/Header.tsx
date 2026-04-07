@@ -92,6 +92,7 @@ export const Header = () => {
     3: routeTable.solAIAgents[language],
     4: routeTable.solOmnichannel[language],
     5: routeTable.solOperationalMonitoring[language],
+    6: routeTable.solSpeechAnalytics[language],
   };
 
   const navigationItems: NavItem[] = [

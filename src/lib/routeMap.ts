@@ -17,6 +17,7 @@ const routeTable: Record<string, Record<Language, string>> = {
   solAIAgents: { en: '/en/solutions/ai-agents', pt: '/solucoes/agentes-ia', es: '/es/soluciones/agentes-ia' },
   solOmnichannel: { en: '/en/solutions/omnichannel', pt: '/solucoes/omnichannel', es: '/es/soluciones/omnicanal' },
   solOperationalMonitoring: { en: '/en/solutions/operational-monitoring', pt: '/solucoes/monitoramento-operacional', es: '/es/soluciones/monitoreo-operacional' },
+  solSpeechAnalytics: { en: '/en/solutions/speech-analytics', pt: '/solucoes/speech-analytics', es: '/es/soluciones/speech-analytics' },
 };
 
 // Build a reverse lookup: path → page key
