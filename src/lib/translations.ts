@@ -740,21 +740,22 @@ export const translations = {
 export const pageTranslations = {
   pt: {
     solutionsSection: {
-      title: "Você sabe onde sua empresa perde clientes, receita ou eficiência?",
+      title: "Qual é a sua necessidade?",
       subtitle: "Apoiamos empresas na melhoria da jornada do cliente, na retenção de clientes e na rentabilização do negócio, usando tecnologia de forma prática e aplicada à realidade de cada operação. Atuamos desde o desenho da solução até a implantação e sustentação, com foco em resultados concretos e previsibilidade.",
       highlight: "Destaque",
-      learnMore: "Saiba Mais",
+      learnMore: "Ver todas as soluções",
       customSolution: "Precisa de uma solução personalizada?",
       customSolutionDesc: "Nossa equipe de especialistas está pronta para desenhar a solução perfeita para os desafios únicos do seu negócio.",
       talkExpert: "Falar com Especialista",
       requestQuote: "Solicitar Cotação",
       solutions: [
-        { title: "stratumHub Technology", description: "stratumHub Communication Suite é uma plataforma omnichannel ágil, customizável e segura, que integra voz, vídeo, WhatsApp, chat, e-mail e automações.", features: ["IA Generativa", "Machine Learning", "Hub de Sistemas"] },
-        { title: "BlueMesh | IA", description: "Solução de Inteligência Artificial da StratumTec, desenvolvida para integrar qualquer plataforma com segurança, escalabilidade e performance.", features: ["IA Proprietária", "API's Unificadas", "Sync em tempo real"] },
-        { title: "Omnichannel", description: "Integração completa entre todos os canais de relacionamento, garantindo uma experiência unificada e uma comunicação mais fluida com o cliente.", features: ["Customer Centricity", "Speech Analytics", "Multiplataforma"] },
-        { title: "Data Analytics", description: "Suite completa para análise e tratamento de dados em grandes volumes, gerando dashboards inteligentes e insights preditivos para tomada de decisão.", features: ["Business Intelligence", "Análise Preditiva", "Dashboards Personalizados"] },
-        { title: "Jornada do Cliente", description: "Mapeamento de jornada da experiência do cliente, visando otimização no tempo de resolução de demandas do atendimento em todos os pontos de contato.", features: ["Régua e Regras de Eventos", "Análise de Touchpoints", "Otimização da Experiência"] },
-        { title: "Fluxos Inteligentes", description: "Workflows automatizados que eliminam tarefas repetitivas, melhoram o tempo de resposta e aceleram processos críticos e garante maior eficiência em CXM.", features: ["Automação de Workflow", "Redução de TMA", "Ganho de Eficiência"] }
+        { title: "Consolide dados e ganhe visibilidade real da sua operação", description: "", features: [] },
+        { title: "Converta mais oportunidades em receita", description: "", features: [] },
+        { title: "Atenda mais sem aumentar equipe", description: "", features: [] },
+        { title: "Expanda o atendimento 24 horas com IA", description: "", features: [] },
+        { title: "Unifique todos os canais em um só lugar", description: "", features: [] },
+        { title: "Monitore e controle sua operação em tempo real", description: "", features: [] },
+        { title: "Transforme conversas com clientes em inteligência de negócio", description: "", features: [] }
       ]
     },
     consultingSection: {
@@ -866,19 +867,20 @@ export const pageTranslations = {
   },
   en: {
     solutionsSection: {
-      title: "Do you know where your company is losing customers, revenue, or efficiency?",
+      title: "What is your need?",
       subtitle: "We support companies in improving customer journeys, retaining clients, and making the business more profitable — using technology in a practical way, tailored to each operation's reality. We act from solution design through implementation and ongoing support, focused on concrete results and predictability.",
-      highlight: "Featured", learnMore: "Learn More",
+      highlight: "Featured", learnMore: "See all solutions",
       customSolution: "Need a custom solution?",
       customSolutionDesc: "Our team of experts is ready to design the perfect solution for your unique business challenges.",
       talkExpert: "Talk to an Expert", requestQuote: "Request Quote",
       solutions: [
-        { title: "stratumHub Technology", description: "stratumHub Communication Suite is an agile, customizable, and secure omnichannel platform integrating voice, video, WhatsApp, chat, email, and automations.", features: ["Generative AI", "Machine Learning", "Systems Hub"] },
-        { title: "BlueMesh | AI", description: "StratumTec's proprietary AI solution, developed to integrate any platform with security, scalability, and performance.", features: ["Proprietary AI", "Unified APIs", "Real-time Sync"] },
-        { title: "Omnichannel", description: "Complete integration across all relationship channels, ensuring a unified experience and smoother client communication.", features: ["Customer Centricity", "Speech Analytics", "Multi-platform"] },
-        { title: "Data Analytics", description: "Complete suite for large-volume data analysis, generating intelligent dashboards and predictive insights.", features: ["Business Intelligence", "Predictive Analysis", "Custom Dashboards"] },
-        { title: "Customer Journey", description: "Customer experience journey mapping, optimizing resolution times across all service touchpoints.", features: ["Event Rules & Triggers", "Touchpoint Analysis", "Experience Optimization"] },
-        { title: "Intelligent Workflows", description: "Automated workflows that eliminate repetitive tasks, improve response times, and accelerate critical processes.", features: ["Workflow Automation", "AHT Reduction", "Efficiency Gains"] }
+        { title: "Consolidate data and gain real visibility of your operation", description: "", features: [] },
+        { title: "Convert more opportunities into revenue", description: "", features: [] },
+        { title: "Serve more customers without growing your team", description: "", features: [] },
+        { title: "Expand 24-hour service with AI", description: "", features: [] },
+        { title: "Unify all channels in one place", description: "", features: [] },
+        { title: "Monitor and control your operation in real time", description: "", features: [] },
+        { title: "Turn customer conversations into business intelligence", description: "", features: [] }
       ]
     },
     consultingSection: {
@@ -987,19 +989,20 @@ export const pageTranslations = {
   },
   es: {
     solutionsSection: {
-      title: "¿Sabe dónde su empresa pierde clientes, ingresos o eficiencia?",
+      title: "¿Cuál es su necesidad?",
       subtitle: "Apoyamos a empresas en la mejora del recorrido del cliente, la retención de clientes y la rentabilización del negocio, usando tecnología de forma práctica y aplicada a la realidad de cada operación. Actuamos desde el diseño de la solución hasta la implantación y sustentación, con foco en resultados concretos y previsibilidad.",
-      highlight: "Destacado", learnMore: "Saber Más",
+      highlight: "Destacado", learnMore: "Ver todas las soluciones",
       customSolution: "¿Necesita una solución personalizada?",
       customSolutionDesc: "Nuestro equipo de expertos está listo para diseñar la solución perfecta para los desafíos de su negocio.",
       talkExpert: "Hablar con un Experto", requestQuote: "Solicitar Cotización",
       solutions: [
-        { title: "stratumHub Technology", description: "Plataforma omnicanal ágil, personalizable y segura que integra voz, video, WhatsApp, chat, correo y automatizaciones.", features: ["IA Generativa", "Machine Learning", "Hub de Sistemas"] },
-        { title: "BlueMesh | IA", description: "Solución de IA propietaria de StratumTec para integrar cualquier plataforma con seguridad y rendimiento.", features: ["IA Propietaria", "APIs Unificadas", "Sincronización en tiempo real"] },
-        { title: "Omnicanal", description: "Integración completa entre todos los canales garantizando experiencia unificada y comunicación fluida.", features: ["Customer Centricity", "Speech Analytics", "Multiplataforma"] },
-        { title: "Data Analytics", description: "Suite completa para análisis de datos en grandes volúmenes con dashboards inteligentes e insights predictivos.", features: ["Business Intelligence", "Análisis Predictivo", "Dashboards Personalizados"] },
-        { title: "Jornada del Cliente", description: "Mapeo de la jornada del cliente optimizando tiempos de resolución en todos los puntos de contacto.", features: ["Reglas de Eventos", "Análisis de Touchpoints", "Optimización de Experiencia"] },
-        { title: "Flujos Inteligentes", description: "Workflows automatizados que eliminan tareas repetitivas y aceleran procesos críticos.", features: ["Automatización de Workflows", "Reducción de TMA", "Ganancia de Eficiencia"] }
+        { title: "Consolide datos y obtenga visibilidad real de su operación", description: "", features: [] },
+        { title: "Convierta más oportunidades en ingresos", description: "", features: [] },
+        { title: "Atienda más sin aumentar el equipo", description: "", features: [] },
+        { title: "Expanda la atención 24 horas con IA", description: "", features: [] },
+        { title: "Unifique todos los canales en un solo lugar", description: "", features: [] },
+        { title: "Monitoree y controle su operación en tiempo real", description: "", features: [] },
+        { title: "Transforme las conversaciones con clientes en inteligencia de negocio", description: "", features: [] }
       ]
     },
     consultingSection: {
