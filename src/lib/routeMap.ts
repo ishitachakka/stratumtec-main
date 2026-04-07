@@ -20,6 +20,7 @@ const routeTable: Record<string, Record<Language, string>> = {
   solSpeechAnalytics: { en: '/en/solutions/speech-analytics', pt: '/solucoes/speech-analytics', es: '/es/soluciones/speech-analytics' },
   platStratumHub: { en: '/en/platforms/stratumhub', pt: '/plataformas/stratumhub', es: '/es/plataformas/stratumhub' },
   platBlueMesh: { en: '/en/platforms/bluemesh', pt: '/plataformas/bluemesh', es: '/es/plataformas/bluemesh' },
+  svcSystemsIntegration: { en: '/en/services/systems-integration', pt: '/servicos/integracao-sistemas', es: '/es/servicios/integracion-sistemas' },
 };
 
 // Build a reverse lookup: path → page key
