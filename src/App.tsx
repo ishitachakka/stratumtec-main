@@ -22,6 +22,7 @@ import AIAgents from "./pages/solutions/AIAgents";
 import OmnichannelCentralization from "./pages/solutions/OmnichannelCentralization";
 import OperationalMonitoring from "./pages/solutions/OperationalMonitoring";
 import SpeechAnalytics from "./pages/solutions/SpeechAnalytics";
+import StratumHub from "./pages/platforms/StratumHub";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import NotFound from "./pages/NotFound";
@@ -79,6 +80,9 @@ const App = () => (
            <Route path="/solucoes/speech-analytics" element={<SpeechAnalytics />} />
            <Route path="/en/solutions/speech-analytics" element={<SpeechAnalytics />} />
            <Route path="/es/soluciones/speech-analytics" element={<SpeechAnalytics />} />
+           <Route path="/plataformas/stratumhub" element={<StratumHub />} />
+           <Route path="/en/platforms/stratumhub" element={<StratumHub />} />
+           <Route path="/es/plataformas/stratumhub" element={<StratumHub />} />
            <Route path="/en/blog/:slug" element={<BlogPost />} />
            <Route path="/es/blog/:slug" element={<BlogPost />} />
            <Route path="/pt/privacidade" element={<PrivacyPolicy />} />
