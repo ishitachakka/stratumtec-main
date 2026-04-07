@@ -1004,9 +1004,6 @@ export const pageTranslations = {
         { title: "Monitoree y controle su operación en tiempo real", description: "", features: [] },
         { title: "Transforme las conversaciones con clientes en inteligencia de negocio", description: "", features: [] }
       ]
-        { title: "Jornada del Cliente", description: "Mapeo de la jornada del cliente optimizando tiempos de resolución en todos los puntos de contacto.", features: ["Reglas de Eventos", "Análisis de Touchpoints", "Optimización de Experiencia"] },
-        { title: "Flujos Inteligentes", description: "Workflows automatizados que eliminan tareas repetitivas y aceleran procesos críticos.", features: ["Automatización de Workflows", "Reducción de TMA", "Ganancia de Eficiencia"] }
-      ]
     },
     consultingSection: {
       title: "Consultoría Especializada",
