@@ -22,6 +22,7 @@ const routeTable: Record<string, Record<Language, string>> = {
   platBlueMesh: { en: '/en/platforms/bluemesh', pt: '/plataformas/bluemesh', es: '/es/plataformas/bluemesh' },
   svcSystemsIntegration: { en: '/en/services/systems-integration', pt: '/servicos/integracao-sistemas', es: '/es/servicios/integracion-sistemas' },
   svcOperationalAdaptation: { en: '/en/services/operational-adaptation', pt: '/servicos/adaptacao-operacional', es: '/es/servicios/adaptacion-operacional' },
+  svcOngoingOperation: { en: '/en/services/ongoing-operation', pt: '/servicos/sustentacao-operacional', es: '/es/servicios/sustentacion-operacional' },
 };
 
 // Build a reverse lookup: path → page key

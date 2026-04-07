@@ -26,6 +26,7 @@ import StratumHub from "./pages/platforms/StratumHub";
 import BlueMesh from "./pages/platforms/BlueMesh";
 import SystemsIntegration from "./pages/services/SystemsIntegration";
 import OperationalAdaptation from "./pages/services/OperationalAdaptation";
+import OngoingOperation from "./pages/services/OngoingOperation";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import NotFound from "./pages/NotFound";
@@ -95,6 +96,9 @@ const App = () => (
            <Route path="/servicos/adaptacao-operacional" element={<OperationalAdaptation />} />
            <Route path="/en/services/operational-adaptation" element={<OperationalAdaptation />} />
            <Route path="/es/servicios/adaptacion-operacional" element={<OperationalAdaptation />} />
+           <Route path="/servicos/sustentacao-operacional" element={<OngoingOperation />} />
+           <Route path="/en/services/ongoing-operation" element={<OngoingOperation />} />
+           <Route path="/es/servicios/sustentacion-operacional" element={<OngoingOperation />} />
            <Route path="/en/blog/:slug" element={<BlogPost />} />
            <Route path="/es/blog/:slug" element={<BlogPost />} />
            <Route path="/pt/privacidade" element={<PrivacyPolicy />} />
