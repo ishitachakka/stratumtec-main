@@ -100,10 +100,14 @@ export const Header = () => {
     1: routeTable.platBlueMesh[language],
   };
 
+  const serviceLinks: Record<number, string> = {
+    0: routeTable.svcSystemsIntegration[language],
+  };
+
   const navigationItems: NavItem[] = [
     { label: t.nav.solutions, items: t.nav.solutionsDropdown.map((s: string, i: number) => ({ label: s, href: solutionLinks[i] })) },
     { label: t.nav.platforms, items: t.nav.platformsDropdown.map((s: string, i: number) => ({ label: s, href: platformLinks[i] })) },
-    { label: t.nav.services, items: t.nav.servicesDropdown.map((s: string) => ({ label: s })) },
+    { label: t.nav.services, items: t.nav.servicesDropdown.map((s: string, i: number) => ({ label: s, href: serviceLinks[i] })) },
     { label: t.nav.about, href: navRoutes[language].about },
     { label: t.nav.contact, href: navRoutes[language].contact },
   ];
