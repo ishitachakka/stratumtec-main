@@ -104,6 +104,7 @@ export const Header = () => {
     0: routeTable.svcSystemsIntegration[language],
     1: routeTable.svcOperationalAdaptation[language],
     2: routeTable.svcOngoingOperation[language],
+    3: routeTable.svcTechnicalConsulting[language],
   };
 
   const navigationItems: NavItem[] = [

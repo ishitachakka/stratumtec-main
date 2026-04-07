@@ -27,6 +27,7 @@ import BlueMesh from "./pages/platforms/BlueMesh";
 import SystemsIntegration from "./pages/services/SystemsIntegration";
 import OperationalAdaptation from "./pages/services/OperationalAdaptation";
 import OngoingOperation from "./pages/services/OngoingOperation";
+import TechnicalConsulting from "./pages/services/TechnicalConsulting";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import NotFound from "./pages/NotFound";
@@ -99,6 +100,9 @@ const App = () => (
            <Route path="/servicos/sustentacao-operacional" element={<OngoingOperation />} />
            <Route path="/en/services/ongoing-operation" element={<OngoingOperation />} />
            <Route path="/es/servicios/sustentacion-operacional" element={<OngoingOperation />} />
+           <Route path="/servicos/consultoria-tecnica" element={<TechnicalConsulting />} />
+           <Route path="/en/services/technical-consulting" element={<TechnicalConsulting />} />
+           <Route path="/es/servicios/consultoria-tecnica" element={<TechnicalConsulting />} />
            <Route path="/en/blog/:slug" element={<BlogPost />} />
            <Route path="/es/blog/:slug" element={<BlogPost />} />
            <Route path="/pt/privacidade" element={<PrivacyPolicy />} />

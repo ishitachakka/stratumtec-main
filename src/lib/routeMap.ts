@@ -23,6 +23,7 @@ const routeTable: Record<string, Record<Language, string>> = {
   svcSystemsIntegration: { en: '/en/services/systems-integration', pt: '/servicos/integracao-sistemas', es: '/es/servicios/integracion-sistemas' },
   svcOperationalAdaptation: { en: '/en/services/operational-adaptation', pt: '/servicos/adaptacao-operacional', es: '/es/servicios/adaptacion-operacional' },
   svcOngoingOperation: { en: '/en/services/ongoing-operation', pt: '/servicos/sustentacao-operacional', es: '/es/servicios/sustentacion-operacional' },
+  svcTechnicalConsulting: { en: '/en/services/technical-consulting', pt: '/servicos/consultoria-tecnica', es: '/es/servicios/consultoria-tecnica' },
 };
 
 // Build a reverse lookup: path → page key
