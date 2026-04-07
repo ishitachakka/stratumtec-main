@@ -15,6 +15,7 @@ import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import FuturoIACX from "./pages/blog/FuturoIACX";
+import DataIntegration from "./pages/solutions/DataIntegration";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import NotFound from "./pages/NotFound";
@@ -51,6 +52,9 @@ const App = () => (
            <Route path="/es/blog" element={<Blog />} />
            <Route path="/blog/:slug" element={<BlogPost />} />
            <Route path="/blog/futuro-ia-cx" element={<FuturoIACX />} />
+           <Route path="/solucoes/integracao-dados" element={<DataIntegration />} />
+           <Route path="/en/solutions/data-integration" element={<DataIntegration />} />
+           <Route path="/es/soluciones/integracion-datos" element={<DataIntegration />} />
            <Route path="/en/blog/:slug" element={<BlogPost />} />
            <Route path="/es/blog/:slug" element={<BlogPost />} />
            <Route path="/pt/privacidade" element={<PrivacyPolicy />} />

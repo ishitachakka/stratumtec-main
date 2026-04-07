@@ -12,7 +12,7 @@ import flagCo from "@/assets/flag-co.png";
 
 interface DropdownNavItem {
   label: string;
-  items: string[];
+  items: { label: string; href?: string }[];
 }
 
 interface SimpleNavItem {
@@ -49,15 +49,26 @@ const DropdownMenu = ({ item }: { item: DropdownNavItem }) => {
       </button>
       {open && (
         <div className="absolute left-0 mt-2 min-w-[320px] bg-popover border border-border rounded-md shadow-lg py-1 z-50">
-          {item.items.map((sub) => (
-            <button
-              key={sub}
-              className="block w-full text-left px-4 py-2.5 text-sm text-stratumtec-text hover:bg-accent hover:text-stratumtec-orange transition-colors"
-              onClick={() => setOpen(false)}
-            >
-              {sub}
-            </button>
-          ))}
+          {item.items.map((sub) =>
+            sub.href ? (
+              <Link
+                key={sub.label}
+                to={sub.href}
+                className="block w-full text-left px-4 py-2.5 text-sm text-stratumtec-text hover:bg-accent hover:text-stratumtec-orange transition-colors"
+                onClick={() => setOpen(false)}
+              >
+                {sub.label}
+              </Link>
+            ) : (
+              <button
+                key={sub.label}
+                className="block w-full text-left px-4 py-2.5 text-sm text-stratumtec-text hover:bg-accent hover:text-stratumtec-orange transition-colors"
+                onClick={() => setOpen(false)}
+              >
+                {sub.label}
+              </button>
+            )
+          )}
         </div>
       )}
     </div>
@@ -74,10 +85,14 @@ export const Header = () => {
     es: { about: routeTable.company.es, contact: routeTable.contact.es },
   };
 
+  const solutionLinks: Record<number, string> = {
+    0: routeTable.solDataIntegration[language],
+  };
+
   const navigationItems: NavItem[] = [
-    { label: t.nav.solutions, items: t.nav.solutionsDropdown },
-    { label: t.nav.platforms, items: t.nav.platformsDropdown },
-    { label: t.nav.services, items: t.nav.servicesDropdown },
+    { label: t.nav.solutions, items: t.nav.solutionsDropdown.map((s: string, i: number) => ({ label: s, href: solutionLinks[i] })) },
+    { label: t.nav.platforms, items: t.nav.platformsDropdown.map((s: string) => ({ label: s })) },
+    { label: t.nav.services, items: t.nav.servicesDropdown.map((s: string) => ({ label: s })) },
     { label: t.nav.about, href: navRoutes[language].about },
     { label: t.nav.contact, href: navRoutes[language].contact },
   ];
@@ -216,15 +231,26 @@ export const Header = () => {
                     </button>
                     {mobileOpenIdx === idx && (
                       <div className="pl-6 space-y-1">
-                        {item.items.map((sub) => (
-                          <button
-                            key={sub}
-                            className="block w-full text-left px-4 py-2 text-sm text-stratumtec-text hover:text-stratumtec-orange hover:bg-muted transition-colors"
-                            onClick={() => setIsMenuOpen(false)}
-                          >
-                            {sub}
-                          </button>
-                        ))}
+                        {item.items.map((sub) =>
+                          sub.href ? (
+                            <Link
+                              key={sub.label}
+                              to={sub.href}
+                              className="block w-full text-left px-4 py-2 text-sm text-stratumtec-text hover:text-stratumtec-orange hover:bg-muted transition-colors"
+                              onClick={() => setIsMenuOpen(false)}
+                            >
+                              {sub.label}
+                            </Link>
+                          ) : (
+                            <button
+                              key={sub.label}
+                              className="block w-full text-left px-4 py-2 text-sm text-stratumtec-text hover:text-stratumtec-orange hover:bg-muted transition-colors"
+                              onClick={() => setIsMenuOpen(false)}
+                            >
+                              {sub.label}
+                            </button>
+                          )
+                        )}
                       </div>
                     )}
                   </div>
