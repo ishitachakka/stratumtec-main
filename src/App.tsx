@@ -19,6 +19,7 @@ import DataIntegration from "./pages/solutions/DataIntegration";
 import LeadManagement from "./pages/solutions/LeadManagement";
 import ServiceAutomation from "./pages/solutions/ServiceAutomation";
 import AIAgents from "./pages/solutions/AIAgents";
+import OmnichannelCentralization from "./pages/solutions/OmnichannelCentralization";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import NotFound from "./pages/NotFound";
@@ -67,6 +68,9 @@ const App = () => (
            <Route path="/solucoes/agentes-ia" element={<AIAgents />} />
            <Route path="/en/solutions/ai-agents" element={<AIAgents />} />
            <Route path="/es/soluciones/agentes-ia" element={<AIAgents />} />
+           <Route path="/solucoes/omnichannel" element={<OmnichannelCentralization />} />
+           <Route path="/en/solutions/omnichannel" element={<OmnichannelCentralization />} />
+           <Route path="/es/soluciones/omnicanal" element={<OmnichannelCentralization />} />
            <Route path="/en/blog/:slug" element={<BlogPost />} />
            <Route path="/es/blog/:slug" element={<BlogPost />} />
            <Route path="/pt/privacidade" element={<PrivacyPolicy />} />
