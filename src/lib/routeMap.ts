@@ -19,6 +19,7 @@ const routeTable: Record<string, Record<Language, string>> = {
   solOperationalMonitoring: { en: '/en/solutions/operational-monitoring', pt: '/solucoes/monitoramento-operacional', es: '/es/soluciones/monitoreo-operacional' },
   solSpeechAnalytics: { en: '/en/solutions/speech-analytics', pt: '/solucoes/speech-analytics', es: '/es/soluciones/speech-analytics' },
   platStratumHub: { en: '/en/platforms/stratumhub', pt: '/plataformas/stratumhub', es: '/es/plataformas/stratumhub' },
+  platBlueMesh: { en: '/en/platforms/bluemesh', pt: '/plataformas/bluemesh', es: '/es/plataformas/bluemesh' },
 };
 
 // Build a reverse lookup: path → page key

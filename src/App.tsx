@@ -23,6 +23,7 @@ import OmnichannelCentralization from "./pages/solutions/OmnichannelCentralizati
 import OperationalMonitoring from "./pages/solutions/OperationalMonitoring";
 import SpeechAnalytics from "./pages/solutions/SpeechAnalytics";
 import StratumHub from "./pages/platforms/StratumHub";
+import BlueMesh from "./pages/platforms/BlueMesh";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import NotFound from "./pages/NotFound";
@@ -83,6 +84,9 @@ const App = () => (
            <Route path="/plataformas/stratumhub" element={<StratumHub />} />
            <Route path="/en/platforms/stratumhub" element={<StratumHub />} />
            <Route path="/es/plataformas/stratumhub" element={<StratumHub />} />
+           <Route path="/plataformas/bluemesh" element={<BlueMesh />} />
+           <Route path="/en/platforms/bluemesh" element={<BlueMesh />} />
+           <Route path="/es/plataformas/bluemesh" element={<BlueMesh />} />
            <Route path="/en/blog/:slug" element={<BlogPost />} />
            <Route path="/es/blog/:slug" element={<BlogPost />} />
            <Route path="/pt/privacidade" element={<PrivacyPolicy />} />

@@ -97,6 +97,7 @@ export const Header = () => {
 
   const platformLinks: Record<number, string> = {
     0: routeTable.platStratumHub[language],
+    1: routeTable.platBlueMesh[language],
   };
 
   const navigationItems: NavItem[] = [
