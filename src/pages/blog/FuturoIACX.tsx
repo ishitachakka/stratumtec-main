@@ -5,7 +5,7 @@ import BlogPost from "../BlogPost";
 const FuturoIACXContent = () => {
   const title = "O Futuro da Inteligência Artificial na <span class='text-stratumtec-orange'>CX</span> do Cliente";
   const excerpt = "Eficiência, Personalização e Escala Estratégica: como a IA está revolucionando o Customer Experience";
-  const author = "Equipe Stratumtec";
+  const author = "Equipe StratumTec";
   const date = "15 de Janeiro, 2024";
   const readTime = "8 min de leitura";
   const category = "Inteligência Artificial";

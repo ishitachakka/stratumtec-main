@@ -4,7 +4,7 @@ export const translations = {
       solutions: "Soluções",
       platforms: "Plataformas",
       services: "Serviços",
-      about: "Sobre a Stratumtec",
+      about: "Sobre a StratumTec",
       contact: "Contato",
       scheduleCall: "Agendar Reunião",
       solutionsDropdown: [
@@ -249,7 +249,7 @@ export const translations = {
       solutions: "Solutions",
       platforms: "Platforms",
       services: "Services",
-      about: "About Stratumtec",
+      about: "About StratumTec",
       contact: "Contact",
       scheduleCall: "Schedule Meeting",
       solutionsDropdown: [
@@ -494,7 +494,7 @@ export const translations = {
       solutions: "Soluciones",
       platforms: "Plataformas",
       services: "Servicios",
-      about: "Sobre Stratumtec",
+      about: "Sobre StratumTec",
       contact: "Contacto",
       scheduleCall: "Agendar Reunión",
       solutionsDropdown: [
@@ -782,7 +782,7 @@ export const pageTranslations = {
       stat1: "", stat2: "", stat3: "", stat4: "", stat3Value: "", stat4Value: ""
     },
     blogSection: {
-      title: "Por que a Stratumtec",
+      title: "Por que a StratumTec",
       items: [
         { title: "Tecnologia aplicada ao contexto do negócio", text: "Não entregamos soluções genéricas. Cada projeto parte da realidade operacional, dos sistemas existentes e dos objetivos da empresa." },
         { title: "Soluções modulares que evoluem com a operação", text: "Começamos pelo essencial e expandimos conforme a maturidade e as prioridades do negócio, sem rupturas ou desperdícios." },
@@ -891,7 +891,7 @@ export const pageTranslations = {
       stat1: "", stat2: "", stat3: "", stat4: "", stat3Value: "", stat4Value: ""
     },
     blogSection: {
-      title: "Why Stratumtec",
+      title: "Why StratumTec",
       items: [
         { title: "Technology applied to your business context", text: "We don't deliver generic solutions. Every project starts from the operational reality, existing systems, and company goals." },
         { title: "Modular solutions that grow with your operation", text: "We start with the essentials and expand as business maturity and priorities evolve — without disruption or waste." },
@@ -1000,7 +1000,7 @@ export const pageTranslations = {
       stat1: "", stat2: "", stat3: "", stat4: "", stat3Value: "", stat4Value: ""
     },
     blogSection: {
-      title: "Por qué Stratumtec",
+      title: "Por qué StratumTec",
       items: [
         { title: "Tecnología aplicada al contexto del negocio", text: "No entregamos soluciones genéricas. Cada proyecto parte de la realidad operacional, los sistemas existentes y los objetivos de la empresa." },
         { title: "Soluciones modulares que evolucionan con la operación", text: "Empezamos por lo esencial y expandimos conforme la madurez y las prioridades del negocio, sin rupturas ni desperdicios." },

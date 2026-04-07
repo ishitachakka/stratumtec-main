@@ -76,7 +76,7 @@ export const SolutionPageTemplate = ({ content }: SolutionPageTemplateProps) => 
             </ul>
           </div>
 
-          {/* Stratumtec Approach */}
+          {/* StratumTec Approach */}
           <div className="mb-16">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 rounded-lg bg-stratumtec-navy/10 flex items-center justify-center">

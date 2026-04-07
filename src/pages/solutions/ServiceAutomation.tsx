@@ -3,17 +3,17 @@ import { SolutionPageTemplate } from "@/components/SolutionPageTemplate";
 
 const content = {
   en: {
-    seoTitle: "Intelligent Digital Service Automation | Stratumtec",
+    seoTitle: "Intelligent Digital Service Automation | StratumTec",
     seoDescription: "Automate digital service flows, reduce operational effort, and increase efficiency with scalable solutions.",
     h1: "Serve more customers without growing your team",
-    intro: "Stratumtec's Intelligent Digital Service Automation was built to reduce operational load, speed up responses, and ensure consistency in customer service.",
+    intro: "StratumTec's Intelligent Digital Service Automation was built to reduce operational load, speed up responses, and ensure consistency in customer service.",
     challengesTitle: "Key challenges",
     challenges: [
       "High volume of repetitive service requests",
       "Manual and slow processes",
       "Lack of service standardization",
     ],
-    approachTitle: "Stratumtec Approach",
+    approachTitle: "StratumTec Approach",
     approach: [
       "Automation of digital service flows",
       "Integration with internal systems",
@@ -28,17 +28,17 @@ const content = {
     cta: "Talk to a specialist",
   },
   pt: {
-    seoTitle: "Automação Inteligente de Atendimento Digital | Stratumtec",
+    seoTitle: "Automação Inteligente de Atendimento Digital | StratumTec",
     seoDescription: "Automatize fluxos de atendimento digital, reduza esforço operacional e aumente eficiência com soluções escaláveis.",
     h1: "Atenda mais sem aumentar equipe",
-    intro: "A Automação Inteligente de Atendimento Digital da Stratumtec foi desenvolvida para reduzir carga operacional, acelerar respostas e garantir consistência no atendimento ao cliente.",
+    intro: "A Automação Inteligente de Atendimento Digital da StratumTec foi desenvolvida para reduzir carga operacional, acelerar respostas e garantir consistência no atendimento ao cliente.",
     challengesTitle: "Principais desafios",
     challenges: [
       "Alto volume de atendimentos repetitivos",
       "Processos manuais e lentos",
       "Falta de padronização no atendimento",
     ],
-    approachTitle: "Abordagem Stratumtec",
+    approachTitle: "Abordagem StratumTec",
     approach: [
       "Automação de fluxos digitais",
       "Integração com sistemas internos",
@@ -53,17 +53,17 @@ const content = {
     cta: "Fale com um especialista",
   },
   es: {
-    seoTitle: "Automatización Inteligente de Atención Digital | Stratumtec",
+    seoTitle: "Automatización Inteligente de Atención Digital | StratumTec",
     seoDescription: "Automatice flujos de atención digital, reduzca el esfuerzo operacional y aumente la eficiencia con soluciones escalables.",
     h1: "Atienda más sin aumentar el equipo",
-    intro: "La Automatización Inteligente de Atención Digital de Stratumtec fue desarrollada para reducir la carga operacional, acelerar respuestas y garantizar consistencia en la atención al cliente.",
+    intro: "La Automatización Inteligente de Atención Digital de StratumTec fue desarrollada para reducir la carga operacional, acelerar respuestas y garantizar consistencia en la atención al cliente.",
     challengesTitle: "Principales desafíos",
     challenges: [
       "Alto volumen de atenciones repetitivas",
       "Procesos manuales y lentos",
       "Falta de estandarización en la atención",
     ],
-    approachTitle: "Enfoque Stratumtec",
+    approachTitle: "Enfoque StratumTec",
     approach: [
       "Automatización de flujos digitales",
       "Integración con sistemas internos",
