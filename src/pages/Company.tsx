@@ -69,7 +69,7 @@ function CompanyContent() {
             {/* Header */}
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-stratumtec-navy mb-6">
-                {t.company.about.title} <strong>stratumtec</strong>
+                {t.company.about.title} <strong>StratumTec</strong>
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-stratumtec-orange to-stratumtec-navy mx-auto rounded-full"></div>
             </div>
@@ -82,7 +82,7 @@ function CompanyContent() {
                   <div className="absolute -inset-1 bg-gradient-to-r from-stratumtec-orange to-stratumtec-navy rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
                   <img 
                     src="/lovable-uploads/02e3aaec-f30f-4301-a08a-1f36188f6403.png" 
-                    alt="Equipe stratumtec" 
+                    alt="Equipe StratumTec" 
                     className="relative rounded-xl shadow-xl w-full h-full object-cover"
                   />
                 </div>
