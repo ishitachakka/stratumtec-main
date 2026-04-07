@@ -66,7 +66,7 @@ export function getLanguageFromPath(pathname: string): Language {
   if (pathname.startsWith('/pt/')) return 'pt';
   if (pathname.startsWith('/en/')) return 'en';
   // Legacy PT routes without prefix
-  const ptRoutes = ['/empresa', '/solucoes', '/consultoria', '/contato', '/blog'];
+  const ptRoutes = ['/empresa', '/solucoes', '/consultoria', '/contato', '/blog', '/plataformas', '/servicos'];
   if (ptRoutes.some(r => pathname === r || pathname.startsWith(r + '/'))) return 'pt';
   return 'en';
 }
