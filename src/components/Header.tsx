@@ -87,6 +87,7 @@ export const Header = () => {
 
   const solutionLinks: Record<number, string> = {
     0: routeTable.solDataIntegration[language],
+    1: routeTable.solLeadManagement[language],
   };
 
   const navigationItems: NavItem[] = [
