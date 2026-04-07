@@ -782,17 +782,12 @@ export const pageTranslations = {
       stat1: "", stat2: "", stat3: "", stat4: "", stat3Value: "", stat4Value: ""
     },
     blogSection: {
-      title: "Insights & Tendências",
-      subtitle: "Mantenha-se atualizado com as últimas tendências em Customer Experience, tecnologia e inovação",
-      featured: "Destaque", readMore: "Ler Mais", readFullArticle: "Ler Artigo Completo", readTime: "de leitura",
-      newsletterTitle: "Quer receber nossos insights?",
-      newsletterDesc: "Assine nossa newsletter e fique por dentro das últimas tendências em CX e tecnologia.",
-      emailPlaceholder: "Seu melhor e-mail", subscribe: "Assinar",
-      posts: [
-        { title: "O Futuro da IA no Customer Experience", excerpt: "Como a Inteligência Artificial está revolucionando a forma como as empresas se relacionam com seus clientes.", category: "Inteligência Artificial" },
-        { title: "Automação Inteligente: Reduzindo Custos e Aumentando Eficiência", excerpt: "Descubra como implementar soluções de automação que transformam processos manuais em workflows inteligentes.", category: "Automação" },
-        { title: "Integração Omnichannel: Unificando a Experiência do Cliente", excerpt: "As melhores práticas para criar uma experiência consistente em todos os canais de comunicação.", category: "Omnichannel" },
-        { title: "Métricas de CX que Realmente Importam em 2024", excerpt: "Um guia completo sobre as métricas mais importantes para medir e otimizar a experiência do cliente.", category: "Analytics" }
+      title: "Por que a Stratumtec",
+      items: [
+        { title: "Tecnologia aplicada ao contexto do negócio", text: "Não entregamos soluções genéricas. Cada projeto parte da realidade operacional, dos sistemas existentes e dos objetivos da empresa." },
+        { title: "Soluções modulares que evoluem com a operação", text: "Começamos pelo essencial e expandimos conforme a maturidade e as prioridades do negócio, sem rupturas ou desperdícios." },
+        { title: "Execução com previsibilidade e controle", text: "Projetos estruturados para entender escopo, tempo e impacto desde o início, reduzindo riscos e surpresas ao longo do caminho." },
+        { title: "Integração entre estratégia, tecnologia e operação", text: "Atuamos do desenho à operação, garantindo que soluções não fiquem apenas no papel e gerem resultado prático." }
       ]
     },
     contactForm: {
@@ -896,17 +891,12 @@ export const pageTranslations = {
       stat1: "", stat2: "", stat3: "", stat4: "", stat3Value: "", stat4Value: ""
     },
     blogSection: {
-      title: "Insights & Trends",
-      subtitle: "Stay updated with the latest trends in Customer Experience, technology and innovation",
-      featured: "Featured", readMore: "Read More", readFullArticle: "Read Full Article", readTime: "read",
-      newsletterTitle: "Want to receive our insights?",
-      newsletterDesc: "Subscribe to our newsletter and stay up to date with the latest CX and technology trends.",
-      emailPlaceholder: "Your best email", subscribe: "Subscribe",
-      posts: [
-        { title: "The Future of AI in Customer Experience", excerpt: "How AI is revolutionizing the way companies relate to their customers, creating more personalized experiences.", category: "Artificial Intelligence" },
-        { title: "Intelligent Automation: Reducing Costs and Increasing Efficiency", excerpt: "Discover how to implement automation solutions that transform manual processes into intelligent workflows.", category: "Automation" },
-        { title: "Omnichannel Integration: Unifying Customer Experience", excerpt: "Best practices for creating a consistent experience across all communication channels.", category: "Omnichannel" },
-        { title: "CX Metrics That Really Matter in 2024", excerpt: "A complete guide to the most important metrics for measuring and optimizing customer experience.", category: "Analytics" }
+      title: "Why Stratumtec",
+      items: [
+        { title: "Technology applied to your business context", text: "We don't deliver generic solutions. Every project starts from the operational reality, existing systems, and company goals." },
+        { title: "Modular solutions that grow with your operation", text: "We start with the essentials and expand as business maturity and priorities evolve — without disruption or waste." },
+        { title: "Execution with predictability and control", text: "Projects structured to clarify scope, timeline, and impact from the start — reducing risks and surprises along the way." },
+        { title: "Integration of strategy, technology, and operations", text: "We work from design through operations, ensuring solutions don't stay on paper and generate practical results." }
       ]
     },
     contactForm: {
@@ -1010,17 +1000,12 @@ export const pageTranslations = {
       stat1: "", stat2: "", stat3: "", stat4: "", stat3Value: "", stat4Value: ""
     },
     blogSection: {
-      title: "Insights y Tendencias",
-      subtitle: "Manténgase actualizado con las últimas tendencias en Customer Experience, tecnología e innovación",
-      featured: "Destacado", readMore: "Leer Más", readFullArticle: "Leer Artículo Completo", readTime: "de lectura",
-      newsletterTitle: "¿Quiere recibir nuestros insights?",
-      newsletterDesc: "Suscríbase a nuestro newsletter y manténgase al día con las últimas tendencias.",
-      emailPlaceholder: "Su mejor correo electrónico", subscribe: "Suscribirse",
-      posts: [
-        { title: "El Futuro de la IA en Customer Experience", excerpt: "Cómo la IA está revolucionando la forma en que las empresas se relacionan con sus clientes.", category: "Inteligencia Artificial" },
-        { title: "Automatización Inteligente: Reduciendo Costos", excerpt: "Descubra cómo implementar soluciones de automatización que transforman procesos manuales.", category: "Automatización" },
-        { title: "Integración Omnicanal: Unificando la Experiencia", excerpt: "Las mejores prácticas para crear una experiencia consistente en todos los canales.", category: "Omnicanal" },
-        { title: "Métricas de CX que Realmente Importan en 2024", excerpt: "Una guía completa sobre las métricas más importantes para medir la experiencia del cliente.", category: "Analytics" }
+      title: "Por qué Stratumtec",
+      items: [
+        { title: "Tecnología aplicada al contexto del negocio", text: "No entregamos soluciones genéricas. Cada proyecto parte de la realidad operacional, los sistemas existentes y los objetivos de la empresa." },
+        { title: "Soluciones modulares que evolucionan con la operación", text: "Empezamos por lo esencial y expandimos conforme la madurez y las prioridades del negocio, sin rupturas ni desperdicios." },
+        { title: "Ejecución con previsibilidad y control", text: "Proyectos estructurados para entender alcance, tiempo e impacto desde el inicio, reduciendo riesgos y sorpresas en el camino." },
+        { title: "Integración entre estrategia, tecnología y operación", text: "Actuamos desde el diseño hasta la operación, garantizando que las soluciones no queden solo en el papel y generen resultados prácticos." }
       ]
     },
     contactForm: {
