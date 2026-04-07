@@ -1,10 +1,9 @@
+import { useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { CalendarPopup } from "@/components/CalendarPopup";
 import { CheckCircle, AlertTriangle, Target, TrendingUp, ArrowRight } from "lucide-react";
-import { useLanguage } from "@/contexts/LanguageContext";
-import { Helmet } from "react-helmet-async";
 
 interface SolutionPageContent {
   seoTitle: string;
@@ -25,12 +24,14 @@ interface SolutionPageTemplateProps {
 }
 
 export const SolutionPageTemplate = ({ content }: SolutionPageTemplateProps) => {
+  useEffect(() => {
+    document.title = content.seoTitle;
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute("content", content.seoDescription);
+  }, [content.seoTitle, content.seoDescription]);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-stratumtec-light via-background to-stratumtec-light/30">
-      <Helmet>
-        <title>{content.seoTitle}</title>
-        <meta name="description" content={content.seoDescription} />
-      </Helmet>
       <Header />
 
       <section className="pt-32 pb-16 bg-stratumtec-navy/95 backdrop-blur-sm relative overflow-hidden">
