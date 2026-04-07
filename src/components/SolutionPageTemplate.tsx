@@ -2,8 +2,10 @@ import { useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { CalendarPopup } from "@/components/CalendarPopup";
 import { CheckCircle, AlertTriangle, Target, TrendingUp, ArrowRight } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { routeTable } from "@/lib/routeMap";
+import { useNavigate } from "react-router-dom";
 
 interface SolutionPageContent {
   seoTitle: string;
@@ -24,6 +26,9 @@ interface SolutionPageTemplateProps {
 }
 
 export const SolutionPageTemplate = ({ content }: SolutionPageTemplateProps) => {
+  const { language } = useLanguage();
+  const navigate = useNavigate();
+
   useEffect(() => {
     document.title = content.seoTitle;
     const meta = document.querySelector('meta[name="description"]');
@@ -116,15 +121,14 @@ export const SolutionPageTemplate = ({ content }: SolutionPageTemplateProps) => 
       {/* CTA */}
       <section className="py-20 bg-stratumtec-navy/95 relative overflow-hidden">
         <div className="container mx-auto px-4 lg:px-6 text-center relative z-10">
-          <CalendarPopup
-            trigger={
-              <Button size="lg" className="bg-stratumtec-orange hover:bg-stratumtec-orange/90 text-white px-8 py-4 text-lg group">
-                {content.cta}
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            }
-            triggerAsChild
-          />
+          <Button
+            size="lg"
+            className="bg-stratumtec-orange hover:bg-stratumtec-orange/90 text-white px-8 py-4 text-lg group"
+            onClick={() => navigate(routeTable.contact[language])}
+          >
+            {content.cta}
+            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          </Button>
         </div>
       </section>
 

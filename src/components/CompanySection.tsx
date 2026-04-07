@@ -2,9 +2,12 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { pageTranslations } from "@/lib/translations";
+import { routeTable } from "@/lib/routeMap";
+import { useNavigate } from "react-router-dom";
 
 export const CompanySection = () => {
   const { language } = useLanguage();
+  const navigate = useNavigate();
   const t = pageTranslations[language].companyHome;
 
   return (
@@ -21,7 +24,7 @@ export const CompanySection = () => {
           <Button
             size="lg"
             className="bg-stratumtec-orange hover:bg-stratumtec-orange/90 text-white px-8 py-4 text-lg group"
-            onClick={() => { window.location.href = "/consultoria"; }}
+            onClick={() => { navigate(routeTable.svcSystemsIntegration[language]); }}
           >
             {t.ctaButton}
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
