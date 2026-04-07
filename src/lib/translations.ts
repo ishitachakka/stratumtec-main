@@ -740,8 +740,8 @@ export const translations = {
 export const pageTranslations = {
   pt: {
     solutionsSection: {
-      title: "Soluções em Destaque",
-      subtitle: "Tecnologias inovadoras que transformam a experiência do cliente e impulsionam o crescimento do seu negócio",
+      title: "Você sabe onde sua empresa perde clientes, receita ou eficiência?",
+      subtitle: "Apoiamos empresas na melhoria da jornada do cliente, na retenção de clientes e na rentabilização do negócio, usando tecnologia de forma prática e aplicada à realidade de cada operação. Atuamos desde o desenho da solução até a implantação e sustentação, com foco em resultados concretos e previsibilidade.",
       highlight: "Destaque",
       learnMore: "Saiba Mais",
       customSolution: "Precisa de uma solução personalizada?",
@@ -866,8 +866,8 @@ export const pageTranslations = {
   },
   en: {
     solutionsSection: {
-      title: "Featured Solutions",
-      subtitle: "Innovative technologies that transform customer experience and drive business growth",
+      title: "Do you know where your company is losing customers, revenue, or efficiency?",
+      subtitle: "We support companies in improving customer journeys, retaining clients, and making the business more profitable — using technology in a practical way, tailored to each operation's reality. We act from solution design through implementation and ongoing support, focused on concrete results and predictability.",
       highlight: "Featured", learnMore: "Learn More",
       customSolution: "Need a custom solution?",
       customSolutionDesc: "Our team of experts is ready to design the perfect solution for your unique business challenges.",
@@ -987,8 +987,8 @@ export const pageTranslations = {
   },
   es: {
     solutionsSection: {
-      title: "Soluciones Destacadas",
-      subtitle: "Tecnologías innovadoras que transforman la experiencia del cliente e impulsan el crecimiento empresarial",
+      title: "¿Sabe dónde su empresa pierde clientes, ingresos o eficiencia?",
+      subtitle: "Apoyamos a empresas en la mejora del recorrido del cliente, la retención de clientes y la rentabilización del negocio, usando tecnología de forma práctica y aplicada a la realidad de cada operación. Actuamos desde el diseño de la solución hasta la implantación y sustentación, con foco en resultados concretos y previsibilidad.",
       highlight: "Destacado", learnMore: "Saber Más",
       customSolution: "¿Necesita una solución personalizada?",
       customSolutionDesc: "Nuestro equipo de expertos está listo para diseñar la solución perfecta para los desafíos de su negocio.",
