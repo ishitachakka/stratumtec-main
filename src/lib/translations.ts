@@ -759,9 +759,9 @@ export const pageTranslations = {
       ]
     },
     consultingSection: {
-      title: "Consultoria Especializada",
-      subtitle: "Nossa equipe de especialistas oferece consultoria estratégica para transformar a experiência do cliente da sua empresa através de soluções tecnológicas inovadoras.",
-      learnMore: "Saiba Mais",
+      title: "Plataformas desenvolvidas para escalar sua operação",
+      subtitle: "",
+      learnMore: "Conheça nossos produtos",
       ctaTitle: "Pronto para Transformar sua Experiência do Cliente?",
       ctaDesc: "Agende uma conversa com nossos especialistas e descubra como podemos ajudar sua empresa a alcançar novos patamares de excelência em Customer Experience.",
       scheduleConsulting: "Agendar Consultoria",
@@ -770,12 +770,8 @@ export const pageTranslations = {
       projects: "Projetos Realizados",
       satisfaction: "Satisfação dos Clientes",
       services: [
-        { title: "Estratégia de CX", description: "Estratégias personalizadas para elevar a experiência do cliente, impulsionando engajamento e fidelização.", features: ["Mapeamento de jornada", "Análise de touchpoints", "Definição de KPIs"] },
-        { title: "Assessment de CX", description: "Avaliação de processos e fluxos de atendimento, jornada do cliente, programas de fidelização e retenção.", features: ["Aumento de NPS, CSAT e CES", "Performance e Escalabilidade", "Insights Personalizados"] },
-        { title: "Transformação Digital", description: "Estratégia e implementação estruturada de projetos de modernização, envolvendo tecnologia, processos e cultura.", features: ["Auditoria de sistemas", "Análise de Performance", "Relatórios detalhados"] },
-        { title: "Monetização", description: "Aumento de receitas por meio de estratégias de monetização centradas no cliente.", features: ["Personalização de ofertas", "Alertas em tempo real", "Precificação inteligente"] },
-        { title: "VoC – Voz do Cliente", description: "Estratégia integrada para capturar, interpretar e transformar feedbacks em decisões estratégicas.", features: ["Insights de consumidores", "Análise de sentimento", "Voice Analytics"] },
-        { title: "Processos de CXM", description: "Mapeamento e revisão de processos de CX para garantir melhor experiência e eficiência operacional.", features: ["Mapeamento de Processos", "Estratégias de Fidelização", "Gestão de Performance"] }
+        { title: "stratumHUB", description: "Centralize e gerencie todo o atendimento ao cliente", features: [] },
+        { title: "BlueMesh", description: "Inteligência Artificial aplicada ao seu negócio", features: [] }
       ]
     },
     companyHome: {
@@ -884,20 +880,17 @@ export const pageTranslations = {
       ]
     },
     consultingSection: {
-      title: "Specialized Consulting",
-      subtitle: "Our team of experts offers strategic consulting to transform your company's customer experience through innovative solutions.",
-      learnMore: "Learn More",
+      title: "Platforms built to scale your operation",
+      subtitle: "",
+      learnMore: "Explore our platforms",
       ctaTitle: "Ready to Transform your Customer Experience?",
       ctaDesc: "Schedule a conversation with our specialists and discover how we can help your company reach new levels of CX excellence.",
       scheduleConsulting: "Schedule Consulting", requestProposal: "Request Proposal",
       yearsExp: "Years of Experience", projects: "Projects Completed", satisfaction: "Client Satisfaction",
       services: [
-        { title: "CX Strategy", description: "Personalized strategies to elevate customer experience, driving engagement and loyalty.", features: ["Journey Mapping", "Touchpoint Analysis", "KPI Definition"] },
-        { title: "CX Assessment", description: "Evaluation of service processes and flows, identifying risks, bottlenecks and opportunities.", features: ["NPS, CSAT & CES Improvement", "Performance & Scalability", "Personalized Insights"] },
-        { title: "Digital Transformation", description: "Strategy and structured implementation of modernization projects.", features: ["System Audit", "Performance Analysis", "Detailed Reports"] },
-        { title: "Monetization", description: "Revenue growth through customer-centric monetization strategies.", features: ["Cluster-based Personalization", "Real-time Alerts", "Intelligent Pricing"] },
-        { title: "VoC – Voice of Customer", description: "Integrated strategy to capture and transform feedback into strategic decisions.", features: ["Consumer Insights", "Sentiment Analysis", "Voice Analytics"] },
-        { title: "CXM Processes", description: "CX process mapping and review for better experience and operational efficiency.", features: ["Process Mapping", "Loyalty Strategies", "Performance Management"] }
+        { title: "stratumHUB", description: "Centralize and manage all customer service", features: [] },
+        { title: "BlueMesh", description: "Artificial Intelligence applied to your business", features: [] }
+      ]
       ]
     },
     companyHome: {
@@ -1006,20 +999,17 @@ export const pageTranslations = {
       ]
     },
     consultingSection: {
-      title: "Consultoría Especializada",
-      subtitle: "Nuestro equipo ofrece consultoría estratégica para transformar la experiencia del cliente a través de soluciones tecnológicas innovadoras.",
-      learnMore: "Saber Más",
+      title: "Plataformas desarrolladas para escalar su operación",
+      subtitle: "",
+      learnMore: "Conozca nuestras plataformas",
       ctaTitle: "¿Listo para Transformar su Experiencia del Cliente?",
       ctaDesc: "Agende una conversación con nuestros especialistas y descubra cómo podemos ayudar a su empresa.",
       scheduleConsulting: "Agendar Consultoría", requestProposal: "Solicitar Propuesta",
       yearsExp: "Años de Experiencia", projects: "Proyectos Realizados", satisfaction: "Satisfacción de Clientes",
       services: [
-        { title: "Estrategia de CX", description: "Estrategias personalizadas para elevar la experiencia del cliente.", features: ["Mapeo de jornada", "Análisis de touchpoints", "Definición de KPIs"] },
-        { title: "Assessment de CX", description: "Evaluación de procesos y flujos de atención identificando riesgos y oportunidades.", features: ["Mejora de NPS, CSAT y CES", "Performance y Escalabilidad", "Insights Personalizados"] },
-        { title: "Transformación Digital", description: "Estrategia e implementación de proyectos de modernización.", features: ["Auditoría de sistemas", "Análisis de Performance", "Informes detallados"] },
-        { title: "Monetización", description: "Aumento de ingresos mediante estrategias centradas en el cliente.", features: ["Personalización de ofertas", "Alertas en tiempo real", "Precificación inteligente"] },
-        { title: "VoC – Voz del Cliente", description: "Estrategia para capturar y transformar feedbacks en decisiones estratégicas.", features: ["Insights de consumidores", "Análisis de sentimiento", "Voice Analytics"] },
-        { title: "Procesos de CXM", description: "Mapeo y revisión de procesos de CX para mejor experiencia y eficiencia.", features: ["Mapeo de Procesos", "Estrategias de Fidelización", "Gestión de Performance"] }
+        { title: "stratumHUB", description: "Centralice y gestione toda la atención al cliente", features: [] },
+        { title: "BlueMesh", description: "Inteligencia Artificial aplicada a su negocio", features: [] }
+      ]
       ]
     },
     companyHome: {
