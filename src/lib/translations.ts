@@ -775,15 +775,11 @@ export const pageTranslations = {
       ]
     },
     companyHome: {
-      title: "Sobre a",
-      description: "A StratumTec atua com o respaldo tecnológico, a experiência internacional e os produtos desenvolvidos pela StratumTec - referência global em soluções tecnológicas customizadas, com mais de 25 anos de atuação em projetos de alta complexidade.",
-      card1Title: "Soluções Modulares e Integráveis",
-      card1Desc: "O foco da StratumTec é entregar soluções modulares e integráveis que se conectam facilmente a qualquer sistema, plataforma ou infraestrutura já existente, de forma ultra customizada.",
-      card2Title: "Integração Sem Barreiras",
-      card2Desc: "Acreditamos que integração não deve ser uma barreira, mas um acelerador. Desenvolvemos nossas soluções para se encaixarem em qualquer ambiente — de forma rápida, segura e sem fricção.",
-      bottomText: "Aliamos agilidade, proximidade e visão estratégica à robustez de uma base tecnológica validada globalmente, garantindo eficiência, escalabilidade e resultados concretos desde o primeiro projeto.",
-      stat1: "Anos de Experiência", stat2: "Soluções Integráveis", stat3: "Alcance Internacional", stat4: "Complexidade de Projetos",
-      stat3Value: "Global", stat4Value: "Alta"
+      title: "Tecnologia que sai do papel e transforma a operação",
+      description: "Nossos serviços acompanham toda a jornada: do diagnóstico e desenho da solução até a implantação, evolução e sustentação. Trabalhamos com escopo claro, governança e acompanhamento contínuo para que tecnologia gere resultado real e não fique apenas no papel.",
+      ctaButton: "Conheça nossos serviços",
+      card1Title: "", card1Desc: "", card2Title: "", card2Desc: "", bottomText: "",
+      stat1: "", stat2: "", stat3: "", stat4: "", stat3Value: "", stat4Value: ""
     },
     blogSection: {
       title: "Insights & Tendências",
@@ -893,15 +889,11 @@ export const pageTranslations = {
       ]
     },
     companyHome: {
-      title: "About",
-      description: "StratumTec operates with the technological backing, international experience and products developed by StratumTec - a global reference in customized technological solutions, with over 25 years of experience in high-complexity projects.",
-      card1Title: "Modular & Integrable Solutions",
-      card1Desc: "StratumTec's focus is delivering modular and integrable solutions that easily connect to any existing system, platform or infrastructure, in a highly customized way.",
-      card2Title: "Integration Without Barriers",
-      card2Desc: "We believe integration should not be a barrier, but an accelerator. We develop our solutions to fit any environment — quickly, securely and without friction.",
-      bottomText: "We combine agility, proximity and strategic vision with the robustness of a globally validated technology base, ensuring efficiency, scalability and concrete results from the first project.",
-      stat1: "Years of Experience", stat2: "Integrable Solutions", stat3: "International Reach", stat4: "Project Complexity",
-      stat3Value: "Global", stat4Value: "High"
+      title: "Technology that moves from concept to real operational impact",
+      description: "Our services cover the entire journey: from diagnosis and solution design through implementation, evolution, and ongoing support. We work with clear scope, governance, and continuous monitoring so technology delivers real results — not just plans.",
+      ctaButton: "Explore our services",
+      card1Title: "", card1Desc: "", card2Title: "", card2Desc: "", bottomText: "",
+      stat1: "", stat2: "", stat3: "", stat4: "", stat3Value: "", stat4Value: ""
     },
     blogSection: {
       title: "Insights & Trends",
@@ -1011,15 +1003,11 @@ export const pageTranslations = {
       ]
     },
     companyHome: {
-      title: "Sobre",
-      description: "StratumTec actúa con el respaldo tecnológico, la experiencia internacional y los productos desarrollados por StratumTec - referencia global en soluciones tecnológicas, con más de 25 años de actuación en proyectos de alta complejidad.",
-      card1Title: "Soluciones Modulares e Integrables",
-      card1Desc: "El foco de StratumTec es entregar soluciones modulares e integrables que se conectan fácilmente a cualquier sistema existente de forma ultra personalizada.",
-      card2Title: "Integración Sin Barreras",
-      card2Desc: "Creemos que la integración no debe ser una barrera, sino un acelerador. Desarrollamos soluciones que se adaptan a cualquier ambiente — rápida, segura y sin fricción.",
-      bottomText: "Combinamos agilidad, proximidad y visión estratégica con la robustez de una base tecnológica validada globalmente, garantizando eficiencia, escalabilidad y resultados concretos.",
-      stat1: "Años de Experiencia", stat2: "Soluciones Integrables", stat3: "Alcance Internacional", stat4: "Complejidad de Proyectos",
-      stat3Value: "Global", stat4Value: "Alta"
+      title: "Tecnología que sale del papel y transforma la operación",
+      description: "Nuestros servicios acompañan toda la jornada: del diagnóstico y diseño de la solución hasta la implantación, evolución y sustentación. Trabajamos con alcance claro, gobernanza y seguimiento continuo para que la tecnología genere resultados reales y no quede solo en el papel.",
+      ctaButton: "Conozca nuestros servicios",
+      card1Title: "", card1Desc: "", card2Title: "", card2Desc: "", bottomText: "",
+      stat1: "", stat2: "", stat3: "", stat4: "", stat3Value: "", stat4Value: ""
     },
     blogSection: {
       title: "Insights y Tendencias",
