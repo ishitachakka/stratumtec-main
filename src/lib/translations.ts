@@ -891,7 +891,6 @@ export const pageTranslations = {
         { title: "stratumHUB", description: "Centralize and manage all customer service", features: [] },
         { title: "BlueMesh", description: "Artificial Intelligence applied to your business", features: [] }
       ]
-      ]
     },
     companyHome: {
       title: "About",
