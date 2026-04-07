@@ -791,7 +791,7 @@ export const pageTranslations = {
       ]
     },
     contactForm: {
-      headerTitle: "Vamos conversar?", headerSubtitle: "Entre em contato conosco e descubra como podemos transformar a experiência do cliente da sua empresa",
+      headerTitle: "Pronto para transformar custo operacional em receita?", headerSubtitle: "Se sua empresa enfrenta dificuldades para integrar sistemas, reter clientes ou rentabilizar melhor sua operação, isso impacta diretamente custos, produtividade e crescimento de receita. Nosso time pode ajudar a estruturar soluções alinhadas à sua realidade e gerar resultado real.",
       contactUs: "Fale conosco", contactDesc: "Nossa equipe de especialistas está pronta para ajudar você a encontrar a solução perfeita.",
       email: "E-mail", phone: "Telefone", address: "Endereço", addressValue: "Alphaville, SP - Brasil",
       phoneValue: "+55 11 99332-4239", phoneLink: "tel:+5511993324239",
@@ -803,7 +803,7 @@ export const pageTranslations = {
       emailPlaceholder: "seu@email.com",
       subject: "Assunto", subjectPlaceholder: "Como podemos ajudar?",
       message: "Mensagem", messagePlaceholder: "Descreva seu projeto ou necessidade...",
-      sending: "Enviando...", sendMessage: "Enviar Mensagem",
+      sending: "Enviando...", sendMessage: "Entrar em contato",
       successTitle: "Mensagem enviada com sucesso!", successDesc: "Nossa equipe entrará em contato em breve.",
       errorTitle: "Erro ao enviar mensagem", errorDesc: "Tente novamente ou entre em contato diretamente."
     },
@@ -900,7 +900,7 @@ export const pageTranslations = {
       ]
     },
     contactForm: {
-      headerTitle: "Let's talk?", headerSubtitle: "Get in touch and discover how we can transform your company's customer experience",
+      headerTitle: "Ready to turn operational cost into revenue?", headerSubtitle: "If your company struggles to integrate systems, retain customers, or improve operational profitability, this directly impacts costs, productivity, and revenue growth. Our team can help structure solutions aligned to your reality and generate real results.",
       contactUs: "Contact us", contactDesc: "Our team of experts is ready to help you find the perfect solution for your business challenges.",
       email: "Email", phone: "Phone", address: "Address", addressValue: "2355 Vanderbilt Beach Road, Suite 154-V-124, Naples, FL 34109",
       phoneValue: "+1 239 776 5370", phoneLink: "tel:+12397765370",
@@ -912,7 +912,7 @@ export const pageTranslations = {
       emailPlaceholder: "your@email.com",
       subject: "Subject", subjectPlaceholder: "How can we help?",
       message: "Message", messagePlaceholder: "Describe your project or need...",
-      sending: "Sending...", sendMessage: "Send Message",
+      sending: "Sending...", sendMessage: "Get in touch",
       successTitle: "Message sent successfully!", successDesc: "Our team will be in touch soon.",
       errorTitle: "Error sending message", errorDesc: "Please try again or contact us directly."
     },
@@ -1009,7 +1009,7 @@ export const pageTranslations = {
       ]
     },
     contactForm: {
-      headerTitle: "¿Conversamos?", headerSubtitle: "Póngase en contacto y descubra cómo podemos transformar la experiencia del cliente de su empresa",
+      headerTitle: "¿Listo para transformar costos operacionales en ingresos?", headerSubtitle: "Si su empresa enfrenta dificultades para integrar sistemas, retener clientes o rentabilizar mejor su operación, esto impacta directamente en costos, productividad y crecimiento de ingresos. Nuestro equipo puede ayudar a estructurar soluciones alineadas a su realidad y generar resultados reales.",
       contactUs: "Contáctenos", contactDesc: "Nuestro equipo de expertos está listo para ayudarle a encontrar la solución perfecta.",
       email: "Correo electrónico", phone: "Teléfono", address: "Dirección", addressValue: "2355 Vanderbilt Beach Road, Suite 154-V-124, Naples, FL 34109",
       phoneValue: "+1 239 776 5370", phoneLink: "tel:+12397765370",
@@ -1021,7 +1021,7 @@ export const pageTranslations = {
       emailPlaceholder: "su@correo.com",
       subject: "Asunto", subjectPlaceholder: "¿Cómo podemos ayudar?",
       message: "Mensaje", messagePlaceholder: "Describa su proyecto o necesidad...",
-      sending: "Enviando...", sendMessage: "Enviar Mensaje",
+      sending: "Enviando...", sendMessage: "Contáctenos",
       successTitle: "¡Mensaje enviado con éxito!", successDesc: "Nuestro equipo se pondrá en contacto pronto.",
       errorTitle: "Error al enviar mensaje", errorDesc: "Intente de nuevo o contáctenos directamente."
     },
