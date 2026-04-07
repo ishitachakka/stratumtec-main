@@ -11,9 +11,9 @@ import { WhatsAppPlugin } from "@/components/WhatsAppPlugin";
 
 const English = () => {
   useEffect(() => {
-    document.title = "Stratumtec | Technology Solutions for Customer Experience and Operations";
+    document.title = "StratumTec | Technology Solutions for Customer Experience and Operations";
     const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Stratumtec delivers technology solutions for customer experience, operational efficiency, and digital transformation. Platforms, AI, integrations, and consulting.");
+    if (meta) meta.setAttribute("content", "StratumTec delivers technology solutions for customer experience, operational efficiency, and digital transformation. Platforms, AI, integrations, and consulting.");
   }, []);
 
   return (

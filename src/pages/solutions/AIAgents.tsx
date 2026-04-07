@@ -3,17 +3,17 @@ import { SolutionPageTemplate } from "@/components/SolutionPageTemplate";
 
 const content = {
   en: {
-    seoTitle: "AI Agents for Digital Channels | Stratumtec",
+    seoTitle: "AI Agents for Digital Channels | StratumTec",
     seoDescription: "Implement AI agents on digital channels to expand service capacity and ensure fast, consistent responses.",
     h1: "Expand 24-hour service with AI",
-    intro: "Stratumtec's AI Agents for Digital Channels act as service support — executing tasks, answering questions, and routing demands in a controlled way.",
+    intro: "StratumTec's AI Agents for Digital Channels act as service support — executing tasks, answering questions, and routing demands in a controlled way.",
     challengesTitle: "Key challenges",
     challenges: [
       "Limited human service capacity",
       "Service demands outside business hours",
       "Slow customer response times",
     ],
-    approachTitle: "Stratumtec Approach",
+    approachTitle: "StratumTec Approach",
     approach: [
       "Agents trained with institutional rules and content",
       "Integration with digital channels",
@@ -28,17 +28,17 @@ const content = {
     cta: "Talk to a specialist",
   },
   pt: {
-    seoTitle: "Agentes de IA para Canais Digitais | Stratumtec",
+    seoTitle: "Agentes de IA para Canais Digitais | StratumTec",
     seoDescription: "Implemente agentes de IA em canais digitais para ampliar capacidade de atendimento e garantir respostas rápidas e consistentes.",
     h1: "Expanda o atendimento 24 horas com IA",
-    intro: "Os Agentes de IA para Canais Digitais da Stratumtec atuam como apoio ao atendimento, executando tarefas, respondendo dúvidas e direcionando demandas de forma controlada.",
+    intro: "Os Agentes de IA para Canais Digitais da StratumTec atuam como apoio ao atendimento, executando tarefas, respondendo dúvidas e direcionando demandas de forma controlada.",
     challengesTitle: "Principais desafios",
     challenges: [
       "Limitação de capacidade humana",
       "Atendimento fora do horário comercial",
       "Demora na resposta ao cliente",
     ],
-    approachTitle: "Abordagem Stratumtec",
+    approachTitle: "Abordagem StratumTec",
     approach: [
       "Agentes treinados com regras e conteúdos institucionais",
       "Integração com canais digitais",
@@ -53,17 +53,17 @@ const content = {
     cta: "Fale com um especialista",
   },
   es: {
-    seoTitle: "Agentes de IA para Canales Digitales | Stratumtec",
+    seoTitle: "Agentes de IA para Canales Digitales | StratumTec",
     seoDescription: "Implemente agentes de IA en canales digitales para ampliar la capacidad de atención y garantizar respuestas rápidas y consistentes.",
     h1: "Expanda la atención 24 horas con IA",
-    intro: "Los Agentes de IA para Canales Digitales de Stratumtec actúan como apoyo a la atención, ejecutando tareas, respondiendo dudas y direccionando demandas de forma controlada.",
+    intro: "Los Agentes de IA para Canales Digitales de StratumTec actúan como apoyo a la atención, ejecutando tareas, respondiendo dudas y direccionando demandas de forma controlada.",
     challengesTitle: "Principales desafíos",
     challenges: [
       "Limitación de capacidad humana",
       "Atención fuera del horario comercial",
       "Demora en la respuesta al cliente",
     ],
-    approachTitle: "Enfoque Stratumtec",
+    approachTitle: "Enfoque StratumTec",
     approach: [
       "Agentes entrenados con reglas y contenidos institucionales",
       "Integración con canales digitales",

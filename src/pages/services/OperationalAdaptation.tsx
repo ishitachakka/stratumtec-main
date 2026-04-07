@@ -3,10 +3,10 @@ import { SolutionPageTemplate } from "@/components/SolutionPageTemplate";
 
 const content = {
   en: {
-    seoTitle: "Operational Adaptation and Continuous Improvement | Stratumtec",
+    seoTitle: "Operational Adaptation and Continuous Improvement | StratumTec",
     seoDescription: "We adjust processes, integrations, and flows to keep pace with business changes with control and stability.",
     h1: "Operational Adaptation and Continuous Improvement",
-    intro: "As operations grow and change, processes, rules, and volumes need adjustment. Stratumtec's Operational Adaptation and Continuous Improvement service ensures these changes happen in a structured way — without improvisation and without compromising operational stability. We adapt integrations, flows, and existing processes so that technology keeps pace with the business, with predictability and governance.",
+    intro: "As operations grow and change, processes, rules, and volumes need adjustment. StratumTec's Operational Adaptation and Continuous Improvement service ensures these changes happen in a structured way — without improvisation and without compromising operational stability. We adapt integrations, flows, and existing processes so that technology keeps pace with the business, with predictability and governance.",
     challengesTitle: "Key challenges",
     challenges: [
       "Operational changes without adequate technology support",
@@ -15,7 +15,7 @@ const content = {
       "Difficulty adapting processes to growth",
       "Loss of efficiency over time",
     ],
-    approachTitle: "Stratumtec Approach",
+    approachTitle: "StratumTec Approach",
     approach: [
       "Adjustments guided by operational and business impact",
       "Optimization of existing flows and integrations",
@@ -34,10 +34,10 @@ const content = {
     cta: "Talk to a specialist",
   },
   pt: {
-    seoTitle: "Adaptação Operacional e Melhoria Contínua | Stratumtec",
+    seoTitle: "Adaptação Operacional e Melhoria Contínua | StratumTec",
     seoDescription: "Ajustamos processos, integrações e fluxos para acompanhar mudanças do negócio com controle e estabilidade.",
     h1: "Evolução e Customização",
-    intro: "À medida que a operação cresce e muda, processos, regras e volumes precisam ser ajustados. O serviço de Adaptação Operacional e Melhoria Contínua da Stratumtec garante que essas mudanças aconteçam de forma estruturada, sem improvisações e sem comprometer a estabilidade da operação. Atuamos na adaptação de integrações, fluxos e processos já existentes, permitindo que a tecnologia acompanhe o negócio com previsibilidade e governança.",
+    intro: "À medida que a operação cresce e muda, processos, regras e volumes precisam ser ajustados. O serviço de Adaptação Operacional e Melhoria Contínua da StratumTec garante que essas mudanças aconteçam de forma estruturada, sem improvisações e sem comprometer a estabilidade da operação. Atuamos na adaptação de integrações, fluxos e processos já existentes, permitindo que a tecnologia acompanhe o negócio com previsibilidade e governança.",
     challengesTitle: "Principais desafios",
     challenges: [
       "Mudanças operacionais sem suporte tecnológico adequado",
@@ -46,7 +46,7 @@ const content = {
       "Dificuldade de adaptar processos ao crescimento",
       "Perda de eficiência ao longo do tempo",
     ],
-    approachTitle: "Abordagem Stratumtec",
+    approachTitle: "Abordagem StratumTec",
     approach: [
       "Ajustes orientados por impacto operacional e de negócio",
       "Otimização de fluxos e integrações existentes",
@@ -65,10 +65,10 @@ const content = {
     cta: "Fale com um especialista",
   },
   es: {
-    seoTitle: "Adaptación Operacional y Mejora Continua | Stratumtec",
+    seoTitle: "Adaptación Operacional y Mejora Continua | StratumTec",
     seoDescription: "Ajustamos procesos, integraciones y flujos para acompañar los cambios del negocio con control y estabilidad.",
     h1: "Adaptación Operacional y Mejora Continua",
-    intro: "A medida que la operación crece y cambia, los procesos, reglas y volúmenes necesitan ajustarse. El servicio de Adaptación Operacional y Mejora Continua de Stratumtec garantiza que estos cambios ocurran de forma estructurada, sin improvisaciones y sin comprometer la estabilidad de la operación. Actuamos en la adaptación de integraciones, flujos y procesos ya existentes, permitiendo que la tecnología acompañe al negocio con previsibilidad y gobernanza.",
+    intro: "A medida que la operación crece y cambia, los procesos, reglas y volúmenes necesitan ajustarse. El servicio de Adaptación Operacional y Mejora Continua de StratumTec garantiza que estos cambios ocurran de forma estructurada, sin improvisaciones y sin comprometer la estabilidad de la operación. Actuamos en la adaptación de integraciones, flujos y procesos ya existentes, permitiendo que la tecnología acompañe al negocio con previsibilidad y gobernanza.",
     challengesTitle: "Principales desafíos",
     challenges: [
       "Cambios operacionales sin soporte tecnológico adecuado",
@@ -77,7 +77,7 @@ const content = {
       "Dificultad para adaptar procesos al crecimiento",
       "Pérdida de eficiencia a lo largo del tiempo",
     ],
-    approachTitle: "Enfoque Stratumtec",
+    approachTitle: "Enfoque StratumTec",
     approach: [
       "Ajustes orientados por impacto operacional y de negocio",
       "Optimización de flujos e integraciones existentes",

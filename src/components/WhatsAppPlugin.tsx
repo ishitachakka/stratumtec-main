@@ -12,12 +12,12 @@ const whatsappCopy = {
     openWhatsApp: "Open WhatsApp",
     ariaLabel: "Open WhatsApp chat",
     quickMessages: [
-      { text: "I want to learn more about the solutions", message: "Hello! I'd like to learn more about Stratumtec's Customer Experience solutions." },
-      { text: "Request a demonstration", message: "Hello! I'd like to schedule a demonstration of Stratumtec's solutions." },
-      { text: "Talk to a specialist", message: "Hello! I'd like to speak with a specialist about Stratumtec's CX solutions." },
-      { text: "Request a quote", message: "Hello! I'd like to request a quote for implementing Stratumtec's solutions." },
+      { text: "I want to learn more about the solutions", message: "Hello! I'd like to learn more about StratumTec's Customer Experience solutions." },
+      { text: "Request a demonstration", message: "Hello! I'd like to schedule a demonstration of StratumTec's solutions." },
+      { text: "Talk to a specialist", message: "Hello! I'd like to speak with a specialist about StratumTec's CX solutions." },
+      { text: "Request a quote", message: "Hello! I'd like to request a quote for implementing StratumTec's solutions." },
     ],
-    defaultMessage: "Hello! I came from the Stratumtec website and would like to learn more about Customer Experience solutions.",
+    defaultMessage: "Hello! I came from the StratumTec website and would like to learn more about Customer Experience solutions.",
   },
   pt: {
     onlineSupport: "Atendimento Online",
@@ -27,12 +27,12 @@ const whatsappCopy = {
     openWhatsApp: "Abrir WhatsApp",
     ariaLabel: "Abrir chat do WhatsApp",
     quickMessages: [
-      { text: "Quero saber mais sobre as soluções", message: "Olá! Gostaria de saber mais sobre as soluções da Stratumtec para Customer Experience." },
-      { text: "Solicitar uma demonstração", message: "Olá! Gostaria de agendar uma demonstração das soluções da Stratumtec." },
-      { text: "Falar com um especialista", message: "Olá! Gostaria de falar com um especialista sobre as soluções de CX da Stratumtec." },
-      { text: "Solicitar uma cotação", message: "Olá! Gostaria de solicitar uma cotação para implementação das soluções da Stratumtec." },
+      { text: "Quero saber mais sobre as soluções", message: "Olá! Gostaria de saber mais sobre as soluções da StratumTec para Customer Experience." },
+      { text: "Solicitar uma demonstração", message: "Olá! Gostaria de agendar uma demonstração das soluções da StratumTec." },
+      { text: "Falar com um especialista", message: "Olá! Gostaria de falar com um especialista sobre as soluções de CX da StratumTec." },
+      { text: "Solicitar uma cotação", message: "Olá! Gostaria de solicitar uma cotação para implementação das soluções da StratumTec." },
     ],
-    defaultMessage: "Olá! Vim do site da Stratumtec e gostaria de saber mais sobre as soluções de Customer Experience.",
+    defaultMessage: "Olá! Vim do site da StratumTec e gostaria de saber mais sobre as soluções de Customer Experience.",
   },
   es: {
     onlineSupport: "Atención en Línea",
@@ -42,12 +42,12 @@ const whatsappCopy = {
     openWhatsApp: "Abrir WhatsApp",
     ariaLabel: "Abrir chat de WhatsApp",
     quickMessages: [
-      { text: "Quiero saber más sobre las soluciones", message: "¡Hola! Me gustaría saber más sobre las soluciones de Customer Experience de Stratumtec." },
-      { text: "Solicitar una demostración", message: "¡Hola! Me gustaría agendar una demostración de las soluciones de Stratumtec." },
-      { text: "Hablar con un especialista", message: "¡Hola! Me gustaría hablar con un especialista sobre las soluciones de CX de Stratumtec." },
-      { text: "Solicitar una cotización", message: "¡Hola! Me gustaría solicitar una cotización para la implementación de las soluciones de Stratumtec." },
+      { text: "Quiero saber más sobre las soluciones", message: "¡Hola! Me gustaría saber más sobre las soluciones de Customer Experience de StratumTec." },
+      { text: "Solicitar una demostración", message: "¡Hola! Me gustaría agendar una demostración de las soluciones de StratumTec." },
+      { text: "Hablar con un especialista", message: "¡Hola! Me gustaría hablar con un especialista sobre las soluciones de CX de StratumTec." },
+      { text: "Solicitar una cotización", message: "¡Hola! Me gustaría solicitar una cotización para la implementación de las soluciones de StratumTec." },
     ],
-    defaultMessage: "¡Hola! Vine del sitio web de Stratumtec y me gustaría saber más sobre las soluciones de Customer Experience.",
+    defaultMessage: "¡Hola! Vine del sitio web de StratumTec y me gustaría saber más sobre las soluciones de Customer Experience.",
   },
 };
 
@@ -81,7 +81,7 @@ export const WhatsAppPlugin = () => {
                 <MessageCircle className="h-6 w-6" />
               </div>
               <div>
-                <div className="font-semibold">Stratumtec</div>
+                <div className="font-semibold">StratumTec</div>
                 <div className="text-sm text-green-100">{copy.onlineSupport}</div>
               </div>
             </div>
@@ -96,7 +96,7 @@ export const WhatsAppPlugin = () => {
                 {copy.greeting}
               </div>
               <div className="text-xs text-gray-500 mt-1 text-right">
-                Stratumtec • {copy.now}
+                StratumTec • {copy.now}
               </div>
             </div>
 

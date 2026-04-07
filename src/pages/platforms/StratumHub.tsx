@@ -3,10 +3,10 @@ import { PlatformPageTemplate } from "@/components/PlatformPageTemplate";
 
 const content = {
   en: {
-    seoTitle: "stratumHUB | Omnichannel Service Platform — Stratumtec",
+    seoTitle: "stratumHUB | Omnichannel Service Platform — StratumTec",
     seoDescription: "Omnichannel service platform to centralize channels, integrate systems, and get a 360° view of the customer.",
     h1: "stratumHUB",
-    intro: "stratumHUB is Stratumtec's service platform, built to centralize customer interactions across multiple channels and integrate service with the business's systems and processes. The solution provides a robust foundation for service and relationship operations, enabling gradual evolution as the company's maturity and needs grow.",
+    intro: "stratumHUB is StratumTec's service platform, built to centralize customer interactions across multiple channels and integrate service with the business's systems and processes. The solution provides a robust foundation for service and relationship operations, enabling gradual evolution as the company's maturity and needs grow.",
     capabilitiesTitle: "Key capabilities",
     capabilities: [
       "Centralized omnichannel service (voice, chat, WhatsApp, email, social media, and external channels)",
@@ -29,10 +29,10 @@ const content = {
     cta: "Talk to a specialist",
   },
   pt: {
-    seoTitle: "stratumHUB | Plataforma Omnichannel de Atendimento — Stratumtec",
+    seoTitle: "stratumHUB | Plataforma Omnichannel de Atendimento — StratumTec",
     seoDescription: "Plataforma omnichannel de atendimento para centralizar canais, integrar sistemas e obter visão 360º do cliente.",
     h1: "stratumHUB",
-    intro: "O stratumHUB é a plataforma de atendimento da Stratumtec, desenvolvida para centralizar interações com clientes em múltiplos canais e integrar o atendimento aos sistemas e processos do negócio. A solução oferece uma base robusta para operações de atendimento e relacionamento, permitindo evolução gradual conforme a maturidade e as necessidades da empresa.",
+    intro: "O stratumHUB é a plataforma de atendimento da StratumTec, desenvolvida para centralizar interações com clientes em múltiplos canais e integrar o atendimento aos sistemas e processos do negócio. A solução oferece uma base robusta para operações de atendimento e relacionamento, permitindo evolução gradual conforme a maturidade e as necessidades da empresa.",
     capabilitiesTitle: "Principais capacidades",
     capabilities: [
       "Atendimento omnichannel centralizado (voz, chat, WhatsApp, e-mail, redes sociais e canais externos)",
@@ -55,10 +55,10 @@ const content = {
     cta: "Fale com um especialista",
   },
   es: {
-    seoTitle: "stratumHUB | Plataforma Omnicanal de Atención — Stratumtec",
+    seoTitle: "stratumHUB | Plataforma Omnicanal de Atención — StratumTec",
     seoDescription: "Plataforma omnicanal de atención para centralizar canales, integrar sistemas y obtener una visión 360° del cliente.",
     h1: "stratumHUB",
-    intro: "stratumHUB es la plataforma de atención de Stratumtec, desarrollada para centralizar interacciones con clientes en múltiples canales e integrar la atención a los sistemas y procesos del negocio. La solución ofrece una base robusta para operaciones de atención y relacionamiento, permitiendo una evolución gradual conforme la madurez y las necesidades de la empresa.",
+    intro: "stratumHUB es la plataforma de atención de StratumTec, desarrollada para centralizar interacciones con clientes en múltiples canales e integrar la atención a los sistemas y procesos del negocio. La solución ofrece una base robusta para operaciones de atención y relacionamiento, permitiendo una evolución gradual conforme la madurez y las necesidades de la empresa.",
     capabilitiesTitle: "Capacidades clave",
     capabilities: [
       "Atención omnicanal centralizada (voz, chat, WhatsApp, correo electrónico, redes sociales y canales externos)",

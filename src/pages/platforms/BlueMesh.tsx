@@ -3,10 +3,10 @@ import { PlatformPageTemplate } from "@/components/PlatformPageTemplate";
 
 const content = {
   en: {
-    seoTitle: "BlueMesh | Corporate Artificial Intelligence Platform — Stratumtec",
+    seoTitle: "BlueMesh | Corporate Artificial Intelligence Platform — StratumTec",
     seoDescription: "Proprietary artificial intelligence platform for process automation, data analysis, and decision support.",
     h1: "BlueMesh",
-    intro: "BlueMesh is Stratumtec's artificial intelligence platform, designed to act as an intelligence layer over corporate systems, data, and processes. It enables automating activities, interpreting information, and supporting strategic decisions — and can be integrated into different operational contexts.",
+    intro: "BlueMesh is StratumTec's artificial intelligence platform, designed to act as an intelligence layer over corporate systems, data, and processes. It enables automating activities, interpreting information, and supporting strategic decisions — and can be integrated into different operational contexts.",
     capabilitiesTitle: "Key capabilities",
     capabilities: [
       "Intelligent automation of corporate processes",
@@ -30,10 +30,10 @@ const content = {
     cta: "Talk to a specialist",
   },
   pt: {
-    seoTitle: "BlueMesh | Plataforma de Inteligência Artificial Corporativa — Stratumtec",
+    seoTitle: "BlueMesh | Plataforma de Inteligência Artificial Corporativa — StratumTec",
     seoDescription: "Plataforma de inteligência artificial proprietária para automação de processos, análise de dados e apoio à tomada de decisão.",
     h1: "BlueMesh",
-    intro: "A BlueMesh é a plataforma de inteligência artificial da Stratumtec, projetada para atuar como uma camada de inteligência sobre sistemas, dados e processos corporativos. Ela permite automatizar atividades, interpretar informações e apoiar decisões estratégicas, podendo ser incorporada de forma integrada a diferentes contextos operacionais.",
+    intro: "A BlueMesh é a plataforma de inteligência artificial da StratumTec, projetada para atuar como uma camada de inteligência sobre sistemas, dados e processos corporativos. Ela permite automatizar atividades, interpretar informações e apoiar decisões estratégicas, podendo ser incorporada de forma integrada a diferentes contextos operacionais.",
     capabilitiesTitle: "Principais capacidades",
     capabilities: [
       "Automação inteligente de processos corporativos",
@@ -57,10 +57,10 @@ const content = {
     cta: "Fale com um especialista",
   },
   es: {
-    seoTitle: "BlueMesh | Plataforma de Inteligencia Artificial Corporativa — Stratumtec",
+    seoTitle: "BlueMesh | Plataforma de Inteligencia Artificial Corporativa — StratumTec",
     seoDescription: "Plataforma de inteligencia artificial propietaria para automatización de procesos, análisis de datos y apoyo a la toma de decisiones.",
     h1: "BlueMesh",
-    intro: "BlueMesh es la plataforma de inteligencia artificial de Stratumtec, diseñada para actuar como una capa de inteligencia sobre sistemas, datos y procesos corporativos. Permite automatizar actividades, interpretar información y apoyar decisiones estratégicas, pudiendo incorporarse de forma integrada a diferentes contextos operacionales.",
+    intro: "BlueMesh es la plataforma de inteligencia artificial de StratumTec, diseñada para actuar como una capa de inteligencia sobre sistemas, datos y procesos corporativos. Permite automatizar actividades, interpretar información y apoyar decisiones estratégicas, pudiendo incorporarse de forma integrada a diferentes contextos operacionales.",
     capabilitiesTitle: "Capacidades clave",
     capabilities: [
       "Automatización inteligente de procesos corporativos",

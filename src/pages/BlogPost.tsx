@@ -30,7 +30,7 @@ export default function BlogPost({
   title = "Título do Post",
   excerpt = "Resumo do artigo que será exibido como preview...",
   content = "Conteúdo completo do artigo será inserido aqui...",
-  author = "Equipe Stratumtec",
+  author = "Equipe StratumTec",
   date = "15 de Janeiro, 2024",
   readTime = "8 min de leitura",
   category = "Customer Experience",
@@ -181,7 +181,7 @@ export default function BlogPost({
                 Descubra como nossas soluções podem revolucionar seu atendimento
               </p>
               <Button 
-                onClick={() => window.open("https://wa.me/5511999999999?text=Olá! Li o artigo sobre Customer Experience e gostaria de conhecer as soluções da Stratumtec.", "_blank")}
+                onClick={() => window.open("https://wa.me/5511999999999?text=Olá! Li o artigo sobre Customer Experience e gostaria de conhecer as soluções da StratumTec.", "_blank")}
                 className="bg-stratumtec-orange hover:bg-stratumtec-orange/90 text-white font-medium px-8 py-3"
               >
                 Agendar Consulta Gratuita

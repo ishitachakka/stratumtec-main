@@ -3,10 +3,10 @@ import { SolutionPageTemplate } from "@/components/SolutionPageTemplate";
 
 const content = {
   en: {
-    seoTitle: "Data Integration and Operational Consolidation | Stratumtec",
-    seoDescription: "Integrate corporate systems, consolidate operational data, and get a unified view of your operation with Stratumtec's scalable solutions.",
+    seoTitle: "Data Integration and Operational Consolidation | StratumTec",
+    seoDescription: "Integrate corporate systems, consolidate operational data, and get a unified view of your operation with StratumTec's scalable solutions.",
     h1: "Consolidate data and gain real visibility of your operation",
-    intro: "Companies running multiple systems face constant challenges consolidating data, ensuring information consistency, and gaining operational visibility. Stratumtec's Data Integration and Operational Consolidation solution was built to centralize information from different sources into a single, reliable base.",
+    intro: "Companies running multiple systems face constant challenges consolidating data, ensuring information consistency, and gaining operational visibility. StratumTec's Data Integration and Operational Consolidation solution was built to centralize information from different sources into a single, reliable base.",
     challengesTitle: "Key challenges",
     challenges: [
       "Fragmented data across multiple systems",
@@ -14,7 +14,7 @@ const content = {
       "Lack of real-time operational visibility",
       "Low information reliability",
     ],
-    approachTitle: "Stratumtec Approach",
+    approachTitle: "StratumTec Approach",
     approach: [
       "Integration with corporate and legacy systems",
       "Data standardization and normalization",
@@ -31,10 +31,10 @@ const content = {
     cta: "Talk to a specialist",
   },
   pt: {
-    seoTitle: "Integração e Consolidação de Dados Operacionais | Stratumtec",
-    seoDescription: "Integre sistemas corporativos, consolide dados operacionais e obtenha uma visão unificada da operação com soluções escaláveis da Stratumtec.",
+    seoTitle: "Integração e Consolidação de Dados Operacionais | StratumTec",
+    seoDescription: "Integre sistemas corporativos, consolide dados operacionais e obtenha uma visão unificada da operação com soluções escaláveis da StratumTec.",
     h1: "Consolide dados e ganhe visibilidade real da sua operação",
-    intro: "Empresas que operam com múltiplos sistemas enfrentam desafios constantes para consolidar dados, garantir consistência da informação e obter visibilidade operacional. A solução de Integração e Consolidação de Dados Operacionais da Stratumtec foi criada para centralizar informações provenientes de diferentes fontes em uma base única e confiável.",
+    intro: "Empresas que operam com múltiplos sistemas enfrentam desafios constantes para consolidar dados, garantir consistência da informação e obter visibilidade operacional. A solução de Integração e Consolidação de Dados Operacionais da StratumTec foi criada para centralizar informações provenientes de diferentes fontes em uma base única e confiável.",
     challengesTitle: "Principais desafios",
     challenges: [
       "Dados fragmentados em múltiplos sistemas",
@@ -42,7 +42,7 @@ const content = {
       "Falta de visibilidade operacional em tempo real",
       "Baixa confiabilidade das informações",
     ],
-    approachTitle: "Abordagem Stratumtec",
+    approachTitle: "Abordagem StratumTec",
     approach: [
       "Integração com sistemas corporativos e legados",
       "Padronização e normalização de dados",
@@ -59,10 +59,10 @@ const content = {
     cta: "Fale com um especialista",
   },
   es: {
-    seoTitle: "Integración y Consolidación de Datos Operacionales | Stratumtec",
-    seoDescription: "Integre sistemas corporativos, consolide datos operacionales y obtenga una visión unificada de la operación con las soluciones escalables de Stratumtec.",
+    seoTitle: "Integración y Consolidación de Datos Operacionales | StratumTec",
+    seoDescription: "Integre sistemas corporativos, consolide datos operacionales y obtenga una visión unificada de la operación con las soluciones escalables de StratumTec.",
     h1: "Consolide datos y obtenga visibilidad real de su operación",
-    intro: "Las empresas que operan con múltiples sistemas enfrentan desafíos constantes para consolidar datos, garantizar la consistencia de la información y obtener visibilidad operacional. La solución de Integración y Consolidación de Datos Operacionales de Stratumtec fue creada para centralizar información proveniente de diferentes fuentes en una base única y confiable.",
+    intro: "Las empresas que operan con múltiples sistemas enfrentan desafíos constantes para consolidar datos, garantizar la consistencia de la información y obtener visibilidad operacional. La solución de Integración y Consolidación de Datos Operacionales de StratumTec fue creada para centralizar información proveniente de diferentes fuentes en una base única y confiable.",
     challengesTitle: "Principales desafíos",
     challenges: [
       "Datos fragmentados en múltiples sistemas",
@@ -70,7 +70,7 @@ const content = {
       "Falta de visibilidad operacional en tiempo real",
       "Baja confiabilidad de la información",
     ],
-    approachTitle: "Enfoque Stratumtec",
+    approachTitle: "Enfoque StratumTec",
     approach: [
       "Integración con sistemas corporativos y legados",
       "Estandarización y normalización de datos",

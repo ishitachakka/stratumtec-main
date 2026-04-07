@@ -3,10 +3,10 @@ import { SolutionPageTemplate } from "@/components/SolutionPageTemplate";
 
 const content = {
   en: {
-    seoTitle: "Ongoing Operation and Stability Management | Stratumtec",
+    seoTitle: "Ongoing Operation and Stability Management | StratumTec",
     seoDescription: "We ensure stability, continuity, and operational predictability through continuous monitoring and assisted operations.",
     h1: "Ongoing Operation and Stability Management",
-    intro: "After implementation and adaptation, the biggest challenge becomes keeping the operation stable, predictable, and aligned with business needs. Stratumtec's Ongoing Operation service was created to ensure systems, integrations, and flows continue working correctly over time. We work closely with the operation, supporting internal teams day to day and anticipating adjustments needed to prevent impacts on performance, SLAs, and results.",
+    intro: "After implementation and adaptation, the biggest challenge becomes keeping the operation stable, predictable, and aligned with business needs. StratumTec's Ongoing Operation service was created to ensure systems, integrations, and flows continue working correctly over time. We work closely with the operation, supporting internal teams day to day and anticipating adjustments needed to prevent impacts on performance, SLAs, and results.",
     challengesTitle: "Key challenges",
     challenges: [
       "Operational instability after going live",
@@ -15,7 +15,7 @@ const content = {
       "Recurring incidents impacting SLAs and operations",
       "Loss of predictability in system functioning",
     ],
-    approachTitle: "Stratumtec Approach",
+    approachTitle: "StratumTec Approach",
     approach: [
       "Continuous monitoring of operations and integrations",
       "Structured technical support for internal teams",
@@ -34,10 +34,10 @@ const content = {
     cta: "Talk to a specialist",
   },
   pt: {
-    seoTitle: "Sustentação Operacional e Estabilidade das Soluções | Stratumtec",
+    seoTitle: "Sustentação Operacional e Estabilidade das Soluções | StratumTec",
     seoDescription: "Garantimos estabilidade, continuidade e previsibilidade operacional por meio de acompanhamento contínuo e operação assistida.",
     h1: "Sustentação e Operação Assistida",
-    intro: "Após a implantação e adaptação das soluções, o maior desafio passa a ser manter a operação estável, previsível e alinhada às necessidades do negócio. O serviço de Sustentação Operacional da Stratumtec foi criado para garantir que sistemas, integrações e fluxos continuem funcionando corretamente ao longo do tempo. Atuamos de forma próxima à operação, acompanhando o dia a dia, apoiando as equipes internas e antecipando ajustes necessários para evitar impactos em performance, SLAs e resultados.",
+    intro: "Após a implantação e adaptação das soluções, o maior desafio passa a ser manter a operação estável, previsível e alinhada às necessidades do negócio. O serviço de Sustentação Operacional da StratumTec foi criado para garantir que sistemas, integrações e fluxos continuem funcionando corretamente ao longo do tempo. Atuamos de forma próxima à operação, acompanhando o dia a dia, apoiando as equipes internas e antecipando ajustes necessários para evitar impactos em performance, SLAs e resultados.",
     challengesTitle: "Principais desafios",
     challenges: [
       "Instabilidade operacional após a entrada em produção",
@@ -46,7 +46,7 @@ const content = {
       "Incidentes recorrentes que impactam SLAs e operação",
       "Perda de previsibilidade no funcionamento dos sistemas",
     ],
-    approachTitle: "Abordagem Stratumtec",
+    approachTitle: "Abordagem StratumTec",
     approach: [
       "Acompanhamento contínuo da operação e das integrações",
       "Apoio técnico estruturado às equipes internas",
@@ -65,10 +65,10 @@ const content = {
     cta: "Fale com um especialista",
   },
   es: {
-    seoTitle: "Sustentación Operacional y Estabilidad de las Soluciones | Stratumtec",
+    seoTitle: "Sustentación Operacional y Estabilidad de las Soluciones | StratumTec",
     seoDescription: "Garantizamos estabilidad, continuidad y previsibilidad operacional mediante seguimiento continuo y operación asistida.",
     h1: "Sustentación y Operación Asistida",
-    intro: "Después de la implantación y adaptación de las soluciones, el mayor desafío pasa a ser mantener la operación estable, previsible y alineada a las necesidades del negocio. El servicio de Sustentación Operacional de Stratumtec fue creado para garantizar que los sistemas, integraciones y flujos continúen funcionando correctamente a lo largo del tiempo. Actuamos de forma cercana a la operación, acompañando el día a día, apoyando a los equipos internos y anticipando ajustes necesarios para evitar impactos en desempeño, SLAs y resultados.",
+    intro: "Después de la implantación y adaptación de las soluciones, el mayor desafío pasa a ser mantener la operación estable, previsible y alineada a las necesidades del negocio. El servicio de Sustentación Operacional de StratumTec fue creado para garantizar que los sistemas, integraciones y flujos continúen funcionando correctamente a lo largo del tiempo. Actuamos de forma cercana a la operación, acompañando el día a día, apoyando a los equipos internos y anticipando ajustes necesarios para evitar impactos en desempeño, SLAs y resultados.",
     challengesTitle: "Principales desafíos",
     challenges: [
       "Inestabilidad operacional tras la entrada en producción",
@@ -77,7 +77,7 @@ const content = {
       "Incidentes recurrentes que impactan SLAs y operación",
       "Pérdida de previsibilidad en el funcionamiento de los sistemas",
     ],
-    approachTitle: "Enfoque Stratumtec",
+    approachTitle: "Enfoque StratumTec",
     approach: [
       "Seguimiento continuo de la operación y las integraciones",
       "Apoyo técnico estructurado a los equipos internos",

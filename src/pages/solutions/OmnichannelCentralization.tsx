@@ -3,17 +3,17 @@ import { SolutionPageTemplate } from "@/components/SolutionPageTemplate";
 
 const content = {
   en: {
-    seoTitle: "Omnichannel Centralization and Journey Governance | Stratumtec",
+    seoTitle: "Omnichannel Centralization and Journey Governance | StratumTec",
     seoDescription: "Centralize service channels and ensure governance, traceability, and complete visibility of the customer journey.",
     h1: "Unify all channels in one place",
-    intro: "Stratumtec's Omnichannel Centralization solution unifies channels and customer journeys, eliminating silos and ensuring a consistent experience across every touchpoint.",
+    intro: "StratumTec's Omnichannel Centralization solution unifies channels and customer journeys, eliminating silos and ensuring a consistent experience across every touchpoint.",
     challengesTitle: "Key challenges",
     challenges: [
       "Fragmented customer journeys",
       "Lack of a unified interaction history",
       "Low governance across channels",
     ],
-    approachTitle: "Stratumtec Approach",
+    approachTitle: "StratumTec Approach",
     approach: [
       "Integration of multiple service channels",
       "Centralization of interaction history",
@@ -28,17 +28,17 @@ const content = {
     cta: "Talk to a specialist",
   },
   pt: {
-    seoTitle: "Centralização Omnichannel e Governança da Jornada | Stratumtec",
+    seoTitle: "Centralização Omnichannel e Governança da Jornada | StratumTec",
     seoDescription: "Centralize canais de atendimento e garanta governança, rastreabilidade e visão completa da jornada do cliente.",
     h1: "Unifique todos os canais em um só lugar",
-    intro: "A Centralização Omnichannel da Stratumtec unifica canais e jornadas, eliminando silos e garantindo uma experiência consistente ao cliente.",
+    intro: "A Centralização Omnichannel da StratumTec unifica canais e jornadas, eliminando silos e garantindo uma experiência consistente ao cliente.",
     challengesTitle: "Principais desafios",
     challenges: [
       "Jornadas fragmentadas",
       "Falta de histórico unificado",
       "Baixa governança dos canais",
     ],
-    approachTitle: "Abordagem Stratumtec",
+    approachTitle: "Abordagem StratumTec",
     approach: [
       "Integração de múltiplos canais",
       "Centralização do histórico de interações",
@@ -53,17 +53,17 @@ const content = {
     cta: "Fale com um especialista",
   },
   es: {
-    seoTitle: "Centralización Omnicanal y Gobernanza del Recorrido | Stratumtec",
+    seoTitle: "Centralización Omnicanal y Gobernanza del Recorrido | StratumTec",
     seoDescription: "Centralice los canales de atención y garantice gobernanza, trazabilidad y visión completa del recorrido del cliente.",
     h1: "Unifique todos los canales en un solo lugar",
-    intro: "La Centralización Omnicanal de Stratumtec unifica canales y recorridos, eliminando silos y garantizando una experiencia consistente para el cliente.",
+    intro: "La Centralización Omnicanal de StratumTec unifica canales y recorridos, eliminando silos y garantizando una experiencia consistente para el cliente.",
     challengesTitle: "Principales desafíos",
     challenges: [
       "Recorridos fragmentados",
       "Falta de historial unificado",
       "Baja gobernanza de los canales",
     ],
-    approachTitle: "Enfoque Stratumtec",
+    approachTitle: "Enfoque StratumTec",
     approach: [
       "Integración de múltiples canales",
       "Centralización del historial de interacciones",

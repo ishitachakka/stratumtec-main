@@ -3,10 +3,10 @@ import { SolutionPageTemplate } from "@/components/SolutionPageTemplate";
 
 const content = {
   en: {
-    seoTitle: "Technical and Architectural Consulting | Stratumtec",
+    seoTitle: "Technical and Architectural Consulting | StratumTec",
     seoDescription: "Technical consulting to support architectural decisions, integrations, and technological evolution with a focus on risk reduction and operational efficiency.",
     h1: "Technical and Architectural Consulting",
-    intro: "Stratumtec's Technical and Architectural Consulting supports companies in critical decisions related to architecture, integrations, and solution design. We work in a practical way oriented to operational reality, helping avoid rework, reduce technical risks, and ensure technology choices support business growth. Our work connects technology, operations, and strategy — offering technical clarity for decisions that have a direct impact on costs, efficiency, and operational continuity.",
+    intro: "StratumTec's Technical and Architectural Consulting supports companies in critical decisions related to architecture, integrations, and solution design. We work in a practical way oriented to operational reality, helping avoid rework, reduce technical risks, and ensure technology choices support business growth. Our work connects technology, operations, and strategy — offering technical clarity for decisions that have a direct impact on costs, efficiency, and operational continuity.",
     challengesTitle: "Key challenges",
     challenges: [
       "Technical decisions made without operational or long-term vision",
@@ -15,7 +15,7 @@ const content = {
       "Technology choices that generate rework and future costs",
       "Lack of clarity on technical and operational impacts",
     ],
-    approachTitle: "Stratumtec Approach",
+    approachTitle: "StratumTec Approach",
     approach: [
       "Technical and architectural assessment of the existing environment",
       "Scenario analysis and solution alternatives",
@@ -34,10 +34,10 @@ const content = {
     cta: "Talk to a specialist",
   },
   pt: {
-    seoTitle: "Consultoria Técnica e Arquitetural | Stratumtec",
+    seoTitle: "Consultoria Técnica e Arquitetural | StratumTec",
     seoDescription: "Consultoria técnica para apoiar decisões arquiteturais, integrações e evolução tecnológica com foco em redução de risco e eficiência operacional.",
     h1: "Consultoria Técnica e Arquitetural",
-    intro: "A Consultoria Técnica e Arquitetural da Stratumtec apoia empresas em decisões críticas relacionadas a arquitetura, integrações e desenho de soluções. Atuamos de forma prática e orientada à realidade operacional, ajudando a evitar retrabalho, reduzir riscos técnicos e garantir que escolhas tecnológicas sustentem o crescimento do negócio. Nossa atuação conecta tecnologia, operação e estratégia, oferecendo clareza técnica para decisões que têm impacto direto em custos, eficiência e continuidade operacional.",
+    intro: "A Consultoria Técnica e Arquitetural da StratumTec apoia empresas em decisões críticas relacionadas a arquitetura, integrações e desenho de soluções. Atuamos de forma prática e orientada à realidade operacional, ajudando a evitar retrabalho, reduzir riscos técnicos e garantir que escolhas tecnológicas sustentem o crescimento do negócio. Nossa atuação conecta tecnologia, operação e estratégia, oferecendo clareza técnica para decisões que têm impacto direto em custos, eficiência e continuidade operacional.",
     challengesTitle: "Principais desafios",
     challenges: [
       "Decisões técnicas sem visão operacional ou de longo prazo",
@@ -46,7 +46,7 @@ const content = {
       "Escolhas tecnológicas que geram retrabalho e custo futuro",
       "Falta de clareza sobre impactos técnicos e operacionais",
     ],
-    approachTitle: "Abordagem Stratumtec",
+    approachTitle: "Abordagem StratumTec",
     approach: [
       "Avaliação técnica e arquitetural do ambiente existente",
       "Análise de cenários e alternativas de solução",
@@ -65,10 +65,10 @@ const content = {
     cta: "Fale com um especialista",
   },
   es: {
-    seoTitle: "Consultoría Técnica y Arquitectural | Stratumtec",
+    seoTitle: "Consultoría Técnica y Arquitectural | StratumTec",
     seoDescription: "Consultoría técnica para apoyar decisiones arquitecturales, integraciones y evolución tecnológica con foco en reducción de riesgos y eficiencia operacional.",
     h1: "Consultoría Técnica y Arquitectural",
-    intro: "La Consultoría Técnica y Arquitectural de Stratumtec apoya a empresas en decisiones críticas relacionadas con arquitectura, integraciones y diseño de soluciones. Actuamos de forma práctica y orientada a la realidad operacional, ayudando a evitar retrabajo, reducir riesgos técnicos y garantizar que las decisiones tecnológicas sostengan el crecimiento del negocio. Nuestra actuación conecta tecnología, operación y estrategia, ofreciendo claridad técnica para decisiones que tienen impacto directo en costos, eficiencia y continuidad operacional.",
+    intro: "La Consultoría Técnica y Arquitectural de StratumTec apoya a empresas en decisiones críticas relacionadas con arquitectura, integraciones y diseño de soluciones. Actuamos de forma práctica y orientada a la realidad operacional, ayudando a evitar retrabajo, reducir riesgos técnicos y garantizar que las decisiones tecnológicas sostengan el crecimiento del negocio. Nuestra actuación conecta tecnología, operación y estrategia, ofreciendo claridad técnica para decisiones que tienen impacto directo en costos, eficiencia y continuidad operacional.",
     challengesTitle: "Principales desafíos",
     challenges: [
       "Decisiones técnicas sin visión operacional o de largo plazo",
@@ -77,7 +77,7 @@ const content = {
       "Decisiones tecnológicas que generan retrabajo y costos futuros",
       "Falta de claridad sobre impactos técnicos y operacionales",
     ],
-    approachTitle: "Enfoque Stratumtec",
+    approachTitle: "Enfoque StratumTec",
     approach: [
       "Evaluación técnica y arquitectural del entorno existente",
       "Análisis de escenarios y alternativas de solución",

@@ -3,10 +3,10 @@ import { SolutionPageTemplate } from "@/components/SolutionPageTemplate";
 
 const content = {
   en: {
-    seoTitle: "Systems Integration and Operational Connectivity | Stratumtec",
+    seoTitle: "Systems Integration and Operational Connectivity | StratumTec",
     seoDescription: "We integrate corporate systems to eliminate silos, reduce rework, and ensure operational fluidity between platforms.",
     h1: "Systems Integration and Connectivity",
-    intro: "Many companies operate with multiple systems that don't communicate, generating rework, data inconsistencies, and low operational efficiency. Stratumtec's Systems Integration service was created to connect platforms, data, and operational flows — building an integrated foundation for more efficient processes and more reliable decisions. We connect existing systems in a structured, secure, and scalable way, respecting each operation's technological reality.",
+    intro: "Many companies operate with multiple systems that don't communicate, generating rework, data inconsistencies, and low operational efficiency. StratumTec's Systems Integration service was created to connect platforms, data, and operational flows — building an integrated foundation for more efficient processes and more reliable decisions. We connect existing systems in a structured, secure, and scalable way, respecting each operation's technological reality.",
     challengesTitle: "Key challenges",
     challenges: [
       "Isolated systems that don't share information",
@@ -15,7 +15,7 @@ const content = {
       "Excessive reliance on spreadsheets and parallel controls",
       "Lack of an integrated operational view",
     ],
-    approachTitle: "Stratumtec Approach",
+    approachTitle: "StratumTec Approach",
     approach: [
       "Integration between corporate, legacy, and external platform systems",
       "Orchestration of data flows and processes between applications",
@@ -34,10 +34,10 @@ const content = {
     cta: "Talk to a specialist",
   },
   pt: {
-    seoTitle: "Integração de Sistemas e Conectividade Operacional | Stratumtec",
+    seoTitle: "Integração de Sistemas e Conectividade Operacional | StratumTec",
     seoDescription: "Integramos sistemas corporativos para eliminar silos, reduzir retrabalho e garantir fluidez operacional entre plataformas.",
     h1: "Integração de Sistemas e Conectividade",
-    intro: "Muitas empresas operam com múltiplos sistemas que não se comunicam entre si, gerando retrabalho, inconsistências de dados e baixa eficiência operacional. O serviço de Integração de Sistemas da Stratumtec foi criado para conectar plataformas, dados e fluxos operacionais, criando uma base integrada que sustenta processos mais eficientes e decisões mais confiáveis. Atuamos conectando sistemas existentes de forma estruturada, segura e escalável, respeitando a realidade tecnológica de cada operação.",
+    intro: "Muitas empresas operam com múltiplos sistemas que não se comunicam entre si, gerando retrabalho, inconsistências de dados e baixa eficiência operacional. O serviço de Integração de Sistemas da StratumTec foi criado para conectar plataformas, dados e fluxos operacionais, criando uma base integrada que sustenta processos mais eficientes e decisões mais confiáveis. Atuamos conectando sistemas existentes de forma estruturada, segura e escalável, respeitando a realidade tecnológica de cada operação.",
     challengesTitle: "Principais desafios",
     challenges: [
       "Sistemas isolados que não trocam informações",
@@ -46,7 +46,7 @@ const content = {
       "Dependência excessiva de planilhas e controles paralelos",
       "Falta de visão integrada da operação",
     ],
-    approachTitle: "Abordagem Stratumtec",
+    approachTitle: "Abordagem StratumTec",
     approach: [
       "Integração entre sistemas corporativos, legados e plataformas externas",
       "Orquestração de fluxos de dados e processos entre aplicações",
@@ -65,10 +65,10 @@ const content = {
     cta: "Fale com um especialista",
   },
   es: {
-    seoTitle: "Integración de Sistemas y Conectividad Operacional | Stratumtec",
+    seoTitle: "Integración de Sistemas y Conectividad Operacional | StratumTec",
     seoDescription: "Integramos sistemas corporativos para eliminar silos, reducir el retrabajo y garantizar fluidez operacional entre plataformas.",
     h1: "Integración de Sistemas y Conectividad",
-    intro: "Muchas empresas operan con múltiples sistemas que no se comunican entre sí, generando retrabajo, inconsistencias de datos y baja eficiencia operacional. El servicio de Integración de Sistemas de Stratumtec fue creado para conectar plataformas, datos y flujos operacionales, creando una base integrada que sustenta procesos más eficientes y decisiones más confiables. Actuamos conectando sistemas existentes de forma estructurada, segura y escalable, respetando la realidad tecnológica de cada operación.",
+    intro: "Muchas empresas operan con múltiples sistemas que no se comunican entre sí, generando retrabajo, inconsistencias de datos y baja eficiencia operacional. El servicio de Integración de Sistemas de StratumTec fue creado para conectar plataformas, datos y flujos operacionales, creando una base integrada que sustenta procesos más eficientes y decisiones más confiables. Actuamos conectando sistemas existentes de forma estructurada, segura y escalable, respetando la realidad tecnológica de cada operación.",
     challengesTitle: "Principales desafíos",
     challenges: [
       "Sistemas aislados que no intercambian información",
@@ -77,7 +77,7 @@ const content = {
       "Dependencia excesiva de hojas de cálculo y controles paralelos",
       "Falta de visión integrada de la operación",
     ],
-    approachTitle: "Enfoque Stratumtec",
+    approachTitle: "Enfoque StratumTec",
     approach: [
       "Integración entre sistemas corporativos, legados y plataformas externas",
       "Orquestación de flujos de datos y procesos entre aplicaciones",
