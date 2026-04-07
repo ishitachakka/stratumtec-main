@@ -11,6 +11,7 @@ const routeTable: Record<string, Record<Language, string>> = {
   privacy:     { en: '/en/privacy-policy',  pt: '/pt/privacidade',    es: '/es/privacidad' },
   terms:       { en: '/en/terms-of-use',    pt: '/pt/termos-de-uso',  es: '/es/condiciones-de-uso' },
   blogIaCx:    { en: '/en/blog/futuro-ia-cx', pt: '/blog/futuro-ia-cx', es: '/es/blog/futuro-ia-cx' },
+  solDataIntegration: { en: '/en/solutions/data-integration', pt: '/solucoes/integracao-dados', es: '/es/soluciones/integracion-datos' },
 };
 
 // Build a reverse lookup: path → page key
