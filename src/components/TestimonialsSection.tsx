@@ -8,7 +8,7 @@ const testimonials = [
     name: "Ana Paula Santos",
     position: "Diretora de CX",
     company: "TechCorp Brasil",
-    content: "A Stratumtec transformou completamente nossa experiência do cliente. Com as soluções de IA implementadas, aumentamos nossa satisfação do cliente em 85% e reduzimos o tempo de resposta em 70%.",
+    content: "A StratumTec transformou completamente nossa experiência do cliente. Com as soluções de IA implementadas, aumentamos nossa satisfação do cliente em 85% e reduzimos o tempo de resposta em 70%.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b586?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
   },
@@ -26,7 +26,7 @@ const testimonials = [
     name: "Mariana Costa",
     position: "Head de Operações",
     company: "RetailMax",
-    content: "As soluções de automação inteligente da Stratumtec otimizaram nossos processos internos. Conseguimos reduzir custos operacionais em 40% mantendo a qualidade do atendimento.",
+    content: "As soluções de automação inteligente da StratumTec otimizaram nossos processos internos. Conseguimos reduzir custos operacionais em 40% mantendo a qualidade do atendimento.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
   },
@@ -35,7 +35,7 @@ const testimonials = [
     name: "Roberto Silva",
     position: "Diretor de TI",
     company: "FinanceGroup",
-    content: "O suporte técnico e a expertise da equipe Stratumtec são excepcionais. Implementaram nossa solução de Customer Analytics em tempo recorde, superando todas as expectativas.",
+    content: "O suporte técnico e a expertise da equipe StratumTec são excepcionais. Implementaram nossa solução de Customer Analytics em tempo recorde, superando todas as expectativas.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
   }

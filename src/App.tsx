@@ -15,6 +15,19 @@ import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import FuturoIACX from "./pages/blog/FuturoIACX";
+import DataIntegration from "./pages/solutions/DataIntegration";
+import LeadManagement from "./pages/solutions/LeadManagement";
+import ServiceAutomation from "./pages/solutions/ServiceAutomation";
+import AIAgents from "./pages/solutions/AIAgents";
+import OmnichannelCentralization from "./pages/solutions/OmnichannelCentralization";
+import OperationalMonitoring from "./pages/solutions/OperationalMonitoring";
+import SpeechAnalytics from "./pages/solutions/SpeechAnalytics";
+import StratumHub from "./pages/platforms/StratumHub";
+import BlueMesh from "./pages/platforms/BlueMesh";
+import SystemsIntegration from "./pages/services/SystemsIntegration";
+import OperationalAdaptation from "./pages/services/OperationalAdaptation";
+import OngoingOperation from "./pages/services/OngoingOperation";
+import TechnicalConsulting from "./pages/services/TechnicalConsulting";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import NotFound from "./pages/NotFound";
@@ -51,6 +64,45 @@ const App = () => (
            <Route path="/es/blog" element={<Blog />} />
            <Route path="/blog/:slug" element={<BlogPost />} />
            <Route path="/blog/futuro-ia-cx" element={<FuturoIACX />} />
+           <Route path="/solucoes/integracao-dados" element={<DataIntegration />} />
+           <Route path="/en/solutions/data-integration" element={<DataIntegration />} />
+           <Route path="/es/soluciones/integracion-datos" element={<DataIntegration />} />
+           <Route path="/solucoes/gestao-leads" element={<LeadManagement />} />
+           <Route path="/en/solutions/lead-management" element={<LeadManagement />} />
+           <Route path="/es/soluciones/gestion-leads" element={<LeadManagement />} />
+           <Route path="/solucoes/automacao-atendimento" element={<ServiceAutomation />} />
+           <Route path="/en/solutions/service-automation" element={<ServiceAutomation />} />
+           <Route path="/es/soluciones/automatizacion-atencion" element={<ServiceAutomation />} />
+           <Route path="/solucoes/agentes-ia" element={<AIAgents />} />
+           <Route path="/en/solutions/ai-agents" element={<AIAgents />} />
+           <Route path="/es/soluciones/agentes-ia" element={<AIAgents />} />
+           <Route path="/solucoes/omnichannel" element={<OmnichannelCentralization />} />
+           <Route path="/en/solutions/omnichannel" element={<OmnichannelCentralization />} />
+           <Route path="/es/soluciones/omnicanal" element={<OmnichannelCentralization />} />
+           <Route path="/solucoes/monitoramento-operacional" element={<OperationalMonitoring />} />
+           <Route path="/en/solutions/operational-monitoring" element={<OperationalMonitoring />} />
+           <Route path="/es/soluciones/monitoreo-operacional" element={<OperationalMonitoring />} />
+           <Route path="/solucoes/speech-analytics" element={<SpeechAnalytics />} />
+           <Route path="/en/solutions/speech-analytics" element={<SpeechAnalytics />} />
+           <Route path="/es/soluciones/speech-analytics" element={<SpeechAnalytics />} />
+           <Route path="/plataformas/stratumhub" element={<StratumHub />} />
+           <Route path="/en/platforms/stratumhub" element={<StratumHub />} />
+           <Route path="/es/plataformas/stratumhub" element={<StratumHub />} />
+           <Route path="/plataformas/bluemesh" element={<BlueMesh />} />
+           <Route path="/en/platforms/bluemesh" element={<BlueMesh />} />
+           <Route path="/es/plataformas/bluemesh" element={<BlueMesh />} />
+           <Route path="/servicos/integracao-sistemas" element={<SystemsIntegration />} />
+           <Route path="/en/services/systems-integration" element={<SystemsIntegration />} />
+           <Route path="/es/servicios/integracion-sistemas" element={<SystemsIntegration />} />
+           <Route path="/servicos/adaptacao-operacional" element={<OperationalAdaptation />} />
+           <Route path="/en/services/operational-adaptation" element={<OperationalAdaptation />} />
+           <Route path="/es/servicios/adaptacion-operacional" element={<OperationalAdaptation />} />
+           <Route path="/servicos/sustentacao-operacional" element={<OngoingOperation />} />
+           <Route path="/en/services/ongoing-operation" element={<OngoingOperation />} />
+           <Route path="/es/servicios/sustentacion-operacional" element={<OngoingOperation />} />
+           <Route path="/servicos/consultoria-tecnica" element={<TechnicalConsulting />} />
+           <Route path="/en/services/technical-consulting" element={<TechnicalConsulting />} />
+           <Route path="/es/servicios/consultoria-tecnica" element={<TechnicalConsulting />} />
            <Route path="/en/blog/:slug" element={<BlogPost />} />
            <Route path="/es/blog/:slug" element={<BlogPost />} />
            <Route path="/pt/privacidade" element={<PrivacyPolicy />} />

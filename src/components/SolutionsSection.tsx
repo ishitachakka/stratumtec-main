@@ -4,12 +4,25 @@ import { CalendarPopup } from "@/components/CalendarPopup";
 import { Brain, Network, BarChart3, Route, ArrowRight, Zap, Users, Settings } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { pageTranslations } from "@/lib/translations";
+import { routeTable } from "@/lib/routeMap";
+import { useNavigate } from "react-router-dom";
 
-const icons = [Brain, Network, Network, BarChart3, Route, Zap];
-const highlights = [true, true, true, false, false, false];
+const icons = [BarChart3, Zap, Users, Brain, Network, Settings, Route];
+const highlights = [false, false, false, false, false, false, false];
+
+const solutionRouteKeys = [
+  'solDataIntegration',
+  'solLeadManagement',
+  'solServiceAutomation',
+  'solAIAgents',
+  'solOmnichannel',
+  'solOperationalMonitoring',
+  'solSpeechAnalytics',
+] as const;
 
 export const SolutionsSection = () => {
   const { language } = useLanguage();
+  const navigate = useNavigate();
   const t = pageTranslations[language].solutionsSection;
 
   return (
@@ -22,34 +35,23 @@ export const SolutionsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {t.solutions.map((solution, index) => {
-            const IconComponent = icons[index];
-            const isHighlight = highlights[index];
+            const IconComponent = icons[index] || Brain;
+            const routeKey = solutionRouteKeys[index];
+            const href = routeKey ? routeTable[routeKey]?.[language] : undefined;
             return (
-              <Card key={index} className={`group relative overflow-hidden border-0 shadow-card hover:shadow-elevated transition-smooth ${isHighlight ? 'bg-white ring-2 ring-stratumtec-orange/20' : 'bg-white'}`}>
-                {isHighlight && (
-                  <div className="absolute top-0 right-0 bg-stratumtec-orange text-white px-3 py-1 text-sm font-medium">{t.highlight}</div>
-                )}
+              <Card key={index} className="group relative overflow-hidden border-0 shadow-card hover:shadow-elevated transition-smooth bg-white">
                 <CardHeader className="pb-4">
-                  <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-start justify-between">
                     <div className="flex-1">
-                      <CardTitle className="text-xl font-heading text-stratumtec-navy mb-2">{solution.title}</CardTitle>
-                      <CardDescription className="text-stratumtec-text leading-relaxed">{solution.description}</CardDescription>
+                      <CardTitle className="text-xl font-heading text-stratumtec-navy">{solution.title}</CardTitle>
                     </div>
-                    <div className={`w-16 h-16 rounded-lg flex items-center justify-center ml-4 group-hover:scale-110 transition-transform flex-shrink-0 ${isHighlight ? 'bg-stratumtec-orange/10' : 'bg-stratumtec-navy/10'}`}>
-                      <IconComponent className={`h-8 w-8 ${isHighlight ? 'text-stratumtec-orange' : 'text-stratumtec-navy'}`} />
+                    <div className="w-16 h-16 rounded-lg flex items-center justify-center ml-4 group-hover:scale-110 transition-transform flex-shrink-0 bg-stratumtec-navy/10">
+                      <IconComponent className="h-8 w-8 text-stratumtec-navy" />
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <div className="space-y-2 mb-6">
-                    {solution.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center text-sm text-stratumtec-text">
-                        <div className="w-1.5 h-1.5 bg-stratumtec-orange rounded-full mr-3" />
-                        {feature}
-                      </div>
-                    ))}
-                  </div>
-                  <Button variant="hero" className="w-full group/btn" onClick={() => { window.location.href = "/solucoes"; }}>
+                  <Button variant="hero" className="w-full group/btn" onClick={() => { if (href) navigate(href); }}>
                     {t.learnMore}
                     <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                   </Button>
@@ -72,7 +74,7 @@ export const SolutionsSection = () => {
             <p className="text-lg text-stratumtec-text mb-6 max-w-2xl mx-auto">{t.customSolutionDesc}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <CalendarPopup trigger={<Button size="lg" className="bg-stratumtec-orange hover:bg-stratumtec-orange/90 text-white px-8 py-3">{t.talkExpert}</Button>} triggerAsChild />
-              <Button variant="outline" size="lg" className="border-stratumtec-navy text-stratumtec-navy hover:bg-stratumtec-navy hover:text-white px-8 py-3" onClick={() => { window.location.href = "/contato"; }}>{t.requestQuote}</Button>
+              <Button variant="outline" size="lg" className="border-stratumtec-navy text-stratumtec-navy hover:bg-stratumtec-navy hover:text-white px-8 py-3" onClick={() => { navigate(routeTable.contact[language]); }}>{t.requestQuote}</Button>
             </div>
           </div>
         </div>

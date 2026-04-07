@@ -4,11 +4,19 @@ import { CalendarPopup } from "@/components/CalendarPopup";
 import { CheckCircle, Target, BarChart3, Users, DollarSign, Headphones, Settings, MessageCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { pageTranslations } from "@/lib/translations";
+import { routeTable } from "@/lib/routeMap";
+import { useNavigate } from "react-router-dom";
 
 const icons = [Target, BarChart3, Users, DollarSign, Headphones, Settings];
 
+const platformRouteKeys = [
+  'platStratumHub',
+  'platBlueMesh',
+] as const;
+
 export const ConsultingSection = () => {
   const { language } = useLanguage();
+  const navigate = useNavigate();
   const t = pageTranslations[language].consultingSection;
 
   return (
@@ -22,6 +30,8 @@ export const ConsultingSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {t.services.map((service, index) => {
             const IconComponent = icons[index];
+            const routeKey = platformRouteKeys[index];
+            const href = routeKey ? routeTable[routeKey]?.[language] : undefined;
             return (
               <Card key={index} className="h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                 <CardHeader>
@@ -45,7 +55,7 @@ export const ConsultingSection = () => {
                     ))}
                   </ul>
                   <div className="mt-4">
-                    <Button variant="navy" size="sm" className="w-full" onClick={() => { window.location.href = "/consultoria"; }}>{t.learnMore}</Button>
+                    <Button variant="navy" size="sm" className="w-full" onClick={() => { if (href) navigate(href); }}>{t.learnMore}</Button>
                   </div>
                 </CardContent>
               </Card>
@@ -59,7 +69,7 @@ export const ConsultingSection = () => {
             <p className="text-lg text-stratumtec-text mb-8 max-w-2xl mx-auto">{t.ctaDesc}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <CalendarPopup trigger={<Button className="bg-stratumtec-orange hover:bg-stratumtec-orange/90 text-white px-8 py-3"><MessageCircle className="h-4 w-4 mr-2" />{t.scheduleConsulting}</Button>} triggerAsChild />
-              <Button variant="outline" className="border-stratumtec-navy text-stratumtec-navy hover:bg-stratumtec-navy hover:text-white px-8 py-3" onClick={() => { window.location.href = "/contato"; }}>{t.requestProposal}</Button>
+              <Button variant="outline" className="border-stratumtec-navy text-stratumtec-navy hover:bg-stratumtec-navy hover:text-white px-8 py-3" onClick={() => { navigate(routeTable.contact[language]); }}>{t.requestProposal}</Button>
             </div>
           </div>
         </div>

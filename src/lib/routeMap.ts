@@ -11,6 +11,19 @@ const routeTable: Record<string, Record<Language, string>> = {
   privacy:     { en: '/en/privacy-policy',  pt: '/pt/privacidade',    es: '/es/privacidad' },
   terms:       { en: '/en/terms-of-use',    pt: '/pt/termos-de-uso',  es: '/es/condiciones-de-uso' },
   blogIaCx:    { en: '/en/blog/futuro-ia-cx', pt: '/blog/futuro-ia-cx', es: '/es/blog/futuro-ia-cx' },
+  solDataIntegration: { en: '/en/solutions/data-integration', pt: '/solucoes/integracao-dados', es: '/es/soluciones/integracion-datos' },
+  solLeadManagement: { en: '/en/solutions/lead-management', pt: '/solucoes/gestao-leads', es: '/es/soluciones/gestion-leads' },
+  solServiceAutomation: { en: '/en/solutions/service-automation', pt: '/solucoes/automacao-atendimento', es: '/es/soluciones/automatizacion-atencion' },
+  solAIAgents: { en: '/en/solutions/ai-agents', pt: '/solucoes/agentes-ia', es: '/es/soluciones/agentes-ia' },
+  solOmnichannel: { en: '/en/solutions/omnichannel', pt: '/solucoes/omnichannel', es: '/es/soluciones/omnicanal' },
+  solOperationalMonitoring: { en: '/en/solutions/operational-monitoring', pt: '/solucoes/monitoramento-operacional', es: '/es/soluciones/monitoreo-operacional' },
+  solSpeechAnalytics: { en: '/en/solutions/speech-analytics', pt: '/solucoes/speech-analytics', es: '/es/soluciones/speech-analytics' },
+  platStratumHub: { en: '/en/platforms/stratumhub', pt: '/plataformas/stratumhub', es: '/es/plataformas/stratumhub' },
+  platBlueMesh: { en: '/en/platforms/bluemesh', pt: '/plataformas/bluemesh', es: '/es/plataformas/bluemesh' },
+  svcSystemsIntegration: { en: '/en/services/systems-integration', pt: '/servicos/integracao-sistemas', es: '/es/servicios/integracion-sistemas' },
+  svcOperationalAdaptation: { en: '/en/services/operational-adaptation', pt: '/servicos/adaptacao-operacional', es: '/es/servicios/adaptacion-operacional' },
+  svcOngoingOperation: { en: '/en/services/ongoing-operation', pt: '/servicos/sustentacao-operacional', es: '/es/servicios/sustentacion-operacional' },
+  svcTechnicalConsulting: { en: '/en/services/technical-consulting', pt: '/servicos/consultoria-tecnica', es: '/es/servicios/consultoria-tecnica' },
 };
 
 // Build a reverse lookup: path → page key
@@ -53,7 +66,7 @@ export function getLanguageFromPath(pathname: string): Language {
   if (pathname.startsWith('/pt/')) return 'pt';
   if (pathname.startsWith('/en/')) return 'en';
   // Legacy PT routes without prefix
-  const ptRoutes = ['/empresa', '/solucoes', '/consultoria', '/contato', '/blog'];
+  const ptRoutes = ['/empresa', '/solucoes', '/consultoria', '/contato', '/blog', '/plataformas', '/servicos'];
   if (ptRoutes.some(r => pathname === r || pathname.startsWith(r + '/'))) return 'pt';
   return 'en';
 }

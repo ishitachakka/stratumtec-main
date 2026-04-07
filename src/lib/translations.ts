@@ -1,12 +1,28 @@
 export const translations = {
   pt: {
     nav: {
-      company: "Empresa",
       solutions: "Soluções",
-      consulting: "Consultoria",
-      content: "Conteúdo",
+      platforms: "Plataformas",
+      services: "Serviços",
+      about: "Sobre a StratumTec",
       contact: "Contato",
-      scheduleCall: "Agendar Reunião"
+      scheduleCall: "Agendar Reunião",
+      solutionsDropdown: [
+        "Integração e Consolidação de Dados Operacionais",
+        "Gestão Integrada de Leads e Oportunidades",
+        "Automação Inteligente de Atendimento Digital",
+        "Agentes de IA para Canais Digitais",
+        "Centralização Omnichannel e Governança da Jornada",
+        "Monitoramento Operacional, SLAs e Performance",
+        "Speech Analytics e Inteligência de Voz",
+      ],
+      platformsDropdown: ["stratumHUB", "BlueMesh"],
+      servicesDropdown: [
+        "Integração de Sistemas e Conectividade",
+        "Adaptação Operacional e Melhoria Contínua",
+        "Sustentação e Operação Assistida",
+        "Consultoria Técnica e Arquitetural",
+      ],
     },
     hero: {
       title: "Transforme a Experiência do Cliente com Inteligência Artificial",
@@ -17,43 +33,11 @@ export const translations = {
     carousel: {
       slides: [
         {
-          title: "BlueMesh: IA Segura e Integrada",
-          subtitle: "Nossa plataforma proprietária de IA",
-          description: "Plataforma de Inteligência Artificial própria, super segura, eficiente e integrada. Potencialize seus resultados com IA de ponta.",
-          ctaText: "Conhecer BlueMesh",
-          ctaSecondary: "Falar com Especialista",
-          link: "/solucoes#bluemesh"
-        },
-        {
-          title: "Inovação em Customer Experience",
-          subtitle: "Transforme a jornada do seu cliente",
-          description: "Soluções inteligentes que conectam tecnologia avançada e experiência humana para criar relacionamentos duradouros e impactantes.",
-          ctaText: "Descobrir Soluções",
-          ctaSecondary: "Falar com Especialista",
-          link: "/solucoes"
-        },
-        {
-          title: "Hub Global de Tecnologia",
-          subtitle: "Conectamos sistemas, integramos possibilidades",
-          description: "Plataforma omnichannel que unifica todos os pontos de contato, criando uma experiência fluida e consistente em cada interação.",
-          ctaText: "Ver Integrações",
-          ctaSecondary: "Falar com Especialista",
-          link: "/solucoes#stratumhub"
-        },
-        {
-          title: "Consultoria Especializada",
-          subtitle: "IA que potencializa resultados",
-          description: "Automatize processos, otimize recursos e maximize a conversão com algoritmos inteligentes que aprendem e evoluem com seu negócio.",
-          ctaText: "Explorar Consultoria",
-          ctaSecondary: "Falar com Especialista",
-          link: "/consultoria"
-        },
-        {
-          title: "Automação que Transforma",
-          subtitle: "Eficiência em cada processo",
-          description: "Elimine gargalos operacionais e acelere a tomada de decisões com soluções que trabalham 24/7 para o sucesso do seu negócio.",
-          ctaText: "Agendar Demo",
-          ctaSecondary: "Falar com Especialista",
+          title: "Como rentabilizar o seu negócio com tecnologia?",
+          subtitle: "",
+          description: "Ajudamos empresas a melhorar a jornada do cliente, reter mais clientes e expandir resultados com soluções de tecnologia aplicadas à sua realidade operacional.",
+          ctaText: "Fale com um especialista",
+          ctaSecondary: "Conheça nossas soluções",
           link: "/contato"
         }
       ]
@@ -262,12 +246,28 @@ export const translations = {
   },
   en: {
     nav: {
-      company: "Company",
       solutions: "Solutions",
-      consulting: "Consulting",
-      content: "Content",
+      platforms: "Platforms",
+      services: "Services",
+      about: "About StratumTec",
       contact: "Contact",
-      scheduleCall: "Schedule Meeting"
+      scheduleCall: "Schedule Meeting",
+      solutionsDropdown: [
+        "Data Integration and Operational Consolidation",
+        "Integrated Lead and Opportunity Management",
+        "Intelligent Digital Service Automation",
+        "AI Agents for Digital Channels",
+        "Omnichannel Centralization and Journey Governance",
+        "Operational Monitoring, SLAs and Performance",
+        "Speech Analytics and Voice Intelligence",
+      ],
+      platformsDropdown: ["stratumHUB", "BlueMesh"],
+      servicesDropdown: [
+        "Systems Integration and Connectivity",
+        "Operational Adaptation and Continuous Improvement",
+        "Ongoing Operation and Stability Management",
+        "Technical and Architectural Consulting",
+      ],
     },
     hero: {
       title: "Transform Customer Experience with Artificial Intelligence",
@@ -278,43 +278,11 @@ export const translations = {
     carousel: {
       slides: [
         {
-          title: "BlueMesh: Secure & Integrated AI",
-          subtitle: "Our proprietary AI platform",
-          description: "A super secure, efficient, and integrated Artificial Intelligence platform. Supercharge your results with cutting-edge AI.",
-          ctaText: "Discover BlueMesh",
-          ctaSecondary: "Talk to an Expert",
-          link: "/en/solutions#bluemesh"
-        },
-        {
-          title: "Customer Experience Innovation",
-          subtitle: "Transform your customer journey",
-          description: "Intelligent solutions connecting advanced technology and human experience to create lasting, impactful relationships.",
-          ctaText: "Discover Solutions",
-          ctaSecondary: "Talk to an Expert",
-          link: "/en/solutions"
-        },
-        {
-          title: "Global Technology Hub",
-          subtitle: "Connecting systems, integrating possibilities",
-          description: "Omnichannel platform that unifies all touchpoints, creating a fluid and consistent experience in every interaction.",
-          ctaText: "View Integrations",
-          ctaSecondary: "Talk to an Expert",
-          link: "/en/solutions#stratumhub"
-        },
-        {
-          title: "Expert Consulting",
-          subtitle: "AI that amplifies results",
-          description: "Automate processes, optimize resources, and maximize conversion with intelligent algorithms that learn and evolve with your business.",
-          ctaText: "Explore Consulting",
-          ctaSecondary: "Talk to an Expert",
-          link: "/en/consulting"
-        },
-        {
-          title: "Transformative Automation",
-          subtitle: "Efficiency in every process",
-          description: "Eliminate operational bottlenecks and accelerate decision-making with solutions that work 24/7 for your business success.",
-          ctaText: "Schedule Demo",
-          ctaSecondary: "Talk to an Expert",
+          title: "How can technology make your business more profitable?",
+          subtitle: "",
+          description: "We help companies improve customer journeys, retain more clients, and grow results with technology solutions tailored to their operational reality.",
+          ctaText: "Talk to a specialist",
+          ctaSecondary: "Explore our solutions",
           link: "/en/contact"
         }
       ]
@@ -523,12 +491,28 @@ export const translations = {
   },
   es: {
     nav: {
-      company: "Empresa",
       solutions: "Soluciones",
-      consulting: "Consultoría",
-      content: "Contenido",
+      platforms: "Plataformas",
+      services: "Servicios",
+      about: "Sobre StratumTec",
       contact: "Contacto",
-      scheduleCall: "Agendar Reunión"
+      scheduleCall: "Agendar Reunión",
+      solutionsDropdown: [
+        "Integración y Consolidación de Datos Operacionales",
+        "Gestión Integrada de Leads y Oportunidades",
+        "Automatización Inteligente de Atención Digital",
+        "Agentes de IA para Canales Digitales",
+        "Centralización Omnicanal y Gobernanza del Recorrido",
+        "Monitoreo Operacional, SLAs y Desempeño",
+        "Speech Analytics e Inteligencia de Voz",
+      ],
+      platformsDropdown: ["stratumHUB", "BlueMesh"],
+      servicesDropdown: [
+        "Integración de Sistemas y Conectividad",
+        "Adaptación Operacional y Mejora Continua",
+        "Sustentación y Operación Asistida",
+        "Consultoría Técnica y Arquitectural",
+      ],
     },
     hero: {
       title: "Transforme la Experiencia del Cliente con Inteligencia Artificial",
@@ -539,43 +523,11 @@ export const translations = {
     carousel: {
       slides: [
         {
-          title: "BlueMesh: IA Segura e Integrada",
-          subtitle: "Nuestra plataforma propietaria de IA",
-          description: "Plataforma de Inteligencia Artificial propia, súper segura, eficiente e integrada. Potencie sus resultados con IA de vanguardia.",
-          ctaText: "Conocer BlueMesh",
-          ctaSecondary: "Hablar con un Experto",
-          link: "/es/soluciones#bluemesh"
-        },
-        {
-          title: "Innovación en Customer Experience",
-          subtitle: "Transforme el recorrido de su cliente",
-          description: "Soluciones inteligentes que conectan tecnología avanzada y experiencia humana para crear relaciones duraderas e impactantes.",
-          ctaText: "Descubrir Soluciones",
-          ctaSecondary: "Hablar con un Experto",
-          link: "/es/soluciones"
-        },
-        {
-          title: "Hub Global de Tecnología",
-          subtitle: "Conectamos sistemas, integramos posibilidades",
-          description: "Plataforma omnicanal que unifica todos los puntos de contacto, creando una experiencia fluida y consistente en cada interacción.",
-          ctaText: "Ver Integraciones",
-          ctaSecondary: "Hablar con un Experto",
-          link: "/es/soluciones#stratumhub"
-        },
-        {
-          title: "Consultoría Especializada",
-          subtitle: "IA que potencia resultados",
-          description: "Automatice procesos, optimice recursos y maximice la conversión con algoritmos inteligentes que aprenden y evolucionan con su negocio.",
-          ctaText: "Explorar Consultoría",
-          ctaSecondary: "Hablar con un Experto",
-          link: "/es/consultoria"
-        },
-        {
-          title: "Automatización Transformadora",
-          subtitle: "Eficiencia en cada proceso",
-          description: "Elimine cuellos de botella operativos y acelere la toma de decisiones con soluciones que trabajan 24/7 para el éxito de su negocio.",
-          ctaText: "Agendar Demo",
-          ctaSecondary: "Hablar con un Experto",
+          title: "¿Cómo rentabilizar su negocio con tecnología?",
+          subtitle: "",
+          description: "Ayudamos a empresas a mejorar el recorrido del cliente, retener más clientes y expandir resultados con soluciones tecnológicas aplicadas a su realidad operacional.",
+          ctaText: "Hable con un especialista",
+          ctaSecondary: "Conozca nuestras soluciones",
           link: "/es/contacto"
         }
       ]
@@ -788,27 +740,28 @@ export const translations = {
 export const pageTranslations = {
   pt: {
     solutionsSection: {
-      title: "Soluções em Destaque",
-      subtitle: "Tecnologias inovadoras que transformam a experiência do cliente e impulsionam o crescimento do seu negócio",
+      title: "Qual é a sua necessidade?",
+      subtitle: "Apoiamos empresas na melhoria da jornada do cliente, na retenção de clientes e na rentabilização do negócio, usando tecnologia de forma prática e aplicada à realidade de cada operação. Atuamos desde o desenho da solução até a implantação e sustentação, com foco em resultados concretos e previsibilidade.",
       highlight: "Destaque",
-      learnMore: "Saiba Mais",
+      learnMore: "Ver todas as soluções",
       customSolution: "Precisa de uma solução personalizada?",
       customSolutionDesc: "Nossa equipe de especialistas está pronta para desenhar a solução perfeita para os desafios únicos do seu negócio.",
       talkExpert: "Falar com Especialista",
       requestQuote: "Solicitar Cotação",
       solutions: [
-        { title: "stratumHub Technology", description: "stratumHub Communication Suite é uma plataforma omnichannel ágil, customizável e segura, que integra voz, vídeo, WhatsApp, chat, e-mail e automações.", features: ["IA Generativa", "Machine Learning", "Hub de Sistemas"] },
-        { title: "BlueMesh | IA", description: "Solução de Inteligência Artificial da StratumTec, desenvolvida para integrar qualquer plataforma com segurança, escalabilidade e performance.", features: ["IA Proprietária", "API's Unificadas", "Sync em tempo real"] },
-        { title: "Omnichannel", description: "Integração completa entre todos os canais de relacionamento, garantindo uma experiência unificada e uma comunicação mais fluida com o cliente.", features: ["Customer Centricity", "Speech Analytics", "Multiplataforma"] },
-        { title: "Data Analytics", description: "Suite completa para análise e tratamento de dados em grandes volumes, gerando dashboards inteligentes e insights preditivos para tomada de decisão.", features: ["Business Intelligence", "Análise Preditiva", "Dashboards Personalizados"] },
-        { title: "Jornada do Cliente", description: "Mapeamento de jornada da experiência do cliente, visando otimização no tempo de resolução de demandas do atendimento em todos os pontos de contato.", features: ["Régua e Regras de Eventos", "Análise de Touchpoints", "Otimização da Experiência"] },
-        { title: "Fluxos Inteligentes", description: "Workflows automatizados que eliminam tarefas repetitivas, melhoram o tempo de resposta e aceleram processos críticos e garante maior eficiência em CXM.", features: ["Automação de Workflow", "Redução de TMA", "Ganho de Eficiência"] }
+        { title: "Consolide dados e ganhe visibilidade real da sua operação", description: "", features: [] },
+        { title: "Converta mais oportunidades em receita", description: "", features: [] },
+        { title: "Atenda mais sem aumentar equipe", description: "", features: [] },
+        { title: "Expanda o atendimento 24 horas com IA", description: "", features: [] },
+        { title: "Unifique todos os canais em um só lugar", description: "", features: [] },
+        { title: "Monitore e controle sua operação em tempo real", description: "", features: [] },
+        { title: "Transforme conversas com clientes em inteligência de negócio", description: "", features: [] }
       ]
     },
     consultingSection: {
-      title: "Consultoria Especializada",
-      subtitle: "Nossa equipe de especialistas oferece consultoria estratégica para transformar a experiência do cliente da sua empresa através de soluções tecnológicas inovadoras.",
-      learnMore: "Saiba Mais",
+      title: "Plataformas desenvolvidas para escalar sua operação",
+      subtitle: "",
+      learnMore: "Conheça nossos produtos",
       ctaTitle: "Pronto para Transformar sua Experiência do Cliente?",
       ctaDesc: "Agende uma conversa com nossos especialistas e descubra como podemos ajudar sua empresa a alcançar novos patamares de excelência em Customer Experience.",
       scheduleConsulting: "Agendar Consultoria",
@@ -817,41 +770,28 @@ export const pageTranslations = {
       projects: "Projetos Realizados",
       satisfaction: "Satisfação dos Clientes",
       services: [
-        { title: "Estratégia de CX", description: "Estratégias personalizadas para elevar a experiência do cliente, impulsionando engajamento e fidelização.", features: ["Mapeamento de jornada", "Análise de touchpoints", "Definição de KPIs"] },
-        { title: "Assessment de CX", description: "Avaliação de processos e fluxos de atendimento, jornada do cliente, programas de fidelização e retenção.", features: ["Aumento de NPS, CSAT e CES", "Performance e Escalabilidade", "Insights Personalizados"] },
-        { title: "Transformação Digital", description: "Estratégia e implementação estruturada de projetos de modernização, envolvendo tecnologia, processos e cultura.", features: ["Auditoria de sistemas", "Análise de Performance", "Relatórios detalhados"] },
-        { title: "Monetização", description: "Aumento de receitas por meio de estratégias de monetização centradas no cliente.", features: ["Personalização de ofertas", "Alertas em tempo real", "Precificação inteligente"] },
-        { title: "VoC – Voz do Cliente", description: "Estratégia integrada para capturar, interpretar e transformar feedbacks em decisões estratégicas.", features: ["Insights de consumidores", "Análise de sentimento", "Voice Analytics"] },
-        { title: "Processos de CXM", description: "Mapeamento e revisão de processos de CX para garantir melhor experiência e eficiência operacional.", features: ["Mapeamento de Processos", "Estratégias de Fidelização", "Gestão de Performance"] }
+        { title: "stratumHUB", description: "Centralize e gerencie todo o atendimento ao cliente", features: [] },
+        { title: "BlueMesh", description: "Inteligência Artificial aplicada ao seu negócio", features: [] }
       ]
     },
     companyHome: {
-      title: "Sobre a",
-      description: "A StratumTec atua com o respaldo tecnológico, a experiência internacional e os produtos desenvolvidos pela StratumTec - referência global em soluções tecnológicas customizadas, com mais de 25 anos de atuação em projetos de alta complexidade.",
-      card1Title: "Soluções Modulares e Integráveis",
-      card1Desc: "O foco da StratumTec é entregar soluções modulares e integráveis que se conectam facilmente a qualquer sistema, plataforma ou infraestrutura já existente, de forma ultra customizada.",
-      card2Title: "Integração Sem Barreiras",
-      card2Desc: "Acreditamos que integração não deve ser uma barreira, mas um acelerador. Desenvolvemos nossas soluções para se encaixarem em qualquer ambiente — de forma rápida, segura e sem fricção.",
-      bottomText: "Aliamos agilidade, proximidade e visão estratégica à robustez de uma base tecnológica validada globalmente, garantindo eficiência, escalabilidade e resultados concretos desde o primeiro projeto.",
-      stat1: "Anos de Experiência", stat2: "Soluções Integráveis", stat3: "Alcance Internacional", stat4: "Complexidade de Projetos",
-      stat3Value: "Global", stat4Value: "Alta"
+      title: "Tecnologia que sai do papel e transforma a operação",
+      description: "Nossos serviços acompanham toda a jornada: do diagnóstico e desenho da solução até a implantação, evolução e sustentação. Trabalhamos com escopo claro, governança e acompanhamento contínuo para que tecnologia gere resultado real e não fique apenas no papel.",
+      ctaButton: "Conheça nossos serviços",
+      card1Title: "", card1Desc: "", card2Title: "", card2Desc: "", bottomText: "",
+      stat1: "", stat2: "", stat3: "", stat4: "", stat3Value: "", stat4Value: ""
     },
     blogSection: {
-      title: "Insights & Tendências",
-      subtitle: "Mantenha-se atualizado com as últimas tendências em Customer Experience, tecnologia e inovação",
-      featured: "Destaque", readMore: "Ler Mais", readFullArticle: "Ler Artigo Completo", readTime: "de leitura",
-      newsletterTitle: "Quer receber nossos insights?",
-      newsletterDesc: "Assine nossa newsletter e fique por dentro das últimas tendências em CX e tecnologia.",
-      emailPlaceholder: "Seu melhor e-mail", subscribe: "Assinar",
-      posts: [
-        { title: "O Futuro da IA no Customer Experience", excerpt: "Como a Inteligência Artificial está revolucionando a forma como as empresas se relacionam com seus clientes.", category: "Inteligência Artificial" },
-        { title: "Automação Inteligente: Reduzindo Custos e Aumentando Eficiência", excerpt: "Descubra como implementar soluções de automação que transformam processos manuais em workflows inteligentes.", category: "Automação" },
-        { title: "Integração Omnichannel: Unificando a Experiência do Cliente", excerpt: "As melhores práticas para criar uma experiência consistente em todos os canais de comunicação.", category: "Omnichannel" },
-        { title: "Métricas de CX que Realmente Importam em 2024", excerpt: "Um guia completo sobre as métricas mais importantes para medir e otimizar a experiência do cliente.", category: "Analytics" }
+      title: "Por que a StratumTec",
+      items: [
+        { title: "Tecnologia aplicada ao contexto do negócio", text: "Não entregamos soluções genéricas. Cada projeto parte da realidade operacional, dos sistemas existentes e dos objetivos da empresa." },
+        { title: "Soluções modulares que evoluem com a operação", text: "Começamos pelo essencial e expandimos conforme a maturidade e as prioridades do negócio, sem rupturas ou desperdícios." },
+        { title: "Execução com previsibilidade e controle", text: "Projetos estruturados para entender escopo, tempo e impacto desde o início, reduzindo riscos e surpresas ao longo do caminho." },
+        { title: "Integração entre estratégia, tecnologia e operação", text: "Atuamos do desenho à operação, garantindo que soluções não fiquem apenas no papel e gerem resultado prático." }
       ]
     },
     contactForm: {
-      headerTitle: "Vamos conversar?", headerSubtitle: "Entre em contato conosco e descubra como podemos transformar a experiência do cliente da sua empresa",
+      headerTitle: "Pronto para transformar custo operacional em receita?", headerSubtitle: "Se sua empresa enfrenta dificuldades para integrar sistemas, reter clientes ou rentabilizar melhor sua operação, isso impacta diretamente custos, produtividade e crescimento de receita. Nosso time pode ajudar a estruturar soluções alinhadas à sua realidade e gerar resultado real.",
       contactUs: "Fale conosco", contactDesc: "Nossa equipe de especialistas está pronta para ajudar você a encontrar a solução perfeita.",
       email: "E-mail", phone: "Telefone", address: "Endereço", addressValue: "Alphaville, SP - Brasil",
       phoneValue: "+55 11 99332-4239", phoneLink: "tel:+5511993324239",
@@ -863,7 +803,7 @@ export const pageTranslations = {
       emailPlaceholder: "seu@email.com",
       subject: "Assunto", subjectPlaceholder: "Como podemos ajudar?",
       message: "Mensagem", messagePlaceholder: "Descreva seu projeto ou necessidade...",
-      sending: "Enviando...", sendMessage: "Enviar Mensagem",
+      sending: "Enviando...", sendMessage: "Entrar em contato",
       successTitle: "Mensagem enviada com sucesso!", successDesc: "Nossa equipe entrará em contato em breve.",
       errorTitle: "Erro ao enviar mensagem", errorDesc: "Tente novamente ou entre em contato diretamente."
     },
@@ -914,65 +854,53 @@ export const pageTranslations = {
   },
   en: {
     solutionsSection: {
-      title: "Featured Solutions",
-      subtitle: "Innovative technologies that transform customer experience and drive business growth",
-      highlight: "Featured", learnMore: "Learn More",
+      title: "What is your need?",
+      subtitle: "We support companies in improving customer journeys, retaining clients, and making the business more profitable — using technology in a practical way, tailored to each operation's reality. We act from solution design through implementation and ongoing support, focused on concrete results and predictability.",
+      highlight: "Featured", learnMore: "See all solutions",
       customSolution: "Need a custom solution?",
       customSolutionDesc: "Our team of experts is ready to design the perfect solution for your unique business challenges.",
       talkExpert: "Talk to an Expert", requestQuote: "Request Quote",
       solutions: [
-        { title: "stratumHub Technology", description: "stratumHub Communication Suite is an agile, customizable, and secure omnichannel platform integrating voice, video, WhatsApp, chat, email, and automations.", features: ["Generative AI", "Machine Learning", "Systems Hub"] },
-        { title: "BlueMesh | AI", description: "StratumTec's proprietary AI solution, developed to integrate any platform with security, scalability, and performance.", features: ["Proprietary AI", "Unified APIs", "Real-time Sync"] },
-        { title: "Omnichannel", description: "Complete integration across all relationship channels, ensuring a unified experience and smoother client communication.", features: ["Customer Centricity", "Speech Analytics", "Multi-platform"] },
-        { title: "Data Analytics", description: "Complete suite for large-volume data analysis, generating intelligent dashboards and predictive insights.", features: ["Business Intelligence", "Predictive Analysis", "Custom Dashboards"] },
-        { title: "Customer Journey", description: "Customer experience journey mapping, optimizing resolution times across all service touchpoints.", features: ["Event Rules & Triggers", "Touchpoint Analysis", "Experience Optimization"] },
-        { title: "Intelligent Workflows", description: "Automated workflows that eliminate repetitive tasks, improve response times, and accelerate critical processes.", features: ["Workflow Automation", "AHT Reduction", "Efficiency Gains"] }
+        { title: "Consolidate data and gain real visibility of your operation", description: "", features: [] },
+        { title: "Convert more opportunities into revenue", description: "", features: [] },
+        { title: "Serve more customers without growing your team", description: "", features: [] },
+        { title: "Expand 24-hour service with AI", description: "", features: [] },
+        { title: "Unify all channels in one place", description: "", features: [] },
+        { title: "Monitor and control your operation in real time", description: "", features: [] },
+        { title: "Turn customer conversations into business intelligence", description: "", features: [] }
       ]
     },
     consultingSection: {
-      title: "Specialized Consulting",
-      subtitle: "Our team of experts offers strategic consulting to transform your company's customer experience through innovative solutions.",
-      learnMore: "Learn More",
+      title: "Platforms built to scale your operation",
+      subtitle: "",
+      learnMore: "Explore our platforms",
       ctaTitle: "Ready to Transform your Customer Experience?",
       ctaDesc: "Schedule a conversation with our specialists and discover how we can help your company reach new levels of CX excellence.",
       scheduleConsulting: "Schedule Consulting", requestProposal: "Request Proposal",
       yearsExp: "Years of Experience", projects: "Projects Completed", satisfaction: "Client Satisfaction",
       services: [
-        { title: "CX Strategy", description: "Personalized strategies to elevate customer experience, driving engagement and loyalty.", features: ["Journey Mapping", "Touchpoint Analysis", "KPI Definition"] },
-        { title: "CX Assessment", description: "Evaluation of service processes and flows, identifying risks, bottlenecks and opportunities.", features: ["NPS, CSAT & CES Improvement", "Performance & Scalability", "Personalized Insights"] },
-        { title: "Digital Transformation", description: "Strategy and structured implementation of modernization projects.", features: ["System Audit", "Performance Analysis", "Detailed Reports"] },
-        { title: "Monetization", description: "Revenue growth through customer-centric monetization strategies.", features: ["Cluster-based Personalization", "Real-time Alerts", "Intelligent Pricing"] },
-        { title: "VoC – Voice of Customer", description: "Integrated strategy to capture and transform feedback into strategic decisions.", features: ["Consumer Insights", "Sentiment Analysis", "Voice Analytics"] },
-        { title: "CXM Processes", description: "CX process mapping and review for better experience and operational efficiency.", features: ["Process Mapping", "Loyalty Strategies", "Performance Management"] }
+        { title: "stratumHUB", description: "Centralize and manage all customer service", features: [] },
+        { title: "BlueMesh", description: "Artificial Intelligence applied to your business", features: [] }
       ]
     },
     companyHome: {
-      title: "About",
-      description: "StratumTec operates with the technological backing, international experience and products developed by StratumTec - a global reference in customized technological solutions, with over 25 years of experience in high-complexity projects.",
-      card1Title: "Modular & Integrable Solutions",
-      card1Desc: "StratumTec's focus is delivering modular and integrable solutions that easily connect to any existing system, platform or infrastructure, in a highly customized way.",
-      card2Title: "Integration Without Barriers",
-      card2Desc: "We believe integration should not be a barrier, but an accelerator. We develop our solutions to fit any environment — quickly, securely and without friction.",
-      bottomText: "We combine agility, proximity and strategic vision with the robustness of a globally validated technology base, ensuring efficiency, scalability and concrete results from the first project.",
-      stat1: "Years of Experience", stat2: "Integrable Solutions", stat3: "International Reach", stat4: "Project Complexity",
-      stat3Value: "Global", stat4Value: "High"
+      title: "Technology that moves from concept to real operational impact",
+      description: "Our services cover the entire journey: from diagnosis and solution design through implementation, evolution, and ongoing support. We work with clear scope, governance, and continuous monitoring so technology delivers real results — not just plans.",
+      ctaButton: "Explore our services",
+      card1Title: "", card1Desc: "", card2Title: "", card2Desc: "", bottomText: "",
+      stat1: "", stat2: "", stat3: "", stat4: "", stat3Value: "", stat4Value: ""
     },
     blogSection: {
-      title: "Insights & Trends",
-      subtitle: "Stay updated with the latest trends in Customer Experience, technology and innovation",
-      featured: "Featured", readMore: "Read More", readFullArticle: "Read Full Article", readTime: "read",
-      newsletterTitle: "Want to receive our insights?",
-      newsletterDesc: "Subscribe to our newsletter and stay up to date with the latest CX and technology trends.",
-      emailPlaceholder: "Your best email", subscribe: "Subscribe",
-      posts: [
-        { title: "The Future of AI in Customer Experience", excerpt: "How AI is revolutionizing the way companies relate to their customers, creating more personalized experiences.", category: "Artificial Intelligence" },
-        { title: "Intelligent Automation: Reducing Costs and Increasing Efficiency", excerpt: "Discover how to implement automation solutions that transform manual processes into intelligent workflows.", category: "Automation" },
-        { title: "Omnichannel Integration: Unifying Customer Experience", excerpt: "Best practices for creating a consistent experience across all communication channels.", category: "Omnichannel" },
-        { title: "CX Metrics That Really Matter in 2024", excerpt: "A complete guide to the most important metrics for measuring and optimizing customer experience.", category: "Analytics" }
+      title: "Why StratumTec",
+      items: [
+        { title: "Technology applied to your business context", text: "We don't deliver generic solutions. Every project starts from the operational reality, existing systems, and company goals." },
+        { title: "Modular solutions that grow with your operation", text: "We start with the essentials and expand as business maturity and priorities evolve — without disruption or waste." },
+        { title: "Execution with predictability and control", text: "Projects structured to clarify scope, timeline, and impact from the start — reducing risks and surprises along the way." },
+        { title: "Integration of strategy, technology, and operations", text: "We work from design through operations, ensuring solutions don't stay on paper and generate practical results." }
       ]
     },
     contactForm: {
-      headerTitle: "Let's talk?", headerSubtitle: "Get in touch and discover how we can transform your company's customer experience",
+      headerTitle: "Ready to turn operational cost into revenue?", headerSubtitle: "If your company struggles to integrate systems, retain customers, or improve operational profitability, this directly impacts costs, productivity, and revenue growth. Our team can help structure solutions aligned to your reality and generate real results.",
       contactUs: "Contact us", contactDesc: "Our team of experts is ready to help you find the perfect solution for your business challenges.",
       email: "Email", phone: "Phone", address: "Address", addressValue: "2355 Vanderbilt Beach Road, Suite 154-V-124, Naples, FL 34109",
       phoneValue: "+1 239 776 5370", phoneLink: "tel:+12397765370",
@@ -984,7 +912,7 @@ export const pageTranslations = {
       emailPlaceholder: "your@email.com",
       subject: "Subject", subjectPlaceholder: "How can we help?",
       message: "Message", messagePlaceholder: "Describe your project or need...",
-      sending: "Sending...", sendMessage: "Send Message",
+      sending: "Sending...", sendMessage: "Get in touch",
       successTitle: "Message sent successfully!", successDesc: "Our team will be in touch soon.",
       errorTitle: "Error sending message", errorDesc: "Please try again or contact us directly."
     },
@@ -1035,65 +963,53 @@ export const pageTranslations = {
   },
   es: {
     solutionsSection: {
-      title: "Soluciones Destacadas",
-      subtitle: "Tecnologías innovadoras que transforman la experiencia del cliente e impulsan el crecimiento empresarial",
-      highlight: "Destacado", learnMore: "Saber Más",
+      title: "¿Cuál es su necesidad?",
+      subtitle: "Apoyamos a empresas en la mejora del recorrido del cliente, la retención de clientes y la rentabilización del negocio, usando tecnología de forma práctica y aplicada a la realidad de cada operación. Actuamos desde el diseño de la solución hasta la implantación y sustentación, con foco en resultados concretos y previsibilidad.",
+      highlight: "Destacado", learnMore: "Ver todas las soluciones",
       customSolution: "¿Necesita una solución personalizada?",
       customSolutionDesc: "Nuestro equipo de expertos está listo para diseñar la solución perfecta para los desafíos de su negocio.",
       talkExpert: "Hablar con un Experto", requestQuote: "Solicitar Cotización",
       solutions: [
-        { title: "stratumHub Technology", description: "Plataforma omnicanal ágil, personalizable y segura que integra voz, video, WhatsApp, chat, correo y automatizaciones.", features: ["IA Generativa", "Machine Learning", "Hub de Sistemas"] },
-        { title: "BlueMesh | IA", description: "Solución de IA propietaria de StratumTec para integrar cualquier plataforma con seguridad y rendimiento.", features: ["IA Propietaria", "APIs Unificadas", "Sincronización en tiempo real"] },
-        { title: "Omnicanal", description: "Integración completa entre todos los canales garantizando experiencia unificada y comunicación fluida.", features: ["Customer Centricity", "Speech Analytics", "Multiplataforma"] },
-        { title: "Data Analytics", description: "Suite completa para análisis de datos en grandes volúmenes con dashboards inteligentes e insights predictivos.", features: ["Business Intelligence", "Análisis Predictivo", "Dashboards Personalizados"] },
-        { title: "Jornada del Cliente", description: "Mapeo de la jornada del cliente optimizando tiempos de resolución en todos los puntos de contacto.", features: ["Reglas de Eventos", "Análisis de Touchpoints", "Optimización de Experiencia"] },
-        { title: "Flujos Inteligentes", description: "Workflows automatizados que eliminan tareas repetitivas y aceleran procesos críticos.", features: ["Automatización de Workflows", "Reducción de TMA", "Ganancia de Eficiencia"] }
+        { title: "Consolide datos y obtenga visibilidad real de su operación", description: "", features: [] },
+        { title: "Convierta más oportunidades en ingresos", description: "", features: [] },
+        { title: "Atienda más sin aumentar el equipo", description: "", features: [] },
+        { title: "Expanda la atención 24 horas con IA", description: "", features: [] },
+        { title: "Unifique todos los canales en un solo lugar", description: "", features: [] },
+        { title: "Monitoree y controle su operación en tiempo real", description: "", features: [] },
+        { title: "Transforme las conversaciones con clientes en inteligencia de negocio", description: "", features: [] }
       ]
     },
     consultingSection: {
-      title: "Consultoría Especializada",
-      subtitle: "Nuestro equipo ofrece consultoría estratégica para transformar la experiencia del cliente a través de soluciones tecnológicas innovadoras.",
-      learnMore: "Saber Más",
+      title: "Plataformas desarrolladas para escalar su operación",
+      subtitle: "",
+      learnMore: "Conozca nuestras plataformas",
       ctaTitle: "¿Listo para Transformar su Experiencia del Cliente?",
       ctaDesc: "Agende una conversación con nuestros especialistas y descubra cómo podemos ayudar a su empresa.",
       scheduleConsulting: "Agendar Consultoría", requestProposal: "Solicitar Propuesta",
       yearsExp: "Años de Experiencia", projects: "Proyectos Realizados", satisfaction: "Satisfacción de Clientes",
       services: [
-        { title: "Estrategia de CX", description: "Estrategias personalizadas para elevar la experiencia del cliente.", features: ["Mapeo de jornada", "Análisis de touchpoints", "Definición de KPIs"] },
-        { title: "Assessment de CX", description: "Evaluación de procesos y flujos de atención identificando riesgos y oportunidades.", features: ["Mejora de NPS, CSAT y CES", "Performance y Escalabilidad", "Insights Personalizados"] },
-        { title: "Transformación Digital", description: "Estrategia e implementación de proyectos de modernización.", features: ["Auditoría de sistemas", "Análisis de Performance", "Informes detallados"] },
-        { title: "Monetización", description: "Aumento de ingresos mediante estrategias centradas en el cliente.", features: ["Personalización de ofertas", "Alertas en tiempo real", "Precificación inteligente"] },
-        { title: "VoC – Voz del Cliente", description: "Estrategia para capturar y transformar feedbacks en decisiones estratégicas.", features: ["Insights de consumidores", "Análisis de sentimiento", "Voice Analytics"] },
-        { title: "Procesos de CXM", description: "Mapeo y revisión de procesos de CX para mejor experiencia y eficiencia.", features: ["Mapeo de Procesos", "Estrategias de Fidelización", "Gestión de Performance"] }
+        { title: "stratumHUB", description: "Centralice y gestione toda la atención al cliente", features: [] },
+        { title: "BlueMesh", description: "Inteligencia Artificial aplicada a su negocio", features: [] }
       ]
     },
     companyHome: {
-      title: "Sobre",
-      description: "StratumTec actúa con el respaldo tecnológico, la experiencia internacional y los productos desarrollados por StratumTec - referencia global en soluciones tecnológicas, con más de 25 años de actuación en proyectos de alta complejidad.",
-      card1Title: "Soluciones Modulares e Integrables",
-      card1Desc: "El foco de StratumTec es entregar soluciones modulares e integrables que se conectan fácilmente a cualquier sistema existente de forma ultra personalizada.",
-      card2Title: "Integración Sin Barreras",
-      card2Desc: "Creemos que la integración no debe ser una barrera, sino un acelerador. Desarrollamos soluciones que se adaptan a cualquier ambiente — rápida, segura y sin fricción.",
-      bottomText: "Combinamos agilidad, proximidad y visión estratégica con la robustez de una base tecnológica validada globalmente, garantizando eficiencia, escalabilidad y resultados concretos.",
-      stat1: "Años de Experiencia", stat2: "Soluciones Integrables", stat3: "Alcance Internacional", stat4: "Complejidad de Proyectos",
-      stat3Value: "Global", stat4Value: "Alta"
+      title: "Tecnología que sale del papel y transforma la operación",
+      description: "Nuestros servicios acompañan toda la jornada: del diagnóstico y diseño de la solución hasta la implantación, evolución y sustentación. Trabajamos con alcance claro, gobernanza y seguimiento continuo para que la tecnología genere resultados reales y no quede solo en el papel.",
+      ctaButton: "Conozca nuestros servicios",
+      card1Title: "", card1Desc: "", card2Title: "", card2Desc: "", bottomText: "",
+      stat1: "", stat2: "", stat3: "", stat4: "", stat3Value: "", stat4Value: ""
     },
     blogSection: {
-      title: "Insights y Tendencias",
-      subtitle: "Manténgase actualizado con las últimas tendencias en Customer Experience, tecnología e innovación",
-      featured: "Destacado", readMore: "Leer Más", readFullArticle: "Leer Artículo Completo", readTime: "de lectura",
-      newsletterTitle: "¿Quiere recibir nuestros insights?",
-      newsletterDesc: "Suscríbase a nuestro newsletter y manténgase al día con las últimas tendencias.",
-      emailPlaceholder: "Su mejor correo electrónico", subscribe: "Suscribirse",
-      posts: [
-        { title: "El Futuro de la IA en Customer Experience", excerpt: "Cómo la IA está revolucionando la forma en que las empresas se relacionan con sus clientes.", category: "Inteligencia Artificial" },
-        { title: "Automatización Inteligente: Reduciendo Costos", excerpt: "Descubra cómo implementar soluciones de automatización que transforman procesos manuales.", category: "Automatización" },
-        { title: "Integración Omnicanal: Unificando la Experiencia", excerpt: "Las mejores prácticas para crear una experiencia consistente en todos los canales.", category: "Omnicanal" },
-        { title: "Métricas de CX que Realmente Importan en 2024", excerpt: "Una guía completa sobre las métricas más importantes para medir la experiencia del cliente.", category: "Analytics" }
+      title: "Por qué StratumTec",
+      items: [
+        { title: "Tecnología aplicada al contexto del negocio", text: "No entregamos soluciones genéricas. Cada proyecto parte de la realidad operacional, los sistemas existentes y los objetivos de la empresa." },
+        { title: "Soluciones modulares que evolucionan con la operación", text: "Empezamos por lo esencial y expandimos conforme la madurez y las prioridades del negocio, sin rupturas ni desperdicios." },
+        { title: "Ejecución con previsibilidad y control", text: "Proyectos estructurados para entender alcance, tiempo e impacto desde el inicio, reduciendo riesgos y sorpresas en el camino." },
+        { title: "Integración entre estrategia, tecnología y operación", text: "Actuamos desde el diseño hasta la operación, garantizando que las soluciones no queden solo en el papel y generen resultados prácticos." }
       ]
     },
     contactForm: {
-      headerTitle: "¿Conversamos?", headerSubtitle: "Póngase en contacto y descubra cómo podemos transformar la experiencia del cliente de su empresa",
+      headerTitle: "¿Listo para transformar costos operacionales en ingresos?", headerSubtitle: "Si su empresa enfrenta dificultades para integrar sistemas, retener clientes o rentabilizar mejor su operación, esto impacta directamente en costos, productividad y crecimiento de ingresos. Nuestro equipo puede ayudar a estructurar soluciones alineadas a su realidad y generar resultados reales.",
       contactUs: "Contáctenos", contactDesc: "Nuestro equipo de expertos está listo para ayudarle a encontrar la solución perfecta.",
       email: "Correo electrónico", phone: "Teléfono", address: "Dirección", addressValue: "2355 Vanderbilt Beach Road, Suite 154-V-124, Naples, FL 34109",
       phoneValue: "+1 239 776 5370", phoneLink: "tel:+12397765370",
@@ -1105,7 +1021,7 @@ export const pageTranslations = {
       emailPlaceholder: "su@correo.com",
       subject: "Asunto", subjectPlaceholder: "¿Cómo podemos ayudar?",
       message: "Mensaje", messagePlaceholder: "Describa su proyecto o necesidad...",
-      sending: "Enviando...", sendMessage: "Enviar Mensaje",
+      sending: "Enviando...", sendMessage: "Contáctenos",
       successTitle: "¡Mensaje enviado con éxito!", successDesc: "Nuestro equipo se pondrá en contacto pronto.",
       errorTitle: "Error al enviar mensaje", errorDesc: "Intente de nuevo o contáctenos directamente."
     },
