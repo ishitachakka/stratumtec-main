@@ -13,6 +13,7 @@ const routeTable: Record<string, Record<Language, string>> = {
   blogIaCx:    { en: '/en/blog/futuro-ia-cx', pt: '/blog/futuro-ia-cx', es: '/es/blog/futuro-ia-cx' },
   solDataIntegration: { en: '/en/solutions/data-integration', pt: '/solucoes/integracao-dados', es: '/es/soluciones/integracion-datos' },
   solLeadManagement: { en: '/en/solutions/lead-management', pt: '/solucoes/gestao-leads', es: '/es/soluciones/gestion-leads' },
+  solServiceAutomation: { en: '/en/solutions/service-automation', pt: '/solucoes/automacao-atendimento', es: '/es/soluciones/automatizacion-atencion' },
 };
 
 // Build a reverse lookup: path → page key

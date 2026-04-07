@@ -17,6 +17,7 @@ import BlogPost from "./pages/BlogPost";
 import FuturoIACX from "./pages/blog/FuturoIACX";
 import DataIntegration from "./pages/solutions/DataIntegration";
 import LeadManagement from "./pages/solutions/LeadManagement";
+import ServiceAutomation from "./pages/solutions/ServiceAutomation";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import NotFound from "./pages/NotFound";
@@ -59,6 +60,9 @@ const App = () => (
            <Route path="/solucoes/gestao-leads" element={<LeadManagement />} />
            <Route path="/en/solutions/lead-management" element={<LeadManagement />} />
            <Route path="/es/soluciones/gestion-leads" element={<LeadManagement />} />
+           <Route path="/solucoes/automacao-atendimento" element={<ServiceAutomation />} />
+           <Route path="/en/solutions/service-automation" element={<ServiceAutomation />} />
+           <Route path="/es/soluciones/automatizacion-atencion" element={<ServiceAutomation />} />
            <Route path="/en/blog/:slug" element={<BlogPost />} />
            <Route path="/es/blog/:slug" element={<BlogPost />} />
            <Route path="/pt/privacidade" element={<PrivacyPolicy />} />
