@@ -95,9 +95,13 @@ export const Header = () => {
     6: routeTable.solSpeechAnalytics[language],
   };
 
+  const platformLinks: Record<number, string> = {
+    0: routeTable.platStratumHub[language],
+  };
+
   const navigationItems: NavItem[] = [
     { label: t.nav.solutions, items: t.nav.solutionsDropdown.map((s: string, i: number) => ({ label: s, href: solutionLinks[i] })) },
-    { label: t.nav.platforms, items: t.nav.platformsDropdown.map((s: string) => ({ label: s })) },
+    { label: t.nav.platforms, items: t.nav.platformsDropdown.map((s: string, i: number) => ({ label: s, href: platformLinks[i] })) },
     { label: t.nav.services, items: t.nav.servicesDropdown.map((s: string) => ({ label: s })) },
     { label: t.nav.about, href: navRoutes[language].about },
     { label: t.nav.contact, href: navRoutes[language].contact },
