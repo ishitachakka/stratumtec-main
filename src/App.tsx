@@ -24,6 +24,7 @@ import OperationalMonitoring from "./pages/solutions/OperationalMonitoring";
 import SpeechAnalytics from "./pages/solutions/SpeechAnalytics";
 import StratumHub from "./pages/platforms/StratumHub";
 import BlueMesh from "./pages/platforms/BlueMesh";
+import SystemsIntegration from "./pages/services/SystemsIntegration";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import NotFound from "./pages/NotFound";
@@ -87,6 +88,9 @@ const App = () => (
            <Route path="/plataformas/bluemesh" element={<BlueMesh />} />
            <Route path="/en/platforms/bluemesh" element={<BlueMesh />} />
            <Route path="/es/plataformas/bluemesh" element={<BlueMesh />} />
+           <Route path="/servicos/integracao-sistemas" element={<SystemsIntegration />} />
+           <Route path="/en/services/systems-integration" element={<SystemsIntegration />} />
+           <Route path="/es/servicios/integracion-sistemas" element={<SystemsIntegration />} />
            <Route path="/en/blog/:slug" element={<BlogPost />} />
            <Route path="/es/blog/:slug" element={<BlogPost />} />
            <Route path="/pt/privacidade" element={<PrivacyPolicy />} />
