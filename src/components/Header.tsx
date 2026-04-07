@@ -103,6 +103,7 @@ export const Header = () => {
   const serviceLinks: Record<number, string> = {
     0: routeTable.svcSystemsIntegration[language],
     1: routeTable.svcOperationalAdaptation[language],
+    2: routeTable.svcOngoingOperation[language],
   };
 
   const navigationItems: NavItem[] = [
