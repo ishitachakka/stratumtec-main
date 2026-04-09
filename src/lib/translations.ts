@@ -134,7 +134,7 @@ export const translations = {
       callSubtitle: "Vamos conversar sobre como nossas soluções podem impulsionar seu negócio",
       callCta: "Agendar Consulta Gratuita",
       email: "jomon@stratumtec.com",
-      phone: "+55 11 99332-4239",
+phone: "+55 11 91263-5196",
       address: "Alphaville, SP - Brasil",
       hours: "Seg. a Sex",
       hoursDetail: "das 9h às 18h",
