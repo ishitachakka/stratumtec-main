@@ -51,7 +51,7 @@ const whatsappCopy = {
   },
 };
 
-const PHONE = "5511993324239";
+const PHONE = "5511912635196";
 
 export const WhatsAppPlugin = () => {
   const [isOpen, setIsOpen] = useState(false);

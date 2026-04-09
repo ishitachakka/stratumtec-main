@@ -93,7 +93,7 @@ const contactPageCopy: Record<Language, {
     talkSubtitle: "Entre em contato através dos nossos canais de atendimento.",
     contactCards: [
       { title: "E-mail", content: "jomon@stratumtec.com", description: "Resposta em até 24 horas" },
-      { title: "Telefone", content: "+55 11 99332-4239", description: "Segunda a sexta, 9h às 18h" },
+      { title: "Telefone", content: "+55 11 91263-5196", description: "Segunda a sexta, 9h às 18h" },
       { title: "Endereço", content: "Alameda Rio Negro, 503 - Cj. 2020", description: "Alphaville, SP - Brasil" },
       { title: "Horário de Atendimento", content: "Segunda a Sexta: 9h às 18h", description: "" },
     ],
