@@ -17,7 +17,7 @@ export default function Consultoria() {
   const t = pageTranslations[language].consultingPage;
 
   const handleWhatsApp = () => {
-    window.open("https://wa.me/5511993324239", "_blank");
+    window.open("https://wa.me/5511912635196", "_blank");
   };
 
   return (

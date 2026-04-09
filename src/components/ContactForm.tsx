@@ -81,7 +81,7 @@ export const ContactForm = () => {
                 <CardContent className="p-6">
                   <h4 className="font-heading font-bold text-stratumtec-navy mb-2">{t.quickResponse}</h4>
                   <p className="text-stratumtec-text mb-4">{t.quickResponseDesc}</p>
-                  <Button className="bg-green-600 hover:bg-green-700 text-white" onClick={() => window.open("https://wa.me/5511993324239", "_blank")}>
+                  <Button className="bg-green-600 hover:bg-green-700 text-white" onClick={() => window.open("https://wa.me/5511912635196", "_blank")}>
                     <Phone className="h-4 w-4 mr-2" />WhatsApp
                   </Button>
                 </CardContent>
