@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { CalendarPopup } from "@/components/CalendarPopup";
 import { Language } from "@/lib/translations";
 import { routeTable } from "@/lib/routeMap";
+import { getAvailableLanguages } from "@/lib/domains";
 import flagBr from "@/assets/flag-br.png";
 import flagUs from "@/assets/flag-us.png";
 import flagCo from "@/assets/flag-co.png";
@@ -128,13 +129,21 @@ export const Header = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const languageOptions: { lang: Language; flag: string; alt: string }[] = [
+  const allLanguageOptions: { lang: Language; flag: string; alt: string }[] = [
     { lang: "en", flag: flagUs, alt: "English" },
     { lang: "pt", flag: flagBr, alt: "Português" },
     { lang: "es", flag: flagCo, alt: "Español" },
   ];
 
-  const currentLang = languageOptions.find((o) => o.lang === language) || languageOptions[0];
+  // Filter dropdown choices based on current domain.
+  // Always include the current language so the active flag still renders.
+  const availableLangs = getAvailableLanguages();
+  const languageOptions = allLanguageOptions.filter(
+    (o) => availableLangs.includes(o.lang) || o.lang === language
+  );
+
+  const currentLang =
+    allLanguageOptions.find((o) => o.lang === language) || allLanguageOptions[0];
 
   const handleLanguageChange = (lang: Language) => {
     switchLanguage(lang);
