@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState, ReactNode, useEffect } from
 import { Language, translations } from '@/lib/translations';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { getLanguageFromPath, getLocalizedPath } from '@/lib/routeMap';
+import { buildCrossDomainUrl } from '@/lib/domains';
 
 interface LanguageContextType {
   language: Language;
@@ -30,6 +31,12 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
   const switchLanguage = (lang: Language) => {
     if (lang === language) return;
     const targetPath = getLocalizedPath(location.pathname, lang);
+    // If target language lives on a different domain, do a full redirect.
+    const crossDomainUrl = buildCrossDomainUrl(lang, targetPath);
+    if (crossDomainUrl) {
+      window.location.href = crossDomainUrl;
+      return;
+    }
     navigate(targetPath);
     // language state will update via the useEffect above
   };
