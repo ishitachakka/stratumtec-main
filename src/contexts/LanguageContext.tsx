@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, ReactNode, useEffect } from
 import { Language, translations } from '@/lib/translations';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { getLanguageFromPath, getLocalizedPath } from '@/lib/routeMap';
-import { buildCrossDomainUrl } from '@/lib/domains';
+import { buildCrossDomainUrl, getCurrentDomain, getDefaultLanguageForDomain } from '@/lib/domains';
 
 interface LanguageContextType {
   language: Language;
@@ -20,7 +20,25 @@ export const LanguageProvider = ({ children }: LanguageProviderProps) => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const [language, setLanguage] = useState<Language>(getLanguageFromPath(location.pathname));
+  // Domain-first language detection.
+  // On dedicated language domains (e.g. stratumtec.com.co → Spanish) the domain
+  // ALWAYS wins over URL path or any previously stored preference. We compute
+  // this synchronously in the useState initializer so the very first render
+  // already uses the correct language — no flicker.
+  const [language, setLanguage] = useState<Language>(() => {
+    const domain = getCurrentDomain();
+    // Clear any stale stored language on dedicated-language domains so that
+    // legacy values from earlier visits can never override the domain.
+    if (typeof window !== 'undefined' && domain === 'spanish') {
+      try {
+        window.localStorage.removeItem('language');
+        window.localStorage.removeItem('preferredLanguage');
+        window.localStorage.removeItem('i18nextLng');
+      } catch { /* ignore storage errors */ }
+      return getDefaultLanguageForDomain();
+    }
+    return getLanguageFromPath(location.pathname);
+  });
 
   // Keep language in sync when URL changes (back/forward, direct navigation)
   useEffect(() => {
