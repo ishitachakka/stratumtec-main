@@ -55,6 +55,11 @@ export function getLocalizedPath(currentPath: string, targetLang: Language): str
  * Detect language from pathname.
  */
 export function getLanguageFromPath(pathname: string): Language {
+  // Domain takes absolute priority on dedicated language domains.
+  // On stratumtec.com.co the site is ALWAYS Spanish, regardless of URL path.
+  const domain = getCurrentDomain();
+  if (domain === 'spanish') return 'es';
+
   // Check exact matches first
   const key = pathToKey[pathname];
   if (key) {
