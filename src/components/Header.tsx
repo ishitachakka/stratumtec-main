@@ -200,26 +200,35 @@ export const Header = () => {
           <div className="flex items-center space-x-4">
             {/* Language Dropdown */}
             <div className="relative" ref={langRef}>
-              <button
-                onClick={() => setIsLangOpen(!isLangOpen)}
-                className="flex items-center space-x-1 p-1.5 rounded-md hover:bg-muted transition-colors"
-              >
-                <img src={currentLang.flag} alt={currentLang.alt} className="w-8 h-6 object-cover rounded" />
-                <ChevronDown className={`h-3.5 w-3.5 text-muted-foreground transition-transform ${isLangOpen ? "rotate-180" : ""}`} />
-              </button>
-              {isLangOpen && (
-                <div className="absolute right-0 mt-1 w-12 bg-popover border border-border rounded-md shadow-lg py-1 z-50">
-                  {languageOptions
-                    .filter((o) => o.lang !== language)
-                    .map((option) => (
-                      <button
-                        key={option.lang}
-                        className="flex items-center justify-center w-full px-2 py-2 hover:bg-accent transition-colors"
-                        onClick={() => handleLanguageChange(option.lang)}
-                      >
-                        <img src={option.flag} alt={option.alt} className="w-8 h-6 object-cover rounded" />
-                      </button>
-                    ))}
+              {hasLanguageChoices ? (
+                <>
+                  <button
+                    onClick={() => setIsLangOpen(!isLangOpen)}
+                    aria-label="Select language"
+                    className="flex items-center space-x-1 p-1.5 rounded-md hover:bg-muted transition-colors"
+                  >
+                    <img src={currentLang.flag} alt={currentLang.alt} className="w-8 h-6 object-cover rounded" />
+                    <ChevronDown className={`h-3.5 w-3.5 text-muted-foreground transition-transform ${isLangOpen ? "rotate-180" : ""}`} />
+                  </button>
+                  {isLangOpen && (
+                    <div className="absolute right-0 mt-1 w-12 bg-popover border border-border rounded-md shadow-lg py-1 z-50">
+                      {otherLanguageOptions.map((option) => (
+                        <button
+                          key={option.lang}
+                          className="flex items-center justify-center w-full px-2 py-2 hover:bg-accent transition-colors"
+                          onClick={() => handleLanguageChange(option.lang)}
+                        >
+                          <img src={option.flag} alt={option.alt} className="w-8 h-6 object-cover rounded" />
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </>
+              ) : (
+                // Single-language domain (e.g. stratumtec.com.co): show the
+                // active flag as a static indicator, no dropdown.
+                <div className="flex items-center p-1.5" aria-label={currentLang.alt}>
+                  <img src={currentLang.flag} alt={currentLang.alt} className="w-8 h-6 object-cover rounded" />
                 </div>
               )}
             </div>
