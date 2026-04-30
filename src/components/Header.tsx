@@ -145,6 +145,10 @@ export const Header = () => {
   const currentLang =
     allLanguageOptions.find((o) => o.lang === language) || allLanguageOptions[0];
 
+  // Other languages the user can switch to from this domain.
+  const otherLanguageOptions = languageOptions.filter((o) => o.lang !== language);
+  const hasLanguageChoices = otherLanguageOptions.length > 0;
+
   const handleLanguageChange = (lang: Language) => {
     switchLanguage(lang);
     setIsLangOpen(false);
