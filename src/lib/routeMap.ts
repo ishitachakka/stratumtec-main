@@ -1,4 +1,5 @@
 import { Language } from './translations';
+import { getCurrentDomain, getDefaultLanguageForDomain } from './domains';
 
 // Each entry maps a "page key" to its localized routes
 const routeTable: Record<string, Record<Language, string>> = {
@@ -54,6 +55,11 @@ export function getLocalizedPath(currentPath: string, targetLang: Language): str
  * Detect language from pathname.
  */
 export function getLanguageFromPath(pathname: string): Language {
+  // Domain takes absolute priority on dedicated language domains.
+  // On stratumtec.com.co the site is ALWAYS Spanish, regardless of URL path.
+  const domain = getCurrentDomain();
+  if (domain === 'spanish') return 'es';
+
   // Check exact matches first
   const key = pathToKey[pathname];
   if (key) {
@@ -68,7 +74,8 @@ export function getLanguageFromPath(pathname: string): Language {
   // Legacy PT routes without prefix
   const ptRoutes = ['/empresa', '/solucoes', '/consultoria', '/contato', '/blog', '/plataformas', '/servicos'];
   if (ptRoutes.some(r => pathname === r || pathname.startsWith(r + '/'))) return 'pt';
-  return 'en';
+  // Fallback: domain-driven default (Spanish on .com.co, English on main).
+  return getDefaultLanguageForDomain();
 }
 
 export { routeTable };
