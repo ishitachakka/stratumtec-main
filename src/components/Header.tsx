@@ -307,8 +307,9 @@ export const Header = () => {
               )}
 
               {/* Mobile Language Selector */}
-              <div className="flex gap-2 px-4 pt-4 border-t border-border/20">
-                {languageOptions.map((option) => (
+              {hasLanguageChoices && (
+                <div className="flex gap-2 px-4 pt-4 border-t border-border/20">
+                  {languageOptions.map((option) => (
                   <button
                     key={option.lang}
                     className={`p-2 rounded-md transition-colors ${
@@ -321,8 +322,9 @@ export const Header = () => {
                   >
                     <img src={option.flag} alt={option.alt} className="w-8 h-6 object-cover rounded" />
                   </button>
-                ))}
-              </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         )}
